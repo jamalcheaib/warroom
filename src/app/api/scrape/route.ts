@@ -7,6 +7,7 @@ const TELEGRAM_CHANNELS = ['mmirleb', 'ElamAlmoqawama', 'unewschannel', 'almayad
 
 const RSS_FEEDS = [
   { url: 'https://www.aljazeera.net/feed/rss2', name: 'Al Jazeera' },
+  { url: 'https://www.reuters.com/arc/outboundfeeds/rss/', name: 'Reuters' },
 ];
 
 export const dynamic = 'force-dynamic';
@@ -17,7 +18,9 @@ export async function GET(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get('secret');
   const cronSecret = process.env.CRON_SECRET;
 
-  if (cronSecret && secret !== cronSecret) {
+  // Vercel crons send authorization via header, manual calls use query param
+  const vercelCron = request.headers.get('x-vercel-cron');
+  if (cronSecret && secret !== cronSecret && !vercelCron) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -48,8 +51,7 @@ export async function GET(request: NextRequest) {
     console.log(`Parsed ${operations.length} operations from ${allItems.length} items`);
 
     // Get today's date in Beirut timezone
-    const beirutNow = new Date(new Date().getTime() + 3 * 60 * 60 * 1000);
-    const today = beirutNow.toISOString().split('T')[0];
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Beirut' });
 
     // Update GitHub
     const result = await updateDailyOperations(today, operations, githubToken);
