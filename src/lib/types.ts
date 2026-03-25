@@ -9,6 +9,7 @@ export interface Operation {
   status: OperationStatus;
   source: string;
   sourceUrl?: string;
+  needsReview?: boolean;
 }
 
 export interface DailyOperations {
