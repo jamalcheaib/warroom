@@ -9,7 +9,7 @@ import { Operation, DailyOperations } from '@/lib/types';
 import { OperationCategory } from '@/lib/terminology';
 
 const ARABIC_MONTHS: Record<number, string> = {
-  1: 'كانون ٢',
+  1: 'كانون 2',
   2: 'شباط',
   3: 'آذار',
   4: 'نيسان',
@@ -18,18 +18,13 @@ const ARABIC_MONTHS: Record<number, string> = {
   7: 'تموز',
   8: 'آب',
   9: 'أيلول',
-  10: 'تشرين ١',
-  11: 'تشرين ٢',
-  12: 'كانون ١',
+  10: 'تشرين 1',
+  11: 'تشرين 2',
+  12: 'كانون 1',
 };
 
-const ARABIC_DIGITS = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
-
 function toArabicNum(n: number): string {
-  return String(n)
-    .split('')
-    .map((d) => ARABIC_DIGITS[parseInt(d)])
-    .join('');
+  return String(n);
 }
 
 function getTodayDate(): string {
