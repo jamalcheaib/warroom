@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://warroom-ecru.vercel.app/sitemap.xml
