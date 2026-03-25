@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Noto_Kufi_Arabic } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const notoKufi = Noto_Kufi_Arabic({
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl" className={notoKufi.variable}>
       <body className="bg-[#0a0f1a] text-white font-[family-name:var(--font-noto-kufi)] antialiased min-h-screen">
         {children}
+        <Analytics />
       </body>
     </html>
   );
