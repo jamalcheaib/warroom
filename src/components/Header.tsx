@@ -1,7 +1,7 @@
 'use client';
 
 export default function Header() {
-  const today = new Date().toLocaleDateString('ar-LB', {
+  const today = new Date().toLocaleDateString('en-GB', {
     timeZone: 'Asia/Beirut',
     weekday: 'long',
     year: 'numeric',

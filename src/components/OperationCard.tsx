@@ -24,7 +24,7 @@ const sourceIcons: Record<string, string> = {
 };
 
 export default function OperationCard({ operation }: OperationCardProps) {
-  const time = new Date(operation.time).toLocaleTimeString('ar-LB', {
+  const time = new Date(operation.time).toLocaleTimeString('en-GB', {
     timeZone: 'Asia/Beirut',
     hour: '2-digit',
     minute: '2-digit',

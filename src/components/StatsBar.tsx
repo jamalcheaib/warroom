@@ -16,7 +16,7 @@ export default function StatsBar({ operations, lastUpdated }: StatsBarProps) {
     return acc;
   }, {});
 
-  const updated = new Date(lastUpdated).toLocaleTimeString('ar-LB', {
+  const updated = new Date(lastUpdated).toLocaleTimeString('en-GB', {
     timeZone: 'Asia/Beirut',
     hour: '2-digit',
     minute: '2-digit',
