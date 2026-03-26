@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:58:56.178Z",
+  "lastUpdated": "2026-03-26T20:58:57.354Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -617,6 +617,15 @@
       "count": 8,
       "description": "مصانع وشركات عسكرية مستهدفة",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-artillery",
+      "date": "2026-03-25",
+      "category": "artillery_positions",
+      "subcategory": "",
+      "count": 12,
+      "description": "مرابض مدفعية مستهدفة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -627,6 +636,7 @@
     "soldiers_wounded": 15,
     "military_vehicles": 89,
     "technical_equipment": 18,
-    "military_factories": 8
+    "military_factories": 8,
+    "artillery_positions": 12
   }
 }
