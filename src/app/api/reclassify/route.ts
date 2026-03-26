@@ -3,11 +3,17 @@ import { NextRequest, NextResponse } from 'next/server';
 const REPO = 'jamalcheaib/warroom';
 
 const HEZ_GEO_KEYWORDS = [
+  'حزب الله', 'المقاومة الإسلامية في لبنان', 'المقاومة الإسلامية:',
+  'بيان صادر عن المقاومة الإسلامية',
   'جنوب لبنان', 'جنوب_لبنان', 'الجليل', 'شمال فلسطين', 'شمالي فلسطين',
   'غولاني', 'كريات شمونة', 'المطلة', 'الناقورة', 'مارون الراس',
   'عيتا الشعب', 'بنت جبيل', 'الخيام', 'كفرشوبا', 'مزارع شبعا',
   'الطيبة', 'المحيسة', 'المحيس', 'نخبة غولاني', 'لواء غولاني',
-  'حزب الله', 'المقاومة الإسلامية في لبنان',
+  'القنطرة', 'علما الشعب', 'مسكاف عام', 'مسغاف عام', 'شلومي',
+  'بيت هلل', 'دبّابة ميركافا', 'ميركافا', 'مروحين', 'حولا',
+  'إصبع الجليل', 'الجليل الغربي', 'الجليل الأعلى',
+  'موقع البغدادي', 'موقع المرج', 'موقع الراهب', 'موقع السماقة',
+  'ثكنة برانيت', 'قاعدة دادو', 'دير سريان', 'مرتفع المحيس',
 ];
 
 export const dynamic = 'force-dynamic';
@@ -47,8 +53,9 @@ export async function GET(request: NextRequest) {
 
       let changed = 0;
       for (const op of content.operations) {
-        if (op.category !== 'iran') continue;
         const text = `${op.title} ${op.description}`;
+        // Skip if already hezbollah
+        if (op.category === 'hezbollah') continue;
         if (HEZ_GEO_KEYWORDS.some(k => text.includes(k))) {
           op.category = 'hezbollah';
           changed++;
