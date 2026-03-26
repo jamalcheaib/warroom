@@ -68,7 +68,7 @@ export type OperationCategory =
   | 'political';
 
 export const categoryLabels: Record<OperationCategory, string> = {
-  hezbollah: 'عمليات حزب الله',
+  hezbollah: 'عمليات المقاومة الإسلامية',
   iraq_resistance: 'عمليات المقاومة الإسلامية في العراق',
   iran: 'عمليات إيران',
   statements: 'تصريحات وبيانات',

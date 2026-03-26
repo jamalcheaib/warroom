@@ -69,7 +69,7 @@ export default function LossesPage() {
       <Header />
       <main className="max-w-6xl mx-auto px-4 py-6">
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          خسائر العدو في جنوب لبنان
+          الخسائر الإسرائيلية في جنوب لبنان
         </h1>
 
         {loading ? (

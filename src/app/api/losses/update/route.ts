@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
   // Commit to GitHub
   const commitBody: Record<string, string> = {
-    message: `📊 تحديث خسائر العدو — ${newLoss.category}: ${newLoss.count}`,
+    message: `📊 تحديث الخسائر الإسرائيلية — ${newLoss.category}: ${newLoss.count}`,
     content: Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64'),
   };
   if (sha) commitBody.sha = sha;

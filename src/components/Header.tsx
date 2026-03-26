@@ -26,7 +26,7 @@ export default function Header() {
             href="/losses"
             className="text-sm text-red-400 hover:text-red-300 border border-red-900 hover:border-red-700 px-3 py-1.5 rounded-lg transition-colors"
           >
-            خسائر العدو
+            الخسائر الإسرائيلية
           </Link>
           <div className="text-gray-400 text-sm hidden md:block">{today}</div>
         </div>
