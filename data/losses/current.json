@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:59:02.497Z",
+  "lastUpdated": "2026-03-26T20:59:03.532Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -662,6 +662,15 @@
       "count": 1,
       "description": "كوادكابتر أُسقط",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-settlement",
+      "date": "2026-03-25",
+      "category": "settlement_units",
+      "subcategory": "",
+      "count": 134,
+      "description": "وحدات استيطانية مستهدفة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -677,6 +686,7 @@
     "bunkers": 306,
     "radar": 1,
     "drones": 3,
-    "quadcopter": 1
+    "quadcopter": 1,
+    "settlement_units": 134
   }
 }
