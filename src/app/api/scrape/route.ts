@@ -45,23 +45,51 @@ export async function GET(request: NextRequest) {
       console.log(`${feed.name} RSS: ${items.length} items scraped`);
     }
 
-    // Parse into operations
-    const existingIds = new Set<string>(); // GitHub module handles dedup
-    const operations = parseOperations(allItems, existingIds);
-    console.log(`Parsed ${operations.length} operations from ${allItems.length} items`);
+    // Group items by date (Beirut timezone) to support multi-day backfill
+    const itemsByDate = new Map<string, typeof allItems>();
+    for (const item of allItems) {
+      const d = new Date(item.timestamp);
+      const beirutDate = new Date(d.getTime() + 3 * 60 * 60 * 1000)
+        .toISOString().split('T')[0];
+      if (!itemsByDate.has(beirutDate)) itemsByDate.set(beirutDate, []);
+      itemsByDate.get(beirutDate)!.push(item);
+    }
 
-    // Get today's date in Beirut timezone
     const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Beirut' });
+    const existingIds = new Set<string>(); // GitHub module handles dedup
 
-    // Update GitHub
-    const result = await updateDailyOperations(today, operations, githubToken);
+    // Process each date
+    let totalAdded = 0;
+    let totalParsed = 0;
+    let todayResult: Awaited<ReturnType<typeof updateDailyOperations>> | null = null;
+
+    const dates = Array.from(itemsByDate.keys()).sort();
+    for (const date of dates) {
+      const ops = parseOperations(itemsByDate.get(date)!, existingIds, date);
+      totalParsed += ops.length;
+      if (ops.length === 0) continue;
+      const result = await updateDailyOperations(date, ops, githubToken);
+      totalAdded += result.added;
+      if (date === today) todayResult = result;
+    }
+
+    // Fallback: if today had no items, still parse for today
+    if (!todayResult) {
+      const ops = parseOperations(allItems, existingIds, today);
+      todayResult = await updateDailyOperations(today, ops, githubToken);
+      totalAdded += todayResult.added;
+      totalParsed += ops.length;
+    }
+
+    const result = todayResult;
 
     const response = {
       success: true,
       date: today,
+      dates: dates,
       scraped: allItems.length,
-      parsed: operations.length,
-      added: result.added,
+      parsed: totalParsed,
+      added: totalAdded,
       total: result.total,
       reviewItems: result.reviewItems.map(op => ({
         title: op.title,

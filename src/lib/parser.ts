@@ -47,8 +47,16 @@ function detectCategory(text: string, source: string): string {
     }
   }
 
-  if (source === '@unewschannel') {
+  if (source === '@unewschannel' || source === '@almayadeen') {
     if (text.includes('حزب الله') || text.includes('المقاومة الإسلامية في لبنان')) return 'hezbollah';
+    // Geographic keywords strongly associated with Hezbollah operations
+    const hezGeoKeywords = [
+      'جنوب لبنان', 'جنوب_لبنان', 'الجليل', 'شمال فلسطين', 'شمالي فلسطين',
+      'غولاني', 'كريات شمونة', 'المطلة', 'الناقورة', 'مارون الراس',
+      'عيتا الشعب', 'بنت جبيل', 'الخيام', 'كفرشوبا', 'مزارع شبعا',
+      'الطيبة', 'المحيسة', 'المحيس', 'نخبة غولاني', 'لواء غولاني',
+    ];
+    if (hezGeoKeywords.some(k => text.includes(k))) return 'hezbollah';
     if (text.includes('إيران') || text.includes('الحرس الثوري') || text.includes('الوعد الصادق')) return 'iran';
     if (text.includes('المقاومة الإسلامية في العراق')) return 'iraq_resistance';
   }
@@ -109,9 +117,9 @@ function needsReview(text: string): boolean {
   return REVIEW_KEYWORDS.some(k => text.includes(k));
 }
 
-export function parseOperations(items: ScrapedItem[], existingIds: Set<string>): Operation[] {
+export function parseOperations(items: ScrapedItem[], existingIds: Set<string>, targetDate?: string): Operation[] {
   const operations: Operation[] = [];
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Beirut' });
 
   for (const item of items) {
     // Skip duplicates
@@ -120,13 +128,13 @@ export function parseOperations(items: ScrapedItem[], existingIds: Set<string>):
     // Skip non-operation content (ads, forwards without substance)
     if (item.text.length < 30) continue;
 
-    // Check if this is from today (Beirut timezone)
+    // Check if this is from today (Beirut timezone) — unless targetDate is specified
     const itemDate = new Date(item.timestamp);
     const beirutDate = new Date(itemDate.getTime() + 3 * 60 * 60 * 1000)
       .toISOString().split('T')[0];
 
-    // Only include today's operations
-    if (beirutDate !== today) continue;
+    // Only include operations matching the target date
+    if (beirutDate !== (targetDate || today)) continue;
 
     const category = detectCategory(item.text, item.source);
     const status = detectStatus(item.text);
