@@ -10,10 +10,10 @@ const notoKufi = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'غرفة العمليات | War Room — متابعة العمليات العسكرية',
+  title: 'غرفة الحرب | War Room — متابعة العمليات العسكرية',
   description: 'لوحة متابعة يومية للعمليات العسكرية في لبنان وإيران والعراق — عمليات المقاومة الإسلامية، حزب الله، الحرس الثوري الإيراني، المقاومة العراقية، وعمليات العدو الأمريكي والصهيوني. تحديث مستمر من المصادر الرسمية.',
   keywords: [
-    'غرفة العمليات',
+    'غرفة الحرب',
     'War Room',
     'عمليات عسكرية',
     'حزب الله',
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
     'غزة',
   ],
   openGraph: {
-    title: 'غرفة العمليات | War Room',
+    title: 'غرفة الحرب | War Room',
     description: 'لوحة متابعة يومية للعمليات العسكرية — تحديث مستمر من المصادر الرسمية لمحور المقاومة',
     type: 'website',
     locale: 'ar_LB',
-    siteName: 'غرفة العمليات',
+    siteName: 'غرفة الحرب',
     url: 'https://warroom-ecru.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'غرفة العمليات | War Room',
+    title: 'غرفة الحرب | War Room',
     description: 'متابعة يومية للعمليات العسكرية — حزب الله، إيران، المقاومة العراقية، عمليات العدو',
   },
   robots: {

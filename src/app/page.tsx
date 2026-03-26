@@ -1,12 +1,15 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
+import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import StatsBar from '@/components/StatsBar';
 import OperationCard from '@/components/OperationCard';
 import CategoryFilter from '@/components/CategoryFilter';
 import { Operation, DailyOperations } from '@/lib/types';
 import { OperationCategory } from '@/lib/terminology';
+
+const OperationsMap = dynamic(() => import('@/components/OperationsMap'), { ssr: false });
 
 const ARABIC_MONTHS: Record<number, string> = {
   1: 'كانون 2',
@@ -52,6 +55,7 @@ export default function Home() {
   const [filter, setFilter] = useState<OperationCategory | 'all'>('all');
   const [loading, setLoading] = useState(true);
   const [selectedDate, setSelectedDate] = useState(getTodayDate());
+  const [view, setView] = useState<'list' | 'map'>('list');
   const scrollRef = useRef<HTMLDivElement>(null);
   const selectedRef = useRef<HTMLButtonElement>(null);
   const calendarRef = useRef<HTMLInputElement>(null);
@@ -156,16 +160,47 @@ export default function Home() {
               operations={operations}
               lastUpdated={data?.lastUpdated ?? new Date().toISOString()}
             />
-            <CategoryFilter active={filter} onChange={setFilter} />
-            <div className="grid gap-4 md:grid-cols-2">
-              {sorted.map((op) => (
-                <OperationCard key={op.id} operation={op} />
-              ))}
+
+            {/* View Toggle */}
+            <div className="flex gap-2 mb-4">
+              <button
+                onClick={() => setView('list')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
+                  view === 'list'
+                    ? 'bg-green-600 border-green-500 text-white'
+                    : 'bg-zinc-900 border-zinc-700 text-zinc-400 hover:border-green-600 hover:text-green-400'
+                }`}
+              >
+                القائمة
+              </button>
+              <button
+                onClick={() => setView('map')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
+                  view === 'map'
+                    ? 'bg-green-600 border-green-500 text-white'
+                    : 'bg-zinc-900 border-zinc-700 text-zinc-400 hover:border-green-600 hover:text-green-400'
+                }`}
+              >
+                الخريطة
+              </button>
             </div>
-            {sorted.length === 0 && (
-              <div className="text-center text-gray-500 py-20">
-                لا توجد عمليات مسجّلة
-              </div>
+
+            {view === 'list' ? (
+              <>
+                <CategoryFilter active={filter} onChange={setFilter} />
+                <div className="grid gap-4 md:grid-cols-2">
+                  {sorted.map((op) => (
+                    <OperationCard key={op.id} operation={op} />
+                  ))}
+                </div>
+                {sorted.length === 0 && (
+                  <div className="text-center text-gray-500 py-20">
+                    لا توجد عمليات مسجّلة
+                  </div>
+                )}
+              </>
+            ) : (
+              <OperationsMap operations={operations} />
             )}
           </>
         )}

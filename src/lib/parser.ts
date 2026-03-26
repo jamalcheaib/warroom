@@ -2,6 +2,7 @@ import { ScrapedItem } from './scraper';
 import { applyTerminology } from './terminology';
 import { Operation } from './types';
 import { OperationCategory } from './terminology';
+import { extractGeoFromText } from './geo-dictionary';
 
 const CHANNEL_CATEGORY_MAP: Record<string, string> = {
   '@mmirleb': 'hezbollah',
@@ -148,6 +149,8 @@ export function parseOperations(items: ScrapedItem[], existingIds: Set<string>, 
         .trim()
     );
 
+    const geo = extractGeoFromText(item.text);
+
     operations.push({
       id: item.id,
       time,
@@ -157,6 +160,7 @@ export function parseOperations(items: ScrapedItem[], existingIds: Set<string>, 
       status,
       source: item.source,
       needsReview: needsReview(item.text),
+      ...(geo ? { lat: geo.lat, lon: geo.lon } : {}),
     });
   }
 
