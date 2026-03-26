@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:53:06.525Z",
+  "lastUpdated": "2026-03-26T20:58:54.061Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -590,6 +590,15 @@
       "description": "#إعلام_العدو   القناة 15 العبرية: إصابة 15 جندياً إسرائيليًا خلال الليل جنوب لبنان. #الإعلام_الحربي",
       "source": "@C_Military1",
       "messageId": "82404"
+    },
+    {
+      "id": "img-mil-vehicles",
+      "date": "2026-03-25",
+      "category": "military_vehicles",
+      "subcategory": "",
+      "count": 89,
+      "description": "آليات عسكرية مدمّرة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -597,6 +606,7 @@
     "tanks": 30,
     "infrastructure": 1,
     "soldiers_killed": 2,
-    "soldiers_wounded": 15
+    "soldiers_wounded": 15,
+    "military_vehicles": 89
   }
 }
