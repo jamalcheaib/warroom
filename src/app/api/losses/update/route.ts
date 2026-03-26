@@ -7,7 +7,7 @@ const REPO = process.env.GITHUB_REPO || 'jamalcheaib/warroom';
 const FILE_PATH = 'data/losses/current.json';
 
 export async function POST(request: NextRequest) {
-  const secret = process.env.WARROOM_SECRET;
+  const secret = process.env.WARROOM_SECRET || process.env.CRON_SECRET;
   const auth = request.headers.get('authorization');
 
   if (!secret || auth !== `Bearer ${secret}`) {
