@@ -48,15 +48,26 @@ function detectCategory(text: string, source: string): string {
     }
   }
 
+  // Hezbollah detection — cross-channel (highest priority for resistance ops)
+  const hezKeywords = [
+    'حزب الله', 'المقاومة الإسلامية في لبنان', 'المقاومة الإسلامية:',
+    'بيان صادر عن المقاومة الإسلامية',
+  ];
+  const hezGeoKeywords = [
+    'جنوب لبنان', 'جنوب_لبنان', 'الجليل', 'شمال فلسطين', 'شمالي فلسطين',
+    'غولاني', 'كريات شمونة', 'المطلة', 'الناقورة', 'مارون الراس',
+    'عيتا الشعب', 'بنت جبيل', 'الخيام', 'كفرشوبا', 'مزارع شبعا',
+    'الطيبة', 'المحيسة', 'المحيس', 'نخبة غولاني', 'لواء غولاني',
+    'القنطرة', 'علما الشعب', 'مسكاف عام', 'مسغاف عام', 'شلومي',
+    'بيت هلل', 'دبّابة ميركافا', 'ميركافا', 'مروحين', 'حولا',
+    'إصبع الجليل', 'الجليل الغربي', 'الجليل الأعلى',
+    'موقع البغدادي', 'موقع المرج', 'موقع الراهب', 'موقع السماقة',
+    'موقع رويسات', 'موقع الأبيض', 'ثكنة برانيت', 'قاعدة دادو',
+    'دير سريان', 'مرتفع المحيس', 'وادي السلوقي',
+  ];
+
+  if (hezKeywords.some(k => text.includes(k))) return 'hezbollah';
   if (source === '@unewschannel' || source === '@almayadeen') {
-    if (text.includes('حزب الله') || text.includes('المقاومة الإسلامية في لبنان')) return 'hezbollah';
-    // Geographic keywords strongly associated with Hezbollah operations
-    const hezGeoKeywords = [
-      'جنوب لبنان', 'جنوب_لبنان', 'الجليل', 'شمال فلسطين', 'شمالي فلسطين',
-      'غولاني', 'كريات شمونة', 'المطلة', 'الناقورة', 'مارون الراس',
-      'عيتا الشعب', 'بنت جبيل', 'الخيام', 'كفرشوبا', 'مزارع شبعا',
-      'الطيبة', 'المحيسة', 'المحيس', 'نخبة غولاني', 'لواء غولاني',
-    ];
     if (hezGeoKeywords.some(k => text.includes(k))) return 'hezbollah';
     if (text.includes('إيران') || text.includes('الحرس الثوري') || text.includes('الوعد الصادق')) return 'iran';
     if (text.includes('المقاومة الإسلامية في العراق')) return 'iraq_resistance';
