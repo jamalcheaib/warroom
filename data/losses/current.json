@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:59:05.745Z",
+  "lastUpdated": "2026-03-26T20:59:07.324Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -689,6 +689,15 @@
       "count": 9,
       "description": "مراكز قيادة مستهدفة",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-iron-dome",
+      "date": "2026-03-25",
+      "category": "iron_dome",
+      "subcategory": "",
+      "count": 9,
+      "description": "منصات قبة حديدية مستهدفة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -707,6 +716,7 @@
     "quadcopter": 1,
     "settlement_units": 134,
     "aircraft": 2,
-    "command_centers": 9
+    "command_centers": 9,
+    "iron_dome": 9
   }
 }
