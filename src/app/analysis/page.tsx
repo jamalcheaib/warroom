@@ -5,8 +5,8 @@ import { articles } from '@/data/articles';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'تحليلات ميدانية | غرفة الحرب',
-  description: 'تحليلات وتقارير ميدانية معمّقة من جبهات المقاومة',
+  title: 'ميداني | غرفة الحرب',
+  description: 'تقارير وتحليلات ميدانية معمّقة',
 };
 
 export default function AnalysisPage() {
@@ -14,8 +14,8 @@ export default function AnalysisPage() {
     <>
       <Header />
       <main className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-2">تحليلات ميدانية</h1>
-        <p className="text-zinc-500 dark:text-zinc-400 mb-8">تقارير وتحليلات معمّقة من الميدان</p>
+        <h1 className="text-3xl font-bold mb-2">ميداني</h1>
+        <p className="text-zinc-500 dark:text-zinc-400 mb-8">تقارير وتحليلات ميدانية معمّقة</p>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
