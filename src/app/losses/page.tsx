@@ -77,13 +77,13 @@ export default function LossesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100" dir="rtl">
+    <div className="min-h-screen" dir="rtl">
       <Header />
       <main className="max-w-6xl mx-auto px-4 py-6">
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
           الخسائر الإسرائيلية في جنوب لبنان
         </h1>
-        <p className="text-center text-zinc-500 text-sm mb-8">
+        <p className="text-center text-zinc-400 dark:text-zinc-500 text-sm mb-8">
           من 2/3/2026 حتى 25/3/2026
         </p>
 
@@ -94,13 +94,13 @@ export default function LossesPage() {
         ) : (
           <>
             {/* Total Overview */}
-            <div className="text-center mb-10 p-6 rounded-xl border border-red-900/50 bg-red-950/20">
-              <p className="text-zinc-400 text-sm mb-2">إجمالي الخسائر المسجّلة</p>
+            <div className="text-center mb-10 p-6 rounded-xl border border-red-200 dark:border-red-900/50 bg-red-50 dark:bg-red-950/20">
+              <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-2">إجمالي الخسائر المسجّلة</p>
               <p className="text-5xl md:text-7xl font-bold text-red-500">
                 <AnimatedCounter value={totalAll} />
               </p>
               {data?.lastUpdated && (
-                <p className="text-zinc-500 text-xs mt-3">
+                <p className="text-zinc-400 dark:text-zinc-500 text-xs mt-3">
                   آخر تحديث: {new Date(data.lastUpdated).toLocaleString('en-GB', { timeZone: 'Asia/Beirut' })}
                 </p>
               )}
@@ -118,7 +118,7 @@ export default function LossesPage() {
                 return (
                   <div
                     key={key}
-                    className="p-4 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 transition-colors"
+                    className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
                   >
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
@@ -131,21 +131,21 @@ export default function LossesPage() {
                     </div>
 
                     {hasBreakdown && (
-                      <div className="border-t border-zinc-800 pt-2 mt-2 space-y-1">
+                      <div className="border-t border-zinc-200 dark:border-zinc-800 pt-2 mt-2 space-y-1">
                         {Object.entries(breakdown)
                           .filter(([k]) => k !== 'غير محدد')
                           .sort(([, a], [, b]) => b - a)
                           .map(([sub, cnt]) => (
                             <div key={sub} className="flex justify-between text-sm">
-                              <span className="text-zinc-400">{sub}</span>
-                              <span className="text-zinc-300 font-medium">{toArabicNum(cnt)}</span>
+                              <span className="text-zinc-500 dark:text-zinc-400">{sub}</span>
+                              <span className="text-zinc-700 dark:text-zinc-300 font-medium">{toArabicNum(cnt)}</span>
                             </div>
                           ))}
                       </div>
                     )}
 
                     {losses.length > 0 && (
-                      <div className="text-xs text-zinc-500 mt-2">
+                      <div className="text-xs text-zinc-400 dark:text-zinc-500 mt-2">
                         {losses[losses.length - 1]?.date} — {losses[0]?.date}
                       </div>
                     )}

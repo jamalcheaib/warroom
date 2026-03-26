@@ -73,7 +73,6 @@ export default function Home() {
       .catch(() => setLoading(false));
   }, [selectedDate]);
 
-  // Scroll to selected date on mount
   useEffect(() => {
     if (selectedRef.current) {
       selectedRef.current.scrollIntoView({
@@ -104,7 +103,7 @@ export default function Home() {
         <div className="mb-4 flex items-center gap-2">
           <button
             onClick={() => calendarRef.current?.showPicker()}
-            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg border border-gray-700 bg-gray-800/80 hover:bg-gray-700 transition-colors text-green-400"
+            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-200 dark:border-gray-700 bg-zinc-100 dark:bg-gray-800/80 hover:bg-zinc-200 dark:hover:bg-gray-700 transition-colors text-green-600 dark:text-green-400"
             title="فتح التقويم"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -137,12 +136,12 @@ export default function Home() {
                   className={`flex-shrink-0 px-3 py-2 rounded-lg border text-xs font-medium transition-all duration-200 ${
                     isSelected
                       ? 'bg-green-600 border-green-500 text-white shadow-lg shadow-green-900/30'
-                      : 'bg-gray-800/80 border-gray-700 text-gray-300 hover:border-green-600 hover:text-green-400'
+                      : 'bg-zinc-100 dark:bg-gray-800/80 border-zinc-200 dark:border-gray-700 text-zinc-700 dark:text-gray-300 hover:border-green-600 hover:text-green-600 dark:hover:text-green-400'
                   } ${isToday && !isSelected ? 'border-green-700' : ''}`}
                 >
                   <div className="leading-tight text-center">
                     <div className={`text-sm font-bold ${isSelected ? 'text-white' : ''}`}>{day}</div>
-                    <div className={`text-[10px] ${isSelected ? 'text-green-100' : 'text-gray-500'}`}>{month}</div>
+                    <div className={`text-[10px] ${isSelected ? 'text-green-100' : 'text-zinc-400 dark:text-gray-500'}`}>{month}</div>
                   </div>
                 </button>
               );
@@ -168,7 +167,7 @@ export default function Home() {
                 className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
                   view === 'list'
                     ? 'bg-green-600 border-green-500 text-white'
-                    : 'bg-zinc-900 border-zinc-700 text-zinc-400 hover:border-green-600 hover:text-green-400'
+                    : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-green-600 hover:text-green-600 dark:hover:text-green-400'
                 }`}
               >
                 القائمة
@@ -178,7 +177,7 @@ export default function Home() {
                 className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
                   view === 'map'
                     ? 'bg-green-600 border-green-500 text-white'
-                    : 'bg-zinc-900 border-zinc-700 text-zinc-400 hover:border-green-600 hover:text-green-400'
+                    : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-green-600 hover:text-green-600 dark:hover:text-green-400'
                 }`}
               >
                 الخريطة
@@ -194,7 +193,7 @@ export default function Home() {
                   ))}
                 </div>
                 {sorted.length === 0 && (
-                  <div className="text-center text-gray-500 py-20">
+                  <div className="text-center text-zinc-400 dark:text-gray-500 py-20">
                     لا توجد عمليات مسجّلة
                   </div>
                 )}

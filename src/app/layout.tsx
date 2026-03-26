@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Kufi_Arabic } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
 
 const notoKufi = Noto_Kufi_Arabic({
@@ -67,9 +68,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={notoKufi.variable}>
-      <body className="bg-[#0a0f1a] text-white font-[family-name:var(--font-noto-kufi)] antialiased min-h-screen">
-        {children}
+    <html lang="ar" dir="rtl" className={`${notoKufi.variable} dark`} suppressHydrationWarning>
+      <body className="bg-white dark:bg-[#0a0f1a] text-zinc-900 dark:text-white font-[family-name:var(--font-noto-kufi)] antialiased min-h-screen">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
-:root {
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
   --bg-primary: #0a0f1a;
   --bg-secondary: #111827;
 }
 
-body {
-  background-color: var(--bg-primary);
+.light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f5;
 }
 
 /* Custom scrollbar */
