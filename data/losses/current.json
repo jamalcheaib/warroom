@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:58:57.354Z",
+  "lastUpdated": "2026-03-26T20:58:58.457Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -626,6 +626,15 @@
       "count": 12,
       "description": "مرابض مدفعية مستهدفة",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-bunkers",
+      "date": "2026-03-25",
+      "category": "bunkers",
+      "subcategory": "",
+      "count": 306,
+      "description": "دشم وتحصينات مدمّرة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -637,6 +646,7 @@
     "military_vehicles": 89,
     "technical_equipment": 18,
     "military_factories": 8,
-    "artillery_positions": 12
+    "artillery_positions": 12,
+    "bunkers": 306
   }
 }
