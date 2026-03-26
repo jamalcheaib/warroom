@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:58:59.711Z",
+  "lastUpdated": "2026-03-26T20:59:01.415Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -644,6 +644,15 @@
       "count": 1,
       "description": "رادار مدمّر",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-drones",
+      "date": "2026-03-25",
+      "category": "drones",
+      "subcategory": "",
+      "count": 3,
+      "description": "طائرات مسيّرة أُسقطت",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -657,6 +666,7 @@
     "military_factories": 8,
     "artillery_positions": 12,
     "bunkers": 306,
-    "radar": 1
+    "radar": 1,
+    "drones": 3
   }
 }
