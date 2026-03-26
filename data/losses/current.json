@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:59:04.564Z",
+  "lastUpdated": "2026-03-26T20:59:05.745Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -680,6 +680,15 @@
       "count": 2,
       "description": "محلّقة أُسقطت",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-command",
+      "date": "2026-03-25",
+      "category": "command_centers",
+      "subcategory": "",
+      "count": 9,
+      "description": "مراكز قيادة مستهدفة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -697,6 +706,7 @@
     "drones": 3,
     "quadcopter": 1,
     "settlement_units": 134,
-    "aircraft": 2
+    "aircraft": 2,
+    "command_centers": 9
   }
 }
