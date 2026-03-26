@@ -20,10 +20,29 @@ export interface DailyOperations {
   lastUpdated: string; // ISO 8601
 }
 
+export type LossCategory =
+  | 'military_vehicles'      // آليات عسكرية
+  | 'technical_equipment'    // تجهيزات فنيّة
+  | 'military_factories'     // مصانع وشركات عسكرية
+  | 'artillery_positions'    // مرابض مدفعية
+  | 'bunkers'                // دشم وتحصينات
+  | 'radar'                  // رادار
+  | 'drones'                 // طائرات مسيّرة
+  | 'quadcopter'             // كوادكابتر
+  | 'settlement_units'       // وحدات استيطانية
+  | 'aircraft'               // محلّقة
+  | 'command_centers'        // مراكز قيادة
+  | 'iron_dome'              // منصة قبة حديدية
+  | 'soldiers_killed'        // جنود قتلى
+  | 'soldiers_wounded'       // جنود جرحى
+  | 'settlers_killed'        // مستوطنون قتلى
+  | 'settlers_wounded'       // مستوطنون جرحى
+  | 'other';                 // مختلف
+
 export interface EnemyLoss {
   id: string;
   date: string;
-  category: 'tanks' | 'drones' | 'soldiers_killed' | 'soldiers_wounded' | 'settlers_killed' | 'settlers_wounded' | 'infrastructure' | 'bases' | 'other';
+  category: LossCategory;
   subcategory?: string;
   count: number;
   description: string;

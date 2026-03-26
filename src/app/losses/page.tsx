@@ -5,16 +5,28 @@ import Header from '@/components/Header';
 import { LossesData, EnemyLoss } from '@/lib/types';
 
 const CATEGORIES: { key: string; label: string; icon: string }[] = [
-  { key: 'tanks', label: 'دبابات', icon: '🔴' },
-  { key: 'drones', label: 'طائرات مسيّرة', icon: '🔴' },
+  { key: 'military_vehicles', label: 'آليات عسكرية', icon: '🚛' },
+  { key: 'technical_equipment', label: 'تجهيزات فنيّة', icon: '⚙️' },
+  { key: 'military_factories', label: 'مصانع وشركات عسكرية', icon: '🏭' },
+  { key: 'artillery_positions', label: 'مرابض مدفعية', icon: '💣' },
+  { key: 'bunkers', label: 'دشم وتحصينات', icon: '🏚️' },
+  { key: 'radar', label: 'رادار', icon: '📡' },
+  { key: 'drones', label: 'طائرات مسيّرة', icon: '✈️' },
+  { key: 'quadcopter', label: 'كوادكابتر', icon: '🚁' },
+  { key: 'settlement_units', label: 'وحدات استيطانية', icon: '🏘️' },
+  { key: 'aircraft', label: 'محلّقة', icon: '🛩️' },
+  { key: 'command_centers', label: 'مراكز قيادة', icon: '🎯' },
+  { key: 'iron_dome', label: 'منصة قبة حديدية', icon: '🛡️' },
   { key: 'soldiers_killed', label: 'جنود قتلى', icon: '💀' },
   { key: 'soldiers_wounded', label: 'جنود جرحى', icon: '🏥' },
   { key: 'settlers_killed', label: 'مستوطنون قتلى', icon: '💀' },
   { key: 'settlers_wounded', label: 'مستوطنون جرحى', icon: '🏥' },
-  { key: 'infrastructure', label: 'بنى تحتية', icon: '🏗️' },
-  { key: 'bases', label: 'قواعد عسكرية', icon: '🎯' },
   { key: 'other', label: 'مختلف', icon: '➕' },
 ];
+
+function toArabicNum(n: number): string {
+  return n.toLocaleString('en-US');
+}
 
 function AnimatedCounter({ value }: { value: number }) {
   const [display, setDisplay] = useState(0);
@@ -35,7 +47,7 @@ function AnimatedCounter({ value }: { value: number }) {
     return () => clearInterval(timer);
   }, [value]);
 
-  return <span>{display.toLocaleString('ar-EG')}</span>;
+  return <span>{toArabicNum(display)}</span>;
 }
 
 export default function LossesPage() {
@@ -68,9 +80,12 @@ export default function LossesPage() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100" dir="rtl">
       <Header />
       <main className="max-w-6xl mx-auto px-4 py-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
           الخسائر الإسرائيلية في جنوب لبنان
         </h1>
+        <p className="text-center text-zinc-500 text-sm mb-8">
+          من 2/3/2026 حتى 25/3/2026
+        </p>
 
         {loading ? (
           <div className="flex items-center justify-center py-20">
@@ -86,15 +101,16 @@ export default function LossesPage() {
               </p>
               {data?.lastUpdated && (
                 <p className="text-zinc-500 text-xs mt-3">
-                  آخر تحديث: {new Date(data.lastUpdated).toLocaleString('ar-LB', { timeZone: 'Asia/Beirut' })}
+                  آخر تحديث: {new Date(data.lastUpdated).toLocaleString('en-GB', { timeZone: 'Asia/Beirut' })}
                 </p>
               )}
             </div>
 
-            {/* Category Sections */}
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {/* Category Grid */}
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {CATEGORIES.map(({ key, label, icon }) => {
                 const count = data?.totals[key] || 0;
+                if (count === 0 && !['soldiers_killed','soldiers_wounded','settlers_killed','settlers_wounded','other'].includes(key)) return null;
                 const losses = getLossesForCategory(key);
                 const breakdown = getSubcategoryBreakdown(losses);
                 const hasBreakdown = Object.keys(breakdown).length > 0 && !(Object.keys(breakdown).length === 1 && breakdown['غير محدد']);
@@ -107,7 +123,7 @@ export default function LossesPage() {
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
                         <span className="text-xl">{icon}</span>
-                        <h3 className="font-bold text-lg">{label}</h3>
+                        <h3 className="font-bold text-base">{label}</h3>
                       </div>
                       <span className="text-2xl font-bold text-red-400">
                         <AnimatedCounter value={count} />
@@ -122,7 +138,7 @@ export default function LossesPage() {
                           .map(([sub, cnt]) => (
                             <div key={sub} className="flex justify-between text-sm">
                               <span className="text-zinc-400">{sub}</span>
-                              <span className="text-zinc-300 font-medium">{cnt}</span>
+                              <span className="text-zinc-300 font-medium">{toArabicNum(cnt)}</span>
                             </div>
                           ))}
                       </div>
