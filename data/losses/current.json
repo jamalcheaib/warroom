@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:58:54.061Z",
+  "lastUpdated": "2026-03-26T20:58:55.183Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -599,6 +599,15 @@
       "count": 89,
       "description": "آليات عسكرية مدمّرة",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-tech-equip",
+      "date": "2026-03-25",
+      "category": "technical_equipment",
+      "subcategory": "",
+      "count": 18,
+      "description": "تجهيزات فنيّة مدمّرة",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -607,6 +616,7 @@
     "infrastructure": 1,
     "soldiers_killed": 2,
     "soldiers_wounded": 15,
-    "military_vehicles": 89
+    "military_vehicles": 89,
+    "technical_equipment": 18
   }
 }
