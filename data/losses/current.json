@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:59:01.415Z",
+  "lastUpdated": "2026-03-26T20:59:02.497Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -653,6 +653,15 @@
       "count": 3,
       "description": "طائرات مسيّرة أُسقطت",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-quadcopter",
+      "date": "2026-03-25",
+      "category": "quadcopter",
+      "subcategory": "",
+      "count": 1,
+      "description": "كوادكابتر أُسقط",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -667,6 +676,7 @@
     "artillery_positions": 12,
     "bunkers": 306,
     "radar": 1,
-    "drones": 3
+    "drones": 3,
+    "quadcopter": 1
   }
 }
