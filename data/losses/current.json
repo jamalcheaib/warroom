@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T20:58:58.457Z",
+  "lastUpdated": "2026-03-26T20:58:59.711Z",
   "losses": [
     {
       "id": "mm-base-10270",
@@ -635,6 +635,15 @@
       "count": 306,
       "description": "دشم وتحصينات مدمّرة",
       "source": "إنفوغرافيك المقاومة"
+    },
+    {
+      "id": "img-radar",
+      "date": "2026-03-25",
+      "category": "radar",
+      "subcategory": "",
+      "count": 1,
+      "description": "رادار مدمّر",
+      "source": "إنفوغرافيك المقاومة"
     }
   ],
   "totals": {
@@ -647,6 +656,7 @@
     "technical_equipment": 18,
     "military_factories": 8,
     "artillery_positions": 12,
-    "bunkers": 306
+    "bunkers": 306,
+    "radar": 1
   }
 }
