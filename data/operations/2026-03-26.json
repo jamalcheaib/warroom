@@ -1,13 +1,13 @@
 {
   "date": "2026-03-26",
-  "lastUpdated": "2026-03-26T07:42:19.660Z",
+  "lastUpdated": "2026-03-26T07:48:46.557Z",
   "operations": [
     {
       "id": "tg-unewschannel-314746",
       "time": "2026-03-26T07:41:21+00:00",
       "title": "بالفيديو | سقوط صواريخ في الجليل شمالي #فلسطين المحتلة",
       "description": "بالفيديو | سقوط صواريخ في الجليل شمالي #فلسطين المحتلة",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "confirmed",
       "source": "@unewschannel",
       "needsReview": false
@@ -117,7 +117,7 @@
       "time": "2026-03-26T07:25:59+00:00",
       "title": "صفارات الإنذار تدوي في إصبع الجليل خشية تسلل طائرة مسيرة",
       "description": "عاجل | صفارات الإنذار تدوي في إصبع الجليل خشية تسلل طائرة مسيرة",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
@@ -127,7 +127,7 @@
       "time": "2026-03-26T07:22:52+00:00",
       "title": "مصادر عبرية: تسجيل إصابة في ثكنة عسكرية في إصبع الجليل يمنع النشر بأمر من الرقابة العسكرية",
       "description": "عاجل | مصادر عبرية: تسجيل إصابة في ثكنة عسكرية في إصبع الجليل يمنع النشر بأمر من الرقابة العسكرية",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
@@ -167,7 +167,7 @@
       "time": "2026-03-26T07:18:44+00:00",
       "title": "الجيش الإسرائيلي: رصدنا إطلاق صواريخ من #إيران باتجاه حيفا والجليل ومرج ابن عامر",
       "description": "عاجل | الجيش الإسرائيلي: رصدنا إطلاق صواريخ من #إيران باتجاه حيفا والجليل ومرج ابن عامر",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
@@ -207,7 +207,7 @@
       "time": "2026-03-26T07:16:41+00:00",
       "title": "رشقه صاروخية من #إيران باتجاه شمال #فلسطين المحتلة الجليل والكريوت وكامل حيفا",
       "description": "عاجل | رشقه صاروخية من #إيران باتجاه شمال #فلسطين المحتلة الجليل والكريوت وكامل حيفا",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
@@ -317,7 +317,7 @@
       "time": "2026-03-26T07:06:50+00:00",
       "title": "هام | القناة 15 العبرية: إصابة 15 جندياً إسرائيليًا خلال الليل في #جنوب_لبنان",
       "description": "هام | القناة 15 العبرية: إصابة 15 جندياً إسرائيليًا خلال الليل في #جنوب_لبنان",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "confirmed",
       "source": "@unewschannel",
       "needsReview": false
@@ -567,7 +567,7 @@
       "time": "2026-03-25T20:49:32+00:00",
       "title": "صفارات الإنذار تدوي في كرم بن زمرا بالجليل الغربي",
       "description": "عاجل | صفارات الإنذار تدوي في كرم بن زمرا بالجليل الغربي",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
@@ -727,7 +727,7 @@
       "time": "2026-03-25T20:10:06+00:00",
       "title": "صفارات الإنذار تدوي في مرجليوت في إصبع الجليل",
       "description": "عاجل | صفارات الإنذار تدوي في مرجليوت في إصبع الجليل 🔥1",
-      "category": "iran",
+      "category": "hezbollah",
       "status": "developing",
       "source": "@unewschannel",
       "needsReview": false
