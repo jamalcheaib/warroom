@@ -11,6 +11,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
   {
     slug: 'ainatha-massacre',
     title: 'معركة "المقتلة" في محور عيناثا - بنت جبيل',
@@ -101,7 +102,7 @@ export const articles: Article[] = [
     summary: 'شهدت الجبهة اللبنانية في الساعات الـ 24 الماضية تحولاً دراماتيكياً وضع الآلة العسكرية الإسرائيلية في مأزق عملياتي غير مسبوق. ففي يومٍ وُصف بأنه "استثناء عملياتي بامتياز"، سجلت المقاومة الإسلامية رقماً قياسياً بتنفيذ 87 عملية عسكرية.',
     tags: ['تقرير ميداني', 'جنوب لبنان', 'دبابات', 'المقاومة الإسلامية'],
     content: `
-<div class="grid grid-cols-2 md:grid-cols-4 gap-3 my-8">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-8">
   <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/30 text-center">
     <div class="text-2xl font-bold text-red-500">87</div>
     <div class="text-sm text-zinc-400 mt-1">عملية عسكرية في 24 ساعة</div>
