@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: 'تقارير وتحليلات ميدانية معمّقة',
 };
 
+export const revalidate = 0; // Disable caching for this page
+
 export default function AnalysisPage() {
   return (
     <>

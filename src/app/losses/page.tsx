@@ -1,5 +1,4 @@
-'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import { LossesData, EnemyLoss } from '@/lib/types';
@@ -86,6 +85,18 @@ export default function LossesPage() {
         <p className="text-center text-zinc-400 dark:text-zinc-500 text-sm mb-8">
           من 2/3/2026 حتى 25/3/2026
         </p>
+
+        {/* New Infographic Section */}
+        <div className="my-8 flex justify-center">
+          <Image 
+            src="/images/losses/loses.jpeg" 
+            alt="أحدث انفوغراف للخسائر الإسرائيلية" 
+            width={1000} 
+            height={600} 
+            className="rounded-lg shadow-md"
+          />
+        </div>
+        {/* End New Infographic Section */}
 
         {loading ? (
           <div className="flex items-center justify-center py-20">

@@ -1,26 +1,8 @@
-export interface Article {
-  slug: string;
-  title: string;
-  subtitle?: string;
-  author: string;
-  date: string;
-  heroImage?: string;
-  summary: string;
-  content: string;
-  tags: string[];
-}
+import Image from 'next/image';
 
-export const articles: Article[] = [
-  {
-    slug: 'ainatha-massacre',
-    title: 'معركة "المقتلة" في محور عيناثا - بنت جبيل',
-    author: 'جمال شعيب',
-    date: '2026-03-29',
-    heroImage: '/images/analysies/مقتلة1.jpeg',
-    summary: 'قراءة تحليلية "عسكرية معلوماتية" في بيان غرفة "عمليات المقاومة الاسلامية حول "المواجهة البطولية في محور عيناثا.',
-    tags: ['تحليل ميداني', 'جنوب لبنان', 'مقاومة', 'دبابات'],
-    content: `
-<div className="container mx-auto px-4 py-8">
+export default function AinathaMassacreAnalysis() {
+  return (
+    <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4">معركة "المقتلة" في محور عيناثا - بنت جبيل</h1>
       <p className="text-xl text-gray-600 mb-8">(قراءة تحليلية "عسكرية معلوماتية" في بيان غرفة "عمليات المقاومة الاسلامية حول "المواجهة البطولية في محور عيناثا)</p>
 
@@ -91,27 +73,5 @@ export const articles: Article[] = [
         ثالثاً: أُحكم الدرع حول بنت جبيل. بتحويل عيناثا إلى "منطقة تدمير" بدلاً من ممر عبور، أسقطت المقاومة المبدأ العملياتي الإسرائيلي القائم على الالتفاف - ولم تتحرك دبابة واحدة نحو الجهة الشمالية الشرقية لبنت جبيل.
       </p>
     </div>
-  },
-  {
-    slug: 'gray-wednesday-2026-03-25',
-    title: 'طوفان الصواريخ ومقبرة الميركافا: الميدان اللبناني يكسر أرقاماً قياسية',
-    author: 'جمال شعيب',
-    date: '2026-03-25',
-    heroImage: '/images/analysis-infographic-20260325.jpeg',
-    summary: 'شهدت الجبهة اللبنانية في الساعات الـ 24 الماضية تحولاً دراماتيكياً وضع الآلة العسكرية الإسرائيلية في مأزق عملياتي غير مسبوق. ففي يومٍ وُصف بأنه "استثناء عملياتي بامتياز"، سجلت المقاومة الإسلامية رقماً قياسياً بتنفيذ 87 عملية عسكرية.',
-    tags: ['تقرير ميداني', 'جنوب لبنان', 'دبابات', 'المقاومة الإسلامية'],
-    content: `
-<div class="grid grid-cols-2 md:grid-cols-4 gap-3 my-8">
-  <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/30 text-center">
-    <div class="text-2xl font-bold text-red-500">87</div>
-    <div class="text-sm text-zinc-400 mt-1">عملية عسكرية في 24 ساعة</div>
-  </div>
-  <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/30 text-center">
-    <div class="text-2xl font-bold text-red-500">10+2</div>
-    <div class="text-sm text-zinc-400 mt-1">دبابات ميركافا + جرافة D9</div>
-  
-
-
-export function getArticleBySlug(slug: string): Article | undefined {
-  return articles.find((a) => a.slug === slug);
+  );
 }
