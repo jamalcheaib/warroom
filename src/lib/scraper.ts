@@ -52,7 +52,7 @@ export async function scrapeTelegram(channel: string): Promise<ScrapedItem[]> {
 
     if (!text) continue;
 
-    // Extract timestamp from datetime attribute
+    // Compute timestamp from datetime attribute when available, else now
     const msgId = postId.split('/')[1] || postId;
     const timeRegex = new RegExp(
       `data-post="${postId.replace('/', '\\/')}"[\\s\\S]*?<time[^>]+datetime="([^"]+)"`,
@@ -61,9 +61,24 @@ export async function scrapeTelegram(channel: string): Promise<ScrapedItem[]> {
     const timeMatch = timeRegex.exec(html);
     const timestamp = timeMatch ? timeMatch[1] : new Date().toISOString();
 
+    // تجاوز رسائل الفيديو
+    if (["بالفيديو", "مشاهد من", "فيديو |", "| فيديو", "شاهد |"].some(kw => text.includes(kw))) continue;
+
+    // تحرير النص
+    const cleanedText = text
+      .replace(/﴿.*?﴾/gs, '')
+      .replace(/بيان صادر عن المقاومة الإسلامية\s*\(\d+\):\s*/g, '')
+      .replace(/بِسْمِ اللَّـهِ الرحمن الرَّحِيمِ/g, '')
+      .replace(/صَدَقَ اللهُ العَلِيّ العَظِيم/g, '')
+      .replace(/#\S+/g, '')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
+
+    if (!cleanedText) continue;
+
     items.push({
       id: `tg-${channel}-${msgId}`,
-      text,
+      text: cleanedText,
       timestamp,
       source: `@${channel}`,
       sourceUrl: `https://t.me/${postId}`,
@@ -98,12 +113,28 @@ export async function scrapeTelegram(channel: string): Promise<ScrapedItem[]> {
       const postId = posts[idx] || `${channel}/${Date.now()}-${idx}`;
       const msgId = postId.split('/')[1] || `${idx}`;
 
+      // تجاوز رسائل الفيديو
+      if (["بالفيديو", "مشاهد من", "فيديو |", "| فيديو", "شاهد |"].some(kw => text.includes(kw))) { idx++; continue; }
+
+      // تحرير النص
+      const cleanedText = text
+        .replace(/﴿.*?﴾/gs, '')
+        .replace(/بيان صادر عن المقاومة الإسلامية\s*\(\d+\):\s*/g, '')
+        .replace(/بِسْمِ اللَّـهِ الرحمن الرَّحِيمِ/g, '')
+        .replace(/صَدَقَ اللهُ العَلِيّ العَظِيم/g, '')
+        .replace(/#\S+/g, '')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+
+      const postIdForText = postId;
+      const finalMsgId = msgId;
+
       items.push({
-        id: `tg-${channel}-${msgId}`,
-        text,
+        id: `tg-${channel}-${finalMsgId}`,
+        text: cleanedText,
         timestamp: new Date().toISOString(),
         source: `@${channel}`,
-        sourceUrl: `https://t.me/${postId}`,
+        sourceUrl: `https://t.me/${postIdForText}`,
       });
       idx++;
     }
@@ -167,7 +198,7 @@ export async function scrapeRSS(url: string, sourceName: string): Promise<Scrape
 }
 
 function extractTag(xml: string, tag: string): string {
-  const regex = new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?<\\/${tag}>`, 'i');
+  const regex = new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?([^\\s\\S]*?)(?:\\]\\]>)?<\\/${tag}>`, 'i');
   const match = regex.exec(xml);
   if (!match) return '';
   return match[1]
