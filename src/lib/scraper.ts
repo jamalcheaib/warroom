@@ -66,7 +66,7 @@ export async function scrapeTelegram(channel: string): Promise<ScrapedItem[]> {
 
     // تحرير النص
     const cleanedText = text
-      .replace(/﴿.*?﴾/gs, '')
+      .replace(/﴿[^﴾]*﴾/g, '')
       .replace(/بيان صادر عن المقاومة الإسلامية\s*\(\d+\):\s*/g, '')
       .replace(/بِسْمِ اللَّـهِ الرحمن الرَّحِيمِ/g, '')
       .replace(/صَدَقَ اللهُ العَلِيّ العَظِيم/g, '')
@@ -118,7 +118,7 @@ export async function scrapeTelegram(channel: string): Promise<ScrapedItem[]> {
 
       // تحرير النص
       const cleanedText = text
-        .replace(/﴿.*?﴾/gs, '')
+        .replace(/﴿[^﴾]*﴾/g, '')
         .replace(/بيان صادر عن المقاومة الإسلامية\s*\(\d+\):\s*/g, '')
         .replace(/بِسْمِ اللَّـهِ الرحمن الرَّحِيمِ/g, '')
         .replace(/صَدَقَ اللهُ العَلِيّ العَظِيم/g, '')
