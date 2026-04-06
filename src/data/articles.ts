@@ -93,25 +93,6 @@ export const articles: Article[] = [
       </p>
     </div>
   },
-  {
-    slug: 'gray-wednesday-2026-03-25',
-    title: 'طوفان الصواريخ ومقبرة الميركافا: الميدان اللبناني يكسر أرقاماً قياسية',
-    author: 'جمال شعيب',
-    date: '2026-03-25',
-    heroImage: '/images/analysis-infographic-20260325.jpeg',
-    summary: 'شهدت الجبهة اللبنانية في الساعات الـ 24 الماضية تحولاً دراماتيكياً وضع الآلة العسكرية الإسرائيلية في مأزق عملياتي غير مسبوق. ففي يومٍ وُصف بأنه "استثناء عملياتي بامتياز"، سجلت المقاومة الإسلامية رقماً قياسياً بتنفيذ 87 عملية عسكرية.',
-    tags: ['تقرير ميداني', 'جنوب لبنان', 'دبابات', 'المقاومة الإسلامية'],
-    content: `
-<div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-8">
-  <div className="p-4 rounded-lg bg-red-950/20 border border-red-900/30 text-center">
-    <div className="text-2xl font-bold text-red-500">87</div>
-    <div className="text-sm text-zinc-400 mt-1">عملية عسكرية في 24 ساعة</div>
-  </div>
-  <div className="p-4 rounded-lg bg-red-950/20 border border-red-900/30 text-center">
-    <div className="text-2xl font-bold text-red-500">10+2</div>
-    <div className="text-sm text-zinc-400 mt-1">دبابات ميركافا + جرافة D9</div>
-  
-
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
