@@ -9,7 +9,7 @@ export interface Article {
   content: string;
 }
 
-const articles: Article[] = [];
+export const articles: Article[] = [];
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
