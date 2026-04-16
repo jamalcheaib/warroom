@@ -1,0 +1,46 @@
+{
+  "date": "2026-04-17",
+  "lastUpdated": "2026-04-16T21:00:53.122Z",
+  "operations": [
+    {
+      "id": "tg-unewschannel-320859",
+      "time": "2026-04-16T21:00:19+00:00",
+      "title": "بدء سريان وقف اطلاق النار المؤقت في",
+      "description": "عاجل | بدء سريان وقف اطلاق النار المؤقت في",
+      "category": "iran",
+      "status": "developing",
+      "source": "@unewschannel",
+      "needsReview": false
+    },
+    {
+      "id": "tg-mmirleb-15427",
+      "time": "2026-04-16T21:00:01+00:00",
+      "title": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...",
+      "description": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...  جودة عالية ❤58🫡8🔥3",
+      "category": "hezbollah",
+      "status": "confirmed",
+      "source": "@mmirleb",
+      "needsReview": false
+    },
+    {
+      "id": "tg-mmirleb-15428",
+      "time": "2026-04-16T21:00:01+00:00",
+      "title": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...",
+      "description": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...  جودة متوسطة ❤49🫡8🔥5",
+      "category": "hezbollah",
+      "status": "confirmed",
+      "source": "@mmirleb",
+      "needsReview": false
+    },
+    {
+      "id": "tg-mmirleb-15429",
+      "time": "2026-04-16T21:00:01+00:00",
+      "title": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...",
+      "description": "سَهلُنَا والجّبَل مَنبِتٌ للرِّجَال...  جودة منخفضة ❤77🫡9🔥6👍3",
+      "category": "hezbollah",
+      "status": "confirmed",
+      "source": "@mmirleb",
+      "needsReview": false
+    }
+  ]
+}
