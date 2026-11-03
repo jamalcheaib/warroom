@@ -1,5 +1,6 @@
 import type { DayFile } from '@/lib/field-data';
 import { Corners } from './ui';
+import ShareCard from './ShareCard';
 import { CATEGORY, placesOf, fmt, formatDateLong, weekday, formatCoords } from '@/lib/field-format';
 
 export default function SitrepPanel({ day, dayNo, prev, next }: { day: DayFile; dayNo: number; prev?: string; next?: string }) {
@@ -43,7 +44,15 @@ export default function SitrepPanel({ day, dayNo, prev, next }: { day: DayFile; 
           <span className="font-wrmono text-xs text-wr-gold tracking-wide">اليوم {dayNo} من الرصد · {weekday(day.date)}</span>
           <h1 className="font-kufi text-3xl md:text-[40px] font-extrabold leading-tight text-wr-text">{formatDateLong(day.date)}</h1>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
+          <ShareCard
+            data={{
+              date: day.date, dateLabel: formatDateLong(day.date), weekday: weekday(day.date), dayNo,
+              total: ev.length, enemy: count.enemy, resistance: count.resistance, political: count.political,
+              impact: day.impact.length, topEnemy, topLocs: topLocs.map(([n, v]) => [n, v.n] as [string, number]),
+              hours, peak,
+            }}
+          />
           {prev ? (
             <a href={`/log/${prev}`} className="h-11 px-4 rounded border border-wr-line2 bg-wr-deep text-wr-text text-sm flex items-center hover:border-wr-gold">→ اليوم السابق</a>
           ) : null}

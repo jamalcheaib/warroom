@@ -6,7 +6,10 @@ import type { FieldEvent } from '@/lib/field-data';
 import { CATEGORY, PLACE_KIND, formatCoords, placesOf } from '@/lib/field-format';
 
 export default function FieldMap({ events }: { events: FieldEvent[] }) {
-  const pts = events.flatMap((e) => placesOf(e).filter((p) => p.lat != null && p.lon != null).map((p) => ({ e, p })));
+  const pts = events.flatMap((e) => [
+    ...placesOf(e).filter((p) => p.lat != null && p.lon != null).map((p) => ({ e, p, m: false })),
+    ...(e.mentions ?? []).filter((p) => p.lat != null).map((p) => ({ e, p, m: true })),
+  ]);
   const missing = events.filter((e) => !placesOf(e).some((p) => p.lat != null)).length;
   return (
     <div className="flex flex-col gap-2">
@@ -16,9 +19,16 @@ export default function FieldMap({ events }: { events: FieldEvent[] }) {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
-          {pts.map(({ e, p }) => {
+          {pts.map(({ e, p, m }) => {
             const c = CATEGORY[e.category].color;
             const area = p.geo === 'area';
+            if (m) {
+              return (
+                <CircleMarker key={`${e.id}-m-${p.name}`} center={[p.lat!, p.lon!]} radius={5} pathOptions={{ color: c, weight: 1.5, opacity: 0.8, fillOpacity: 0, dashArray: '2 3' }}>
+                  <Popup><div dir="rtl" className="text-right" style={{ minWidth: 200 }}><div style={{ fontSize: 12, color: '#9BA6B4' }}>مذكور في نص الخبر</div><div style={{ fontWeight: 700 }}>{p.name}</div><div style={{ fontSize: 12 }}>{e.time} · {e.subtype}</div></div></Popup>
+                </CircleMarker>
+              );
+            }
             return (
               <CircleMarker
                 key={`${e.id}-${p.name}`}
@@ -40,7 +50,7 @@ export default function FieldMap({ events }: { events: FieldEvent[] }) {
         </MapContainer>
       </div>
       <span className="text-xs text-wr-muted">
-        {pts.length} نقطة على الخريطة{missing > 0 ? ` · ${missing} بلا موقع محدد` : ''} · الدوائر المتقطعة = منطقة لا بلدة محددة
+        {pts.length} نقطة على الخريطة{missing > 0 ? ` · ${missing} بلا موقع محدد` : ''} · الدوائر الكبيرة المتقطعة = منطقة · الدوائر المفرغة الصغيرة = مكان مذكور في النص
       </span>
     </div>
   );

@@ -57,7 +57,7 @@ function toCsv(rows: FieldEvent[]): string {
   return '﻿' + [head.join(','), ...lines].join('\n');
 }
 
-export default function FieldLog({ day }: { day: DayFile }) {
+export default function FieldLog({ day, placeLinks = {} }: { day: DayFile; placeLinks?: Record<string, string> }) {
   const [q, setQ] = useState('');
   const [cats, setCats] = useState<Set<Category>>(new Set(CATEGORY_ORDER));
   const [subs, setSubs] = useState<Set<string>>(new Set());
@@ -88,7 +88,7 @@ export default function FieldLog({ day }: { day: DayFile }) {
       .filter((e) => cats.has(e.category) && vers.has(e.verification))
       .filter((e) => subs.size === 0 || subs.has(e.subtype))
       .filter((e) => !src || e.source === src)
-      .filter((e) => !qq || e.text.includes(qq) || placesOf(e).some((p) => p.name.includes(qq)) || e.subtype.includes(qq))
+      .filter((e) => !qq || e.text.includes(qq) || placesOf(e).some((p) => p.name.includes(qq)) || (e.mentions ?? []).some((p) => p.name.includes(qq)) || e.subtype.includes(qq))
       .sort((a, b) => b.time.localeCompare(a.time));
   }, [day.events, q, cats, subs, vers, src]);
 
@@ -219,7 +219,11 @@ export default function FieldLog({ day }: { day: DayFile }) {
                       {placesOf(e).map((p, i) => (
                         <span key={p.name} className="flex items-center gap-1.5">
                           {i > 0 && <span className="text-wr-dim">·</span>}
-                          <span className="text-sm font-semibold">{p.name}</span>
+                          {placeLinks[p.name] ? (
+                            <a href={`/places/${placeLinks[p.name]}`} className="text-sm font-semibold hover:text-wr-gold underline decoration-wr-line2 underline-offset-4">{p.name}</a>
+                          ) : (
+                            <span className="text-sm font-semibold">{p.name}</span>
+                          )}
                           {p.kind && p.kind !== 'area' && <span className="text-[11px] text-wr-gold border border-wr-line2 px-1">{PLACE_KIND[p.kind]}</span>}
                           {(i === 0 || p.lat == null) && !(p.kind && NO_POINT_KINDS.includes(p.kind)) && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(p.lat, p.lon, p.geo)}</span>}
                         </span>
@@ -227,6 +231,16 @@ export default function FieldLog({ day }: { day: DayFile }) {
                       <span className="mr-auto font-wrmono text-[11px] text-wr-dim">{shortCode(e.id)}</span>
                     </div>
                     <EventText text={e.text} />
+                    {e.mentions && e.mentions.length > 0 && (
+                      <div className="px-4 -mt-1.5 pb-2.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-wr-muted">
+                        <span>مذكور في النص:</span>
+                        {e.mentions.map((m) => placeLinks[m.name] ? (
+                          <a key={m.name} href={`/places/${placeLinks[m.name]}`} className="text-wr-sub hover:text-wr-gold border border-dashed border-wr-line2 px-1.5">{m.name}</a>
+                        ) : (
+                          <span key={m.name} className="text-wr-sub border border-dashed border-wr-line2 px-1.5">{m.name}</span>
+                        ))}
+                      </div>
+                    )}
                     <div className="flex flex-wrap gap-x-3 gap-y-1.5 items-center px-4 pb-3 text-xs text-wr-muted">
                       <VerBars v={e.verification} />
                       {e.url ? <a href={e.url} target="_blank" rel="noopener noreferrer" className="text-wr-sub hover:text-white">{e.source} ↗</a> : <span>{e.source}</span>}

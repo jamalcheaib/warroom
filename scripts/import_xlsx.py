@@ -70,7 +70,7 @@ def load_geomelon(d):
                 continue
             dist = math.hypot(c['latitude'] - FRONT[0], c['longitude'] - FRONT[1]) if pref == 0 else 0
             for k in keys(ar):
-                idx.setdefault(k, []).append((pref, dist, round(c['latitude'], 4), round(c['longitude'], 4), c['name']))
+                idx.setdefault(k, []).append((pref, dist, round(c['latitude'], 4), round(c['longitude'], 4), c['name'], country))
     return idx
 
 
@@ -106,7 +106,7 @@ class Geocoder:
         if not cands:
             return None
         c = sorted(cands)[0]
-        return {'lat': c[2], 'lon': c[3], 'precision': 'town', 'source': 'wikidata', 'en': c[4]}
+        return {'lat': c[2], 'lon': c[3], 'precision': 'town', 'source': 'wikidata', 'en': c[4], 'country': c[5]}
 
     def known(self, name):
         """هل الاسم مكان معروف (يدوياً أو في القاموس)؟ بلا أثر جانبي."""
@@ -193,6 +193,102 @@ class LocationCleaner:
         return [v]
 
 
+class MentionExtractor:
+    """يستخرج من نص الخبر أسماء أماكن معروفة سلفاً (لا يخمّن أسماء جديدة)."""
+    AR = '\u0621-\u064A'
+
+    def __init__(self, geo, cleaner):
+        cfg = json.load(open(os.path.join(DATA, 'geo', 'mentions.json'), encoding='utf-8'))
+        self.geo = geo
+        stop = {norm(x) for x in cfg['stop']}
+        self.marker_only = {norm(x) for x in cfg['marker_only']}
+        self.markers = {norm(x) for x in cfg['markers']}
+        self.admin = {norm(x) for x in cfg.get('admin_prefix', [])}
+        self.cut = [norm(x) for x in cfg.get('preamble_cut', [])]
+        self.reporter = {norm(x) for x in cfg.get('reporter', [])}
+        region_keep = set(cfg.get('region_keep', []))
+        def canon(n):
+            m = geo.manual.get(n)
+            if isinstance(m, dict) and 'alias' in m:
+                return m['alias']
+            return cleaner.rename.get(n, n)
+        names = set(k for k, v in geo.used.items() if v) | set(geo.nopoint)
+        names |= {k for k, v in geo.manual.items() if not (isinstance(v, dict) and 'alias' in v)}
+        names |= set(cleaner.rename)
+        vocab = {}
+        for n in names:
+            c = canon(n)
+            if geo.nopoint.get(c, {}).get('kind') == 'region' and c not in region_keep:
+                continue
+            k = norm(n)
+            cur = vocab.get(k)
+            # فضّل الاسم بلا تشكيل/شدّة
+            if cur is None or (re.search('[\u064B-\u0652]', cur) and not re.search('[\u064B-\u0652]', c)):
+                vocab[k] = c
+        vocab = {k: v for k, v in vocab.items() if len(k.replace(' ', '')) >= cfg['min_len'] and k not in stop}
+        self.vocab = vocab
+        self.qual = set(vocab) | stop | {norm(n) for n in names}
+        alts = []
+        for k in sorted(vocab, key=len, reverse=True):
+            alts.append('(?:ال|ل)' + re.escape(k[2:]) if k.startswith('ال') and len(k) > 4 else re.escape(k))
+        A = self.AR
+        self.rx = re.compile(f'(?<![{A}])[وفب]?ل?(' + '|'.join(alts) + f')(?![{A}])')
+        self.count = 0
+
+    def _canon(self, core):
+        if core in self.vocab:
+            return core
+        if core.startswith('ل') and ('ا' + core) in self.vocab:
+            return 'ا' + core
+        return None
+
+    def extract(self, text, exclude, category=None):
+        t = norm(text)
+        if category == 'resistance':  # تجاوز ديباجة البيان الثابتة
+            for c in self.cut:
+                i = t.find(c)
+                if i >= 0:
+                    t = t[i:]
+                    break
+        excl = {norm(x) for x in exclude}
+        out = []
+        for m in self.rx.finditer(t):
+            key = self._canon(m.group(1))
+            if not key:
+                continue
+            before = re.findall(f'[{self.AR}]+', t[max(0, m.start() - 40):m.start()])[-4:]
+            if before and (before[-1] in self.admin or before[-1][1:] in self.admin):
+                continue  # «قضاء صور»: تقسيم إداري
+            if key in self.marker_only and not any(w in self.markers or w[1:] in self.markers for w in before):
+                continue
+            if any(w in self.reporter for w in before[-3:]):
+                continue  # «مراسل الميادين في بيروت»
+            raw_prev = t[max(0, m.start() - 50):m.start()].rstrip()
+            pre = m.group(0)[:len(m.group(0)) - len(m.group(1))]
+            q = re.search(r'\s+(في|ب)(\s+(منطقة|قضاء|مدينة|محافظة))?$', raw_prev)
+            if (q or ('ل' in pre and not pre.startswith('و'))):
+                prev = raw_prev[:q.start()] if q else raw_prev
+                if any(prev.endswith(k) for k in self.qual if k != key):
+                    continue  # وصف لمكان سابق: «الضاحية الجنوبية لبيروت»، «سحمر في البقاع الغربي»
+            if any(norm(name := self.vocab[key]) in x or x in norm(name) for x in excl):
+                continue  # جزء من اسم الموقع المسجّل: «جديدة مرجعيون» ← «مرجعيون»
+            name = self.vocab[key]
+            if norm(name) in excl or name in [o['name'] for o in out]:
+                continue
+            g0 = self.geo.used.get(name)
+            if g0 and any(g0.get('lat') is not None and (g0.get('lat'), g0.get('lon')) == xy for xy in self._own_xy):
+                continue
+            g = self.geo.used.get(name) or self.geo.resolve(name)
+            p = {'name': name}
+            if g and g.get('lat') is not None:
+                p.update({'lat': g['lat'], 'lon': g['lon'], 'geo': g['precision']})
+            if g and g.get('kind'):
+                p['kind'] = g['kind']
+            out.append(p)
+        self.count += len(out)
+        return out
+
+
 # ---------------------------------------------------------------- أدوات
 def s(v):
     return str(v).strip() if v is not None and str(v).strip() else None
@@ -277,6 +373,26 @@ def main():
             'link': link, 'linkedEvents': split_refs(r[10]) if link != 'unlinked' else [],
         })
 
+    # أماكن مذكورة في نص الخبر (غير السياسي)
+    mx = MentionExtractor(geo, cleaner)
+    for o in events + impacts:
+        if o.get('category') == 'political':
+            continue
+        ownp = o['places'] or ([{'name': o['location'], 'lat': o['lat'], 'lon': o['lon']}] if o['location'] else [])
+        mx._own_xy = {(p.get('lat'), p.get('lon')) for p in ownp if p.get('lat') is not None}
+        o['mentions'] = mx.extract(o['text'], {p['name'] for p in ownp}, o.get('category'))
+
+    # المستبعَد: إحصاءات فقط (لصفحة المنهجية)
+    excluded = collections.Counter()
+    excluded_src = collections.Counter()
+    if 'المستبعَد' in wb.sheetnames:
+        for r in wb['المستبعَد'].iter_rows(min_row=2, values_only=True):
+            if not r[0]:
+                continue
+            reason = re.sub(r'\s*\(.*\)$', '', s(r[4]) or 'غير محدد')
+            excluded[reason] += 1
+            excluded_src[s(r[2]) or '—'] += 1
+
     # ربط الأثر بالعمليات
     by_id = {e['id']: e for e in events}
     for im in impacts:
@@ -341,6 +457,8 @@ def main():
             **collections.Counter(e['category'] for e in events),
             'impact': len(impacts),
             'geolocated': sum(1 for e in events if e['lat'] is not None),
+            'mentions': sum(len(o.get('mentions') or []) for o in events + impacts),
+            'withMentions': sum(1 for o in events + impacts if o.get('mentions')),
             'withLocation': sum(1 for e in events if e['location']),
         },
         'verification': dict(collections.Counter(e['verification'] for e in events)),
@@ -350,6 +468,7 @@ def main():
         'impactByMonth': {k: dict(v) for k, v in sorted(impact_month.items())},
         'sources': dict(collections.Counter(e['source'] for e in events).most_common()),
         'topLocations': top_locations,
+        'excluded': {'total': sum(excluded.values()), 'reasons': dict(excluded.most_common()), 'sources': dict(excluded_src.most_common())},
         'days': index_days,
     }
     with open(os.path.join(DATA, 'index.json'), 'w', encoding='utf-8') as fh:
@@ -380,11 +499,69 @@ def main():
                 continue
             pts.append([day_pos[im['date']], 3, p['lat'], p['lon'],
                         pos(subs_list, sub_pos, im['type']), pos(locs_list, loc_pos, p['name']), GEO_N.get(p['geo'], 1)])
+    for o in sorted(events + impacts, key=lambda x: (x['date'], x['time'])):
+        layer = CAT_N.get(o.get('category'), 3)
+        for p in o.get('mentions') or []:
+            if p.get('lat') is None:
+                continue
+            pts.append([day_pos[o['date']], layer, p['lat'], p['lon'],
+                        pos(subs_list, sub_pos, o.get('subtype') or o.get('type')), pos(locs_list, loc_pos, p['name']), 3])
     pub = os.path.join(ROOT, 'public', 'data')
     os.makedirs(pub, exist_ok=True)
     with open(os.path.join(pub, 'map.json'), 'w', encoding='utf-8') as fh:
         json.dump({'days': day_list, 'subtypes': subs_list, 'locations': locs_list, 'points': pts},
                   fh, ensure_ascii=False, separators=(',', ':'))
+
+    # فهرس الأماكن — data/places.json (لصفحات البلدات)
+    notes = {}
+    for k, v in geo.manual.items():
+        if isinstance(v, dict) and v.get('note'):
+            notes[k] = v['note']
+    for k, v in geo.nopoint.items():
+        if v.get('note'):
+            notes[k] = v['note']
+    pidx = {}
+    def touch(name, o, cat, role=None):
+        g = geo.used.get(name) or {}
+        rec = pidx.setdefault(name, {
+            'name': name, 'slug': re.sub(r'\s+', '-', name.strip()),
+            'lat': g.get('lat'), 'lon': g.get('lon'), 'geo': g.get('precision'), 'kind': g.get('kind'),
+            'source': g.get('source'), 'note': notes.get(name),
+            'counts': collections.Counter(), 'months': collections.Counter(), 'first': o['date'], 'last': o['date'], 'refs': []})
+        rec['counts'][cat] += 1
+        rec['months'][o['date'][:7]] += 1
+        rec['first'] = min(rec['first'], o['date'])
+        rec['last'] = max(rec['last'], o['date'])
+        rec['refs'].append([o['date'], o['id']] + ([role] if role else []))
+    for e in events:
+        for p in all_places(e):
+            touch(p['name'], e, e['category'])
+    for im in impacts:
+        for p in all_places(im):
+            touch(p['name'], im, 'impact')
+    for o in events + impacts:
+        for p in o.get('mentions') or []:
+            touch(p['name'], o, 'mention', 'm')
+    plist = []
+    for rec in pidx.values():
+        rec['total'] = sum(rec['counts'].values())
+        g = geo.used.get(rec['name']) or {}
+        if g.get('country') == 'lebanon':
+            rec['side'] = 'lb'
+        elif g.get('country') == 'israel':
+            rec['side'] = 'il'
+        elif rec['counts'].get('enemy'):
+            rec['side'] = 'lb'  # اعتداءات العدو تقع في لبنان
+        elif rec['counts'].get('impact') or rec['counts'].get('resistance'):
+            rec['side'] = 'il'
+        else:
+            rec['side'] = 'none'
+        rec['counts'] = dict(rec['counts'])
+        rec['months'] = dict(sorted(rec['months'].items()))
+        plist.append({k: v for k, v in rec.items() if v is not None})
+    plist.sort(key=lambda x: -x['total'])
+    with open(os.path.join(DATA, 'places.json'), 'w', encoding='utf-8') as fh:
+        json.dump(plist, fh, ensure_ascii=False, separators=(',', ':'))
 
     places = {k: v for k, v in sorted(geo.used.items()) if v and v.get('lat') is not None}
     with open(os.path.join(DATA, 'geo', 'places.json'), 'w', encoding='utf-8') as fh:

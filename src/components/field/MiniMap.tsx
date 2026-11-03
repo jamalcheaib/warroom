@@ -3,10 +3,10 @@
 import { MapContainer, TileLayer, CircleMarker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-export default function MiniMap({ points }: { points: { name: string; count: number; lat: number; lon: number }[] }) {
+export default function MiniMap({ points, center, zoom = 9 }: { points: { name: string; count: number; lat: number; lon: number }[]; center?: [number, number]; zoom?: number }) {
   const max = Math.max(...points.map((p) => p.count), 1);
   return (
-    <MapContainer center={[33.3, 35.45]} zoom={9} className="w-full h-full" scrollWheelZoom={false} attributionControl={false}>
+    <MapContainer center={center ?? [33.3, 35.45]} zoom={zoom} className="w-full h-full" scrollWheelZoom={false} attributionControl={false}>
       <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
       {points.map((p) => (
         <CircleMarker

@@ -4,14 +4,16 @@
 "lon": 35.211,
 "precision": "town",
 "source": "wikidata",
-"en": "Adamit"
+"en": "Adamit",
+"country": "israel"
 },
 "أرزون": {
 "lat": 33.2828,
 "lon": 35.3772,
 "precision": "town",
 "source": "wikidata",
-"en": "Arzoun"
+"en": "Arzoun",
+"country": "lebanon"
 },
 "أرزي": {
 "lat": 33.44,
@@ -24,35 +26,40 @@
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Erkay"
+"en": "Erkay",
+"country": "lebanon"
 },
 "أرنون": {
 "lat": 33.3333,
 "lon": 35.5333,
 "precision": "town",
 "source": "wikidata",
-"en": "Arnoun"
+"en": "Arnoun",
+"country": "lebanon"
 },
 "أفيفيم": {
 "lat": 33.0892,
 "lon": 35.4721,
 "precision": "town",
 "source": "wikidata",
-"en": "Avivim"
+"en": "Avivim",
+"country": "israel"
 },
 "أنصار": {
 "lat": 33.3833,
 "lon": 35.35,
 "precision": "town",
 "source": "wikidata",
-"en": "Ansar"
+"en": "Ansar",
+"country": "lebanon"
 },
 "أنصارية": {
 "lat": 33.4125,
 "lon": 35.2792,
 "precision": "town",
 "source": "wikidata",
-"en": "Ansariye"
+"en": "Ansariye",
+"country": "lebanon"
 },
 "أيليت هشاحر": {
 "lat": 33.0228,
@@ -65,21 +72,24 @@
 "lon": 35.6272,
 "precision": "town",
 "source": "wikidata",
-"en": "Ibl al-Saqi"
+"en": "Ibl al-Saqi",
+"country": "lebanon"
 },
 "إدميت": {
 "lat": 33.0784,
 "lon": 35.211,
 "precision": "town",
 "source": "wikidata",
-"en": "Adamit"
+"en": "Adamit",
+"country": "israel"
 },
 "إركي": {
 "lat": 33.4667,
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Erkay"
+"en": "Erkay",
+"country": "lebanon"
 },
 "إقليم التفاح": {
 "lat": 33.48,
@@ -98,7 +108,8 @@
 "lon": 35.6272,
 "precision": "town",
 "source": "wikidata",
-"en": "Ibl al-Saqi"
+"en": "Ibl al-Saqi",
+"country": "lebanon"
 },
 "ابل القمح": {
 "lat": 33.27,
@@ -111,7 +122,8 @@
 "lon": 35.211,
 "precision": "town",
 "source": "wikidata",
-"en": "Adamit"
+"en": "Adamit",
+"country": "israel"
 },
 "ارزي": {
 "lat": 33.44,
@@ -124,28 +136,32 @@
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Erkay"
+"en": "Erkay",
+"country": "lebanon"
 },
 "ارنون": {
 "lat": 33.3333,
 "lon": 35.5333,
 "precision": "town",
 "source": "wikidata",
-"en": "Arnoun"
+"en": "Arnoun",
+"country": "lebanon"
 },
 "افيفيم": {
 "lat": 33.0892,
 "lon": 35.4721,
 "precision": "town",
 "source": "wikidata",
-"en": "Avivim"
+"en": "Avivim",
+"country": "israel"
 },
 "الأنصارية": {
 "lat": 33.4125,
 "lon": 35.2792,
 "precision": "town",
 "source": "wikidata",
-"en": "Ansariye"
+"en": "Ansariye",
+"country": "lebanon"
 },
 "الأوزاعي": {
 "lat": 33.85,
@@ -164,14 +180,16 @@
 "lon": 35.3431,
 "precision": "town",
 "source": "wikidata",
-"en": "Babliyeh"
+"en": "Babliyeh",
+"country": "lebanon"
 },
 "البازورية": {
 "lat": 33.2539,
 "lon": 35.2717,
 "precision": "town",
 "source": "wikidata",
-"en": "Bazouriyeh"
+"en": "Bazouriyeh",
+"country": "lebanon"
 },
 "الباشورة": {
 "lat": 33.887,
@@ -184,21 +202,24 @@
 "lon": 35.2389,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Bustan"
+"en": "Al-Bustan",
+"country": "lebanon"
 },
 "البرغلية": {
 "lat": 33.3119,
 "lon": 35.2411,
 "precision": "town",
 "source": "wikidata",
-"en": "Bourgheliyeh"
+"en": "Bourgheliyeh",
+"country": "lebanon"
 },
 "البزالية": {
 "lat": 34.1805,
 "lon": 36.3236,
 "precision": "town",
 "source": "wikidata",
-"en": "Toufiqiyeh"
+"en": "Toufiqiyeh",
+"country": "lebanon"
 },
 "البص": {
 "lat": 33.275,
@@ -223,28 +244,32 @@
 "lon": 35.3283,
 "precision": "town",
 "source": "wikidata",
-"en": "Bayyad"
+"en": "Bayyad",
+"country": "lebanon"
 },
 "البياضة": {
 "lat": 33.1628,
 "lon": 35.1817,
 "precision": "town",
 "source": "wikidata",
-"en": "Bayyada"
+"en": "Bayyada",
+"country": "lebanon"
 },
 "البيسارية": {
 "lat": 33.4444,
 "lon": 35.3236,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Baisariyah"
+"en": "Al-Baisariyah",
+"country": "lebanon"
 },
 "البيّاضة": {
 "lat": 33.1628,
 "lon": 35.1817,
 "precision": "town",
 "source": "wikidata",
-"en": "Bayyada"
+"en": "Bayyada",
+"country": "lebanon"
 },
 "الجامعة اللبنانية": {
 "lat": 33.83,
@@ -257,14 +282,16 @@
 "lon": 35.535,
 "precision": "town",
 "source": "wikidata",
-"en": "Jarmaq"
+"en": "Jarmaq",
+"country": "lebanon"
 },
 "الجميجمة": {
 "lat": 33.2037,
 "lon": 35.4388,
 "precision": "town",
 "source": "wikidata",
-"en": "Jumayjimah"
+"en": "Jumayjimah",
+"country": "lebanon"
 },
 "الجناح": {
 "lat": 33.865,
@@ -277,21 +304,24 @@
 "lon": 35.4268,
 "precision": "town",
 "source": "wikidata",
-"en": "Jieh"
+"en": "Jieh",
+"country": "lebanon"
 },
 "الحازمية": {
 "lat": 33.8511,
 "lon": 35.5414,
 "precision": "town",
 "source": "wikidata",
-"en": "Hazmiyeh"
+"en": "Hazmiyeh",
+"country": "lebanon"
 },
 "الحامول": {
 "lat": 33.1261,
 "lon": 35.1669,
 "precision": "town",
 "source": "wikidata",
-"en": "Hamoul"
+"en": "Hamoul",
+"country": "lebanon"
 },
 "الحدت": {
 "lat": 33.84,
@@ -304,14 +334,16 @@
 "lon": 36.025,
 "precision": "town",
 "source": "wikidata",
-"en": "Hadath Baalbek"
+"en": "Hadath Baalbek",
+"country": "lebanon"
 },
 "الحلوسية": {
 "lat": 33.3081,
 "lon": 35.3264,
 "precision": "town",
 "source": "wikidata",
-"en": "Halloussiyeh"
+"en": "Halloussiyeh",
+"country": "lebanon"
 },
 "الحمادية": {
 "lat": 33.29,
@@ -324,7 +356,8 @@
 "lon": 35.2236,
 "precision": "town",
 "source": "wikidata",
-"en": "Henniyeh"
+"en": "Henniyeh",
+"country": "lebanon"
 },
 "الحوش": {
 "lat": 33.258,
@@ -337,7 +370,8 @@
 "lon": 35.2997,
 "precision": "town",
 "source": "wikidata",
-"en": "Kharayeb (Sidon)"
+"en": "Kharayeb (Sidon)",
+"country": "lebanon"
 },
 "الخردلي": {
 "lat": 33.335,
@@ -350,35 +384,40 @@
 "lon": 35.3717,
 "precision": "town",
 "source": "wikidata",
-"en": "Khartoum"
+"en": "Khartoum",
+"country": "lebanon"
 },
 "الخريبة": {
 "lat": 33.8236,
 "lon": 35.7153,
 "precision": "town",
 "source": "wikidata",
-"en": "Khreibeh (Baabda)"
+"en": "Khreibeh (Baabda)",
+"country": "lebanon"
 },
 "الخضيرة": {
 "lat": 32.45,
 "lon": 34.9167,
 "precision": "town",
 "source": "wikidata",
-"en": "Hadera"
+"en": "Hadera",
+"country": "israel"
 },
 "الخيام": {
 "lat": 33.3272,
 "lon": 35.6111,
 "precision": "town",
 "source": "wikidata",
-"en": "Khiam"
+"en": "Khiam",
+"country": "lebanon"
 },
 "الدامور": {
 "lat": 33.7333,
 "lon": 35.45,
 "precision": "town",
 "source": "wikidata",
-"en": "Damour"
+"en": "Damour",
+"country": "lebanon"
 },
 "الدلافة": {
 "lat": 33.4,
@@ -391,14 +430,16 @@
 "lon": 35.4144,
 "precision": "town",
 "source": "wikidata",
-"en": "Doueir"
+"en": "Doueir",
+"country": "lebanon"
 },
 "الرابية": {
 "lat": 33.92,
 "lon": 35.6024,
 "precision": "town",
 "source": "wikidata",
-"en": "Rabieh"
+"en": "Rabieh",
+"country": "lebanon"
 },
 "الرشيدية": {
 "lat": 33.236,
@@ -411,21 +452,24 @@
 "lon": 35.8169,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Rafid"
+"en": "Al-Rafid",
+"country": "lebanon"
 },
 "الرمادية": {
 "lat": 33.1994,
 "lon": 35.2758,
 "precision": "town",
 "source": "wikidata",
-"en": "Rmadiyeh"
+"en": "Rmadiyeh",
+"country": "lebanon"
 },
 "الرملة": {
 "lat": 31.9275,
 "lon": 34.8625,
 "precision": "town",
 "source": "wikidata",
-"en": "Ramla"
+"en": "Ramla",
+"country": "israel"
 },
 "الرملة البيضاء": {
 "lat": 33.88,
@@ -438,7 +482,8 @@
 "lon": 35.6505,
 "precision": "town",
 "source": "wikidata",
-"en": "Ramlieh"
+"en": "Ramlieh",
+"country": "lebanon"
 },
 "الروشة": {
 "lat": 33.89,
@@ -451,28 +496,32 @@
 "lon": 35.5675,
 "precision": "town",
 "source": "wikidata",
-"en": "Al Rihan"
+"en": "Al Rihan",
+"country": "lebanon"
 },
 "الزرارية": {
 "lat": 33.3417,
 "lon": 35.3328,
 "precision": "town",
 "source": "wikidata",
-"en": "Zrarieh"
+"en": "Zrarieh",
+"country": "lebanon"
 },
 "الزهراني": {
 "lat": 33.4972,
 "lon": 35.34,
 "precision": "town",
 "source": "wikidata",
-"en": "الزهراني"
+"en": "الزهراني",
+"country": "lebanon"
 },
 "السريرة": {
 "lat": 33.4357,
 "lon": 35.6229,
 "precision": "town",
 "source": "wikidata",
-"en": "As-Srira"
+"en": "As-Srira",
+"country": "lebanon"
 },
 "السعديات": {
 "lat": 33.66,
@@ -485,49 +534,56 @@
 "lon": 36.0814,
 "precision": "town",
 "source": "wikidata",
-"en": "Saaideh"
+"en": "Saaideh",
+"country": "lebanon"
 },
 "السكسكية": {
 "lat": 33.4369,
 "lon": 35.2847,
 "precision": "town",
 "source": "wikidata",
-"en": "Saksakiyeh"
+"en": "Saksakiyeh",
+"country": "lebanon"
 },
 "السلطانية": {
 "lat": 33.205,
 "lon": 35.4053,
 "precision": "town",
 "source": "wikidata",
-"en": "As-Sultaniyah"
+"en": "As-Sultaniyah",
+"country": "lebanon"
 },
 "السماعية": {
 "lat": 33.2206,
 "lon": 35.2361,
 "precision": "town",
 "source": "wikidata",
-"en": "Smaiyeh"
+"en": "Smaiyeh",
+"country": "lebanon"
 },
 "الشارون": {
 "lat": 33.7711,
 "lon": 35.6858,
 "precision": "town",
 "source": "wikidata",
-"en": "Charoun"
+"en": "Charoun",
+"country": "lebanon"
 },
 "الشرقية": {
 "lat": 33.3999,
 "lon": 35.4195,
 "precision": "town",
 "source": "wikidata",
-"en": "Charkiyeh"
+"en": "Charkiyeh",
+"country": "lebanon"
 },
 "الشعيتية": {
 "lat": 33.1969,
 "lon": 35.2654,
 "precision": "town",
 "source": "wikidata",
-"en": "Chaaitiyeh"
+"en": "Chaaitiyeh",
+"country": "lebanon"
 },
 "الشقيف": {
 "lat": 33.3285,
@@ -540,35 +596,40 @@
 "lon": 35.3819,
 "precision": "town",
 "source": "wikidata",
-"en": "Chehabiyeh"
+"en": "Chehabiyeh",
+"country": "lebanon"
 },
 "الشهابيّة": {
 "lat": 33.2425,
 "lon": 35.3819,
 "precision": "town",
 "source": "wikidata",
-"en": "Chehabiyeh"
+"en": "Chehabiyeh",
+"country": "lebanon"
 },
 "الشويفات": {
 "lat": 33.8167,
 "lon": 35.5167,
 "precision": "town",
 "source": "wikidata",
-"en": "Choueifat"
+"en": "Choueifat",
+"country": "lebanon"
 },
 "الشيخ دنون": {
 "lat": 32.9916,
 "lon": 35.1478,
 "precision": "town",
 "source": "wikidata",
-"en": "Sheikh Danun"
+"en": "Sheikh Danun",
+"country": "israel"
 },
 "الصرفند": {
 "lat": 33.4517,
 "lon": 35.2908,
 "precision": "town",
 "source": "wikidata",
-"en": "Sarafand"
+"en": "Sarafand",
+"country": "lebanon"
 },
 "الصوانة": {
 "lat": 33.217,
@@ -605,7 +666,8 @@
 "lon": 35.4,
 "precision": "town",
 "source": "wikidata",
-"en": "At Tiri"
+"en": "At Tiri",
+"country": "lebanon"
 },
 "الطّيبة": {
 "lat": 33.282,
@@ -630,7 +692,8 @@
 "lon": 35.2831,
 "precision": "town",
 "source": "wikidata",
-"en": "Aabbassiyeh"
+"en": "Aabbassiyeh",
+"country": "lebanon"
 },
 "العبّاد": {
 "lat": 33.2,
@@ -643,14 +706,16 @@
 "lon": 35.3444,
 "precision": "town",
 "source": "wikidata",
-"en": "Aaddoussiyeh"
+"en": "Aaddoussiyeh",
+"country": "lebanon"
 },
 "العديسة": {
 "lat": 33.2542,
 "lon": 35.5425,
 "precision": "town",
 "source": "wikidata",
-"en": "Adaisseh"
+"en": "Adaisseh",
+"country": "lebanon"
 },
 "العمروسية": {
 "lat": 33.83,
@@ -663,49 +728,56 @@
 "lon": 35.5561,
 "precision": "town",
 "source": "wikidata",
-"en": "Aishiya"
+"en": "Aishiya",
+"country": "lebanon"
 },
 "العيشيّة": {
 "lat": 33.4086,
 "lon": 35.5561,
 "precision": "town",
 "source": "wikidata",
-"en": "Aishiya"
+"en": "Aishiya",
+"country": "lebanon"
 },
 "الغازية": {
 "lat": 33.5189,
 "lon": 35.3597,
 "precision": "town",
 "source": "wikidata",
-"en": "Ghazieh"
+"en": "Ghazieh",
+"country": "lebanon"
 },
 "الغبيري": {
 "lat": 33.8589,
 "lon": 35.5042,
 "precision": "town",
 "source": "wikidata",
-"en": "Ghobeiry"
+"en": "Ghobeiry",
+"country": "lebanon"
 },
 "الغجر": {
 "lat": 33.2727,
 "lon": 35.6235,
 "precision": "town",
 "source": "wikidata",
-"en": "Ghajar"
+"en": "Ghajar",
+"country": "lebanon"
 },
 "الغسانية": {
 "lat": 33.4175,
 "lon": 35.3583,
 "precision": "town",
 "source": "wikidata",
-"en": "Ghassanieh"
+"en": "Ghassanieh",
+"country": "lebanon"
 },
 "الغندورية": {
 "lat": 33.2722,
 "lon": 35.4311,
 "precision": "town",
 "source": "wikidata",
-"en": "Ghanduriyah"
+"en": "Ghanduriyah",
+"country": "lebanon"
 },
 "القاسمية": {
 "lat": 33.338,
@@ -724,70 +796,80 @@
 "lon": 35.7219,
 "precision": "town",
 "source": "wikidata",
-"en": "Qaraoun"
+"en": "Qaraoun",
+"country": "lebanon"
 },
 "القصيبة": {
 "lat": 33.3339,
 "lon": 35.3967,
 "precision": "town",
 "source": "wikidata",
-"en": "Kossaybeh"
+"en": "Kossaybeh",
+"country": "lebanon"
 },
 "القصير": {
 "lat": 33.2928,
 "lon": 35.455,
 "precision": "town",
 "source": "wikidata",
-"en": "Qoussair"
+"en": "Qoussair",
+"country": "lebanon"
 },
 "القطراني": {
 "lat": 33.4333,
 "lon": 35.6,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Qatrani, Jezzine"
+"en": "Al-Qatrani, Jezzine",
+"country": "lebanon"
 },
 "القعقعية": {
 "lat": 33.4308,
 "lon": 35.3444,
 "precision": "town",
 "source": "wikidata",
-"en": "Qaaqaaiyet Es Snaoubar"
+"en": "Qaaqaaiyet Es Snaoubar",
+"country": "lebanon"
 },
 "القليعة": {
 "lat": 33.3389,
 "lon": 35.5619,
 "precision": "town",
 "source": "wikidata",
-"en": "Qlaiaa"
+"en": "Qlaiaa",
+"country": "lebanon"
 },
 "القليلة": {
 "lat": 33.1964,
 "lon": 35.2311,
 "precision": "town",
 "source": "wikidata",
-"en": "Qlaileh"
+"en": "Qlaileh",
+"country": "lebanon"
 },
 "القنطرة": {
 "lat": 33.2725,
 "lon": 35.4653,
 "precision": "town",
 "source": "wikidata",
-"en": "Qantara"
+"en": "Qantara",
+"country": "lebanon"
 },
 "القوزح": {
 "lat": 33.1167,
 "lon": 35.3333,
 "precision": "town",
 "source": "wikidata",
-"en": "Qaouzah"
+"en": "Qaouzah",
+"country": "lebanon"
 },
 "الكرمئيل": {
 "lat": 32.9,
 "lon": 35.2833,
 "precision": "town",
 "source": "wikidata",
-"en": "Karmiel"
+"en": "Karmiel",
+"country": "israel"
 },
 "الكرمل": {
 "lat": 32.75,
@@ -806,7 +888,8 @@
 "lon": 35.4511,
 "precision": "town",
 "source": "wikidata",
-"en": "al-Kufur"
+"en": "al-Kufur",
+"country": "lebanon"
 },
 "اللبوة": {
 "lat": 34.2,
@@ -825,56 +908,64 @@
 "lon": 35.2833,
 "precision": "town",
 "source": "wikidata",
-"en": "Loubieh"
+"en": "Loubieh",
+"country": "lebanon"
 },
 "اللوبيه": {
 "lat": 33.4256,
 "lon": 35.2833,
 "precision": "town",
 "source": "wikidata",
-"en": "Loubieh"
+"en": "Loubieh",
+"country": "lebanon"
 },
 "اللويزة": {
 "lat": 33.4604,
 "lon": 35.5358,
 "precision": "town",
 "source": "wikidata",
-"en": "Louayzeh (Jezzine)"
+"en": "Louayzeh (Jezzine)",
+"country": "lebanon"
 },
 "الليلكي": {
 "lat": 33.8329,
 "lon": 35.5127,
 "precision": "town",
 "source": "wikidata",
-"en": "Laïlaké"
+"en": "Laïlaké",
+"country": "lebanon"
 },
 "المالكية": {
 "lat": 33.0982,
 "lon": 35.5111,
 "precision": "town",
 "source": "wikidata",
-"en": "Malkia"
+"en": "Malkia",
+"country": "israel"
 },
 "المالكيّة": {
 "lat": 33.0982,
 "lon": 35.5111,
 "precision": "town",
 "source": "wikidata",
-"en": "Malkia"
+"en": "Malkia",
+"country": "israel"
 },
 "المجادل": {
 "lat": 33.2294,
 "lon": 35.3601,
 "precision": "town",
 "source": "wikidata",
-"en": "Majadel"
+"en": "Majadel",
+"country": "lebanon"
 },
 "المجدل": {
 "lat": 34.1058,
 "lon": 35.8975,
 "precision": "town",
 "source": "wikidata",
-"en": "Majdel el-Aqoura"
+"en": "Majdel el-Aqoura",
+"country": "lebanon"
 },
 "المحمودية": {
 "lat": 33.3879,
@@ -888,14 +979,16 @@
 "lon": 35.8833,
 "precision": "town",
 "source": "wikidata",
-"en": "Marj"
+"en": "Marj",
+"country": "lebanon"
 },
 "المروانية": {
 "lat": 33.4456,
 "lon": 35.3856,
 "precision": "town",
 "source": "wikidata",
-"en": "Merouaniyeh"
+"en": "Merouaniyeh",
+"country": "lebanon"
 },
 "المصنع": {
 "lat": 33.705,
@@ -914,21 +1007,24 @@
 "lon": 35.5767,
 "precision": "town",
 "source": "wikidata",
-"en": "Metula"
+"en": "Metula",
+"country": "israel"
 },
 "المطلّة": {
 "lat": 33.2789,
 "lon": 35.5767,
 "precision": "town",
 "source": "wikidata",
-"en": "Metula"
+"en": "Metula",
+"country": "israel"
 },
 "المعشوق": {
 "lat": 33.2672,
 "lon": 35.2242,
 "precision": "town",
 "source": "wikidata",
-"en": "معشوق"
+"en": "معشوق",
+"country": "lebanon"
 },
 "المعلية": {
 "lat": 33.196,
@@ -947,28 +1043,32 @@
 "lon": 35.21,
 "precision": "town",
 "source": "wikidata",
-"en": "Mansouri"
+"en": "Mansouri",
+"country": "lebanon"
 },
 "المية ومية": {
 "lat": 33.5419,
 "lon": 35.3978,
 "precision": "town",
 "source": "wikidata",
-"en": "Mieh Mieh"
+"en": "Mieh Mieh",
+"country": "lebanon"
 },
 "الناقورة": {
 "lat": 33.12,
 "lon": 35.1342,
 "precision": "town",
 "source": "wikidata",
-"en": "Naqoura"
+"en": "Naqoura",
+"country": "lebanon"
 },
 "النبطية": {
 "lat": 33.3772,
 "lon": 35.4836,
 "precision": "town",
 "source": "wikidata",
-"en": "Nabatieh"
+"en": "Nabatieh",
+"country": "lebanon"
 },
 "النبطية التحتا": {
 "lat": 33.375,
@@ -987,7 +1087,8 @@
 "lon": 35.4836,
 "precision": "town",
 "source": "wikidata",
-"en": "Nabatieh"
+"en": "Nabatieh",
+"country": "lebanon"
 },
 "النبعة": {
 "lat": 33.88,
@@ -1006,35 +1107,40 @@
 "lon": 36.1128,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Nabi Shayth"
+"en": "Al-Nabi Shayth",
+"country": "lebanon"
 },
 "النجارية": {
 "lat": 33.4722,
 "lon": 35.3486,
 "precision": "town",
 "source": "wikidata",
-"en": "Najjarieh"
+"en": "Najjarieh",
+"country": "lebanon"
 },
 "النفاخية": {
 "lat": 33.2708,
 "lon": 35.3861,
 "precision": "town",
 "source": "wikidata",
-"en": "Naffakhiyeh"
+"en": "Naffakhiyeh",
+"country": "lebanon"
 },
 "النميرية": {
 "lat": 33.4231,
 "lon": 35.3989,
 "precision": "town",
 "source": "wikidata",
-"en": "Nmairiyeh"
+"en": "Nmairiyeh",
+"country": "lebanon"
 },
 "النّاقورة": {
 "lat": 33.12,
 "lon": 35.1342,
 "precision": "town",
 "source": "wikidata",
-"en": "Naqoura"
+"en": "Naqoura",
+"country": "lebanon"
 },
 "الهبارية": {
 "lat": 33.37,
@@ -1047,28 +1153,32 @@
 "lon": 36.3875,
 "precision": "town",
 "source": "wikidata",
-"en": "Hermel"
+"en": "Hermel",
+"country": "lebanon"
 },
 "الوزاني": {
 "lat": 33.2743,
 "lon": 35.6181,
 "precision": "town",
 "source": "wikidata",
-"en": "Wazzani"
+"en": "Wazzani",
+"country": "lebanon"
 },
 "انصار": {
 "lat": 33.3833,
 "lon": 35.35,
 "precision": "town",
 "source": "wikidata",
-"en": "Ansar"
+"en": "Ansar",
+"country": "lebanon"
 },
 "انصارية": {
 "lat": 33.4125,
 "lon": 35.2792,
 "precision": "town",
 "source": "wikidata",
-"en": "Ansariye"
+"en": "Ansariye",
+"country": "lebanon"
 },
 "ايفن مناحيم": {
 "lat": 33.074,
@@ -1081,7 +1191,8 @@
 "lon": 35.5776,
 "precision": "town",
 "source": "wikidata",
-"en": "Ayelet HaShahar"
+"en": "Ayelet HaShahar",
+"country": "israel"
 },
 "بئر العبد": {
 "lat": 33.845,
@@ -1094,28 +1205,32 @@
 "lon": 35.2542,
 "precision": "town",
 "source": "wikidata",
-"en": "Batoulay"
+"en": "Batoulay",
+"country": "lebanon"
 },
 "باتوليه": {
 "lat": 33.2247,
 "lon": 35.2542,
 "precision": "town",
 "source": "wikidata",
-"en": "Batoulay"
+"en": "Batoulay",
+"country": "lebanon"
 },
 "باريش": {
 "lat": 33.2731,
 "lon": 35.3539,
 "precision": "town",
 "source": "wikidata",
-"en": "Barich"
+"en": "Barich",
+"country": "lebanon"
 },
 "بافليه": {
 "lat": 33.2633,
 "lon": 35.365,
 "precision": "town",
 "source": "wikidata",
-"en": "Baflay"
+"en": "Baflay",
+"country": "lebanon"
 },
 "بتست": {
 "lat": 33.07,
@@ -1128,14 +1243,16 @@
 "lon": 35.3006,
 "precision": "town",
 "source": "wikidata",
-"en": "Bedias"
+"en": "Bedias",
+"country": "lebanon"
 },
 "برالياس": {
 "lat": 33.775,
 "lon": 35.9,
 "precision": "town",
 "source": "wikidata",
-"en": "Barelias"
+"en": "Barelias",
+"country": "lebanon"
 },
 "برانيت": {
 "lat": 33.08,
@@ -1148,70 +1265,80 @@
 "lon": 35.5033,
 "precision": "town",
 "source": "wikidata",
-"en": "Bourj el-Barajneh"
+"en": "Bourj el-Barajneh",
+"country": "lebanon"
 },
 "برج الشمالي": {
 "lat": 33.2625,
 "lon": 35.2389,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Bustan"
+"en": "Al-Bustan",
+"country": "lebanon"
 },
 "برج الملوك": {
 "lat": 33.3242,
 "lon": 35.5633,
 "precision": "town",
 "source": "wikidata",
-"en": "Borj El Mlouk"
+"en": "Borj El Mlouk",
+"country": "lebanon"
 },
 "برج حمود": {
 "lat": 33.8936,
 "lon": 35.5403,
 "precision": "town",
 "source": "wikidata",
-"en": "Bourj Hammoud"
+"en": "Bourj Hammoud",
+"country": "lebanon"
 },
 "برج رحال": {
 "lat": 33.3097,
 "lon": 35.2825,
 "precision": "town",
 "source": "wikidata",
-"en": "Borj Rahal"
+"en": "Borj Rahal",
+"country": "lebanon"
 },
 "برج قلاوي": {
 "lat": 33.2606,
 "lon": 35.4189,
 "precision": "town",
 "source": "wikidata",
-"en": "Burj Qallawiyah"
+"en": "Burj Qallawiyah",
+"country": "lebanon"
 },
 "برج قلاوية": {
 "lat": 33.2606,
 "lon": 35.4189,
 "precision": "town",
 "source": "wikidata",
-"en": "Burj Qallawiyah"
+"en": "Burj Qallawiyah",
+"country": "lebanon"
 },
 "برج قلاويه": {
 "lat": 33.2606,
 "lon": 35.4189,
 "precision": "town",
 "source": "wikidata",
-"en": "Burj Qallawiyah"
+"en": "Burj Qallawiyah",
+"country": "lebanon"
 },
 "برعشيت": {
 "lat": 33.1761,
 "lon": 35.4434,
 "precision": "town",
 "source": "wikidata",
-"en": "Baraachit"
+"en": "Baraachit",
+"country": "lebanon"
 },
 "برعم": {
 "lat": 33.0583,
 "lon": 35.4333,
 "precision": "town",
 "source": "wikidata",
-"en": "Bar'am"
+"en": "Bar'am",
+"country": "israel"
 },
 "برغز": {
 "lat": 33.38,
@@ -1225,21 +1352,24 @@
 "lon": 36.1508,
 "precision": "town",
 "source": "wikidata",
-"en": "Brital"
+"en": "Brital",
+"country": "lebanon"
 },
 "بريقع": {
 "lat": 33.3389,
 "lon": 35.3833,
 "precision": "town",
 "source": "wikidata",
-"en": "Braiqeaa"
+"en": "Braiqeaa",
+"country": "lebanon"
 },
 "بصليا": {
 "lat": 33.5011,
 "lon": 35.5119,
 "precision": "town",
 "source": "wikidata",
-"en": "Bouslaiya"
+"en": "Bouslaiya",
+"country": "lebanon"
 },
 "بعلبك": {
 "lat": 34.01,
@@ -1252,7 +1382,8 @@
 "lon": 35.6006,
 "precision": "town",
 "source": "wikidata",
-"en": "Blat, Marjayoun"
+"en": "Blat, Marjayoun",
+"country": "lebanon"
 },
 "بلماخيم الجوية": {
 "lat": 31.93,
@@ -1265,28 +1396,32 @@
 "lon": 35.5082,
 "precision": "town",
 "source": "wikidata",
-"en": "Blida"
+"en": "Blida",
+"country": "lebanon"
 },
 "بنت جبيل": {
 "lat": 33.1258,
 "lon": 35.4428,
 "precision": "town",
 "source": "wikidata",
-"en": "Bint Jbeil"
+"en": "Bint Jbeil",
+"country": "lebanon"
 },
 "بنعفول": {
 "lat": 33.4828,
 "lon": 35.4217,
 "precision": "town",
 "source": "wikidata",
-"en": "Bnaafoul"
+"en": "Bnaafoul",
+"country": "lebanon"
 },
 "بني حيان": {
 "lat": 33.2431,
 "lon": 35.4875,
 "precision": "town",
 "source": "wikidata",
-"en": "Bani Haiyyan"
+"en": "Bani Haiyyan",
+"country": "lebanon"
 },
 "بوداي": {
 "lat": 34.07,
@@ -1299,7 +1434,8 @@
 "lon": 35.3328,
 "precision": "town",
 "source": "wikidata",
-"en": "Bayt Lif"
+"en": "Bayt Lif",
+"country": "lebanon"
 },
 "بيت هلل": {
 "lat": 33.2075,
@@ -1312,21 +1448,24 @@
 "lon": 35.6057,
 "precision": "town",
 "source": "wikidata",
-"en": "Beit Hillel"
+"en": "Beit Hillel",
+"country": "israel"
 },
 "بيت ياحون": {
 "lat": 33.1592,
 "lon": 35.4217,
 "precision": "town",
 "source": "wikidata",
-"en": "Beit Yahoun"
+"en": "Beit Yahoun",
+"country": "lebanon"
 },
 "بيروت": {
 "lat": 33.8869,
 "lon": 35.5131,
 "precision": "town",
 "source": "wikidata",
-"en": "Beirut"
+"en": "Beirut",
+"country": "lebanon"
 },
 "بيريا": {
 "lat": 32.98,
@@ -1339,7 +1478,8 @@
 "lon": 35.4989,
 "precision": "town",
 "source": "wikidata",
-"en": "Beit She'an"
+"en": "Beit She'an",
+"country": "israel"
 },
 "بيوت السياد": {
 "lat": 33.168,
@@ -1358,28 +1498,32 @@
 "lon": 35.4108,
 "precision": "town",
 "source": "wikidata",
-"en": "Tebnine"
+"en": "Tebnine",
+"country": "lebanon"
 },
 "تفاحتا": {
 "lat": 33.4389,
 "lon": 35.3692,
 "precision": "town",
 "source": "wikidata",
-"en": "Teffahta"
+"en": "Teffahta",
+"country": "lebanon"
 },
 "تل أبيب": {
 "lat": 32.08,
 "lon": 34.78,
 "precision": "town",
 "source": "wikidata",
-"en": "Tel Aviv"
+"en": "Tel Aviv",
+"country": "israel"
 },
 "تل ابيب": {
 "lat": 32.08,
 "lon": 34.78,
 "precision": "town",
 "source": "wikidata",
-"en": "Tel Aviv"
+"en": "Tel Aviv",
+"country": "israel"
 },
 "تل النحاس": {
 "lat": 33.28,
@@ -1422,21 +1566,24 @@
 "lon": 35.9914,
 "precision": "town",
 "source": "wikidata",
-"en": "Temnin el Tahta"
+"en": "Temnin el Tahta",
+"country": "lebanon"
 },
 "تول": {
 "lat": 33.3864,
 "lon": 35.4503,
 "precision": "town",
 "source": "wikidata",
-"en": "Toul"
+"en": "Toul",
+"country": "lebanon"
 },
 "تولين": {
 "lat": 33.2472,
 "lon": 35.4403,
 "precision": "town",
 "source": "wikidata",
-"en": "Touline"
+"en": "Touline",
+"country": "lebanon"
 },
 "تيفن": {
 "lat": 32.96,
@@ -1449,21 +1596,24 @@
 "lon": 35.5167,
 "precision": "town",
 "source": "wikidata",
-"en": "Jbaa"
+"en": "Jbaa",
+"country": "lebanon"
 },
 "جبال البطم": {
 "lat": 33.1765,
 "lon": 35.2914,
 "precision": "town",
 "source": "wikidata",
-"en": "Jabal El Botm"
+"en": "Jabal El Botm",
+"country": "lebanon"
 },
 "جبشيت": {
 "lat": 33.3657,
 "lon": 35.4343,
 "precision": "town",
 "source": "wikidata",
-"en": "Jebchit"
+"en": "Jebchit",
+"country": "lebanon"
 },
 "جبل الرفيع": {
 "lat": 33.45,
@@ -1476,7 +1626,8 @@
 "lon": 35.5675,
 "precision": "town",
 "source": "wikidata",
-"en": "Al Rihan"
+"en": "Al Rihan",
+"country": "lebanon"
 },
 "جبل الشيخ": {
 "lat": 33.42,
@@ -1495,14 +1646,16 @@
 "lon": 35.5191,
 "precision": "town",
 "source": "wikidata",
-"en": "Jarjouh"
+"en": "Jarjouh",
+"country": "lebanon"
 },
 "جزين": {
 "lat": 33.54,
 "lon": 35.5836,
 "precision": "town",
 "source": "wikidata",
-"en": "Jezzine"
+"en": "Jezzine",
+"country": "lebanon"
 },
 "جسر الدلافة": {
 "lat": 33.4,
@@ -1539,42 +1692,48 @@
 "lon": 35.4388,
 "precision": "town",
 "source": "wikidata",
-"en": "Jumayjimah"
+"en": "Jumayjimah",
+"country": "lebanon"
 },
 "جناتا": {
 "lat": 33.2861,
 "lon": 35.3196,
 "precision": "town",
 "source": "wikidata",
-"en": "Jannata"
+"en": "Jannata",
+"country": "lebanon"
 },
 "جنتا": {
 "lat": 33.8574,
 "lon": 36.1065,
 "precision": "town",
 "source": "wikidata",
-"en": "Jenta"
+"en": "Jenta",
+"country": "lebanon"
 },
 "جويا": {
 "lat": 33.2365,
 "lon": 35.3385,
 "precision": "town",
 "source": "wikidata",
-"en": "Jwaya"
+"en": "Jwaya",
+"country": "lebanon"
 },
 "جويّا": {
 "lat": 33.2365,
 "lon": 35.3385,
 "precision": "town",
 "source": "wikidata",
-"en": "Jwaya"
+"en": "Jwaya",
+"country": "lebanon"
 },
 "حارة حريك": {
 "lat": 33.85,
 "lon": 35.5167,
 "precision": "town",
 "source": "wikidata",
-"en": "Haret Hreik"
+"en": "Haret Hreik",
+"country": "lebanon"
 },
 "حارة صيدا": {
 "lat": 33.555,
@@ -1587,28 +1746,32 @@
 "lon": 35.4444,
 "precision": "town",
 "source": "wikidata",
-"en": "Harouf"
+"en": "Harouf",
+"country": "lebanon"
 },
 "حاريص": {
 "lat": 33.1745,
 "lon": 35.3766,
 "precision": "town",
 "source": "wikidata",
-"en": "Hariss"
+"en": "Hariss",
+"country": "lebanon"
 },
 "حاصبيا": {
 "lat": 33.3972,
 "lon": 35.6833,
 "precision": "town",
 "source": "wikidata",
-"en": "Hasbaya"
+"en": "Hasbaya",
+"country": "lebanon"
 },
 "حامول": {
 "lat": 33.1261,
 "lon": 35.1669,
 "precision": "town",
 "source": "wikidata",
-"en": "Hamoul"
+"en": "Hamoul",
+"country": "lebanon"
 },
 "حانيتا": {
 "lat": 33.0876,
@@ -1621,21 +1784,24 @@
 "lon": 35.3811,
 "precision": "town",
 "source": "wikidata",
-"en": "Hanine"
+"en": "Hanine",
+"country": "lebanon"
 },
 "حبوش": {
 "lat": 33.4,
 "lon": 35.4833,
 "precision": "town",
 "source": "wikidata",
-"en": "Habboûch"
+"en": "Habboûch",
+"country": "lebanon"
 },
 "حداثا": {
 "lat": 33.1667,
 "lon": 35.3833,
 "precision": "town",
 "source": "wikidata",
-"en": "Haddatha"
+"en": "Haddatha",
+"country": "lebanon"
 },
 "حدب يارون": {
 "lat": 33.09,
@@ -1648,56 +1814,64 @@
 "lon": 35.3833,
 "precision": "town",
 "source": "wikidata",
-"en": "Haddatha"
+"en": "Haddatha",
+"country": "lebanon"
 },
 "حربتا": {
 "lat": 34.2067,
 "lon": 36.2647,
 "precision": "town",
 "source": "wikidata",
-"en": "Harbata"
+"en": "Harbata",
+"country": "lebanon"
 },
 "حلتا": {
 "lat": 33.3086,
 "lon": 35.6689,
 "precision": "town",
 "source": "wikidata",
-"en": "Halta"
+"en": "Halta",
+"country": "lebanon"
 },
 "حناوية": {
 "lat": 33.2211,
 "lon": 35.2775,
 "precision": "town",
 "source": "wikidata",
-"en": "Hanaouay"
+"en": "Hanaouay",
+"country": "lebanon"
 },
 "حناويه": {
 "lat": 33.2211,
 "lon": 35.2775,
 "precision": "town",
 "source": "wikidata",
-"en": "Hanaouay"
+"en": "Hanaouay",
+"country": "lebanon"
 },
 "حنيتا": {
 "lat": 33.0876,
 "lon": 35.1735,
 "precision": "town",
 "source": "wikidata",
-"en": "Hanita"
+"en": "Hanita",
+"country": "israel"
 },
 "حوش الرافقة": {
 "lat": 33.9236,
 "lon": 36.045,
 "precision": "town",
 "source": "wikidata",
-"en": "Haouch Er Rafqa"
+"en": "Haouch Er Rafqa",
+"country": "lebanon"
 },
 "حولا": {
 "lat": 33.21,
 "lon": 35.5169,
 "precision": "town",
 "source": "wikidata",
-"en": "Hula"
+"en": "Hula",
+"country": "lebanon"
 },
 "حومين": {
 "lat": 33.43,
@@ -1710,49 +1884,56 @@
 "lon": 35.4344,
 "precision": "town",
 "source": "wikidata",
-"en": "Houmine Et Tahta"
+"en": "Houmine Et Tahta",
+"country": "lebanon"
 },
 "حومين الفوقا": {
 "lat": 33.4436,
 "lon": 35.4903,
 "precision": "town",
 "source": "wikidata",
-"en": "Houmine El Faouqa"
+"en": "Houmine El Faouqa",
+"country": "lebanon"
 },
 "حيفا": {
 "lat": 32.8192,
 "lon": 34.9992,
 "precision": "town",
 "source": "wikidata",
-"en": "Haifa"
+"en": "Haifa",
+"country": "israel"
 },
 "حيفا البحرية": {
 "lat": 32.8192,
 "lon": 34.9992,
 "precision": "town",
 "source": "wikidata",
-"en": "Haifa"
+"en": "Haifa",
+"country": "israel"
 },
 "خربة المنارة": {
 "lat": 32.6455,
 "lon": 34.9644,
 "precision": "town",
 "source": "wikidata",
-"en": "Khirbat Al-Manara"
+"en": "Khirbat Al-Manara",
+"country": "israel"
 },
 "خربة سلم": {
 "lat": 33.2292,
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Khirbet Selm"
+"en": "Khirbet Selm",
+"country": "lebanon"
 },
 "خلدة": {
 "lat": 33.7833,
 "lon": 35.4833,
 "precision": "town",
 "source": "wikidata",
-"en": "Khalde"
+"en": "Khalde",
+"country": "lebanon"
 },
 "خليج حيفا": {
 "lat": 32.82,
@@ -1765,35 +1946,40 @@
 "lon": 35.6531,
 "precision": "town",
 "source": "wikidata",
-"en": "Dan"
+"en": "Dan",
+"country": "israel"
 },
 "دبعال": {
 "lat": 33.2517,
 "lon": 35.3489,
 "precision": "town",
 "source": "wikidata",
-"en": "Debaal"
+"en": "Debaal",
+"country": "lebanon"
 },
 "دبل": {
 "lat": 33.1167,
 "lon": 35.3667,
 "precision": "town",
 "source": "wikidata",
-"en": "Debel"
+"en": "Debel",
+"country": "lebanon"
 },
 "دبين": {
 "lat": 33.3694,
 "lon": 35.5947,
 "precision": "town",
 "source": "wikidata",
-"en": "Dibbine"
+"en": "Dibbine",
+"country": "lebanon"
 },
 "دبّين": {
 "lat": 33.3694,
 "lon": 35.5947,
 "precision": "town",
 "source": "wikidata",
-"en": "Dibbine"
+"en": "Dibbine",
+"country": "lebanon"
 },
 "دفنا": {
 "lat": 33.233,
@@ -1812,119 +1998,136 @@
 "lon": 35.4076,
 "precision": "town",
 "source": "wikidata",
-"en": "Dovev"
+"en": "Dovev",
+"country": "israel"
 },
 "دير أنطار": {
 "lat": 33.2186,
 "lon": 35.3758,
 "precision": "town",
 "source": "wikidata",
-"en": "Deyrintar"
+"en": "Deyrintar",
+"country": "lebanon"
 },
 "دير الزهراني": {
 "lat": 33.4311,
 "lon": 35.4594,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Ez Zahrani"
+"en": "Deir Ez Zahrani",
+"country": "lebanon"
 },
 "دير انطار": {
 "lat": 33.2186,
 "lon": 35.3758,
 "precision": "town",
 "source": "wikidata",
-"en": "Deyrintar"
+"en": "Deyrintar",
+"country": "lebanon"
 },
 "دير حنا": {
 "lat": 32.8624,
 "lon": 35.3712,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Hanna"
+"en": "Deir Hanna",
+"country": "israel"
 },
 "دير سريان": {
 "lat": 33.2908,
 "lon": 35.5064,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Siriane"
+"en": "Deir Siriane",
+"country": "lebanon"
 },
 "دير عامص": {
 "lat": 33.2008,
 "lon": 35.3361,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Aames"
+"en": "Deir Aames",
+"country": "lebanon"
 },
 "دير قانون النهر": {
 "lat": 33.301,
 "lon": 35.3075,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Qanoun En Nahr"
+"en": "Deir Qanoun En Nahr",
+"country": "lebanon"
 },
 "دير قانون رأس العين": {
 "lat": 33.2227,
 "lon": 35.2459,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Qanoun El Ain"
+"en": "Deir Qanoun El Ain",
+"country": "lebanon"
 },
 "دير قانون راس العين": {
 "lat": 33.2227,
 "lon": 35.2459,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Qanoun El Ain"
+"en": "Deir Qanoun El Ain",
+"country": "lebanon"
 },
 "دير كيفا": {
 "lat": 33.2564,
 "lon": 35.3983,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Kifa"
+"en": "Deir Kifa",
+"country": "lebanon"
 },
 "دير ميماس": {
 "lat": 33.3,
 "lon": 35.55,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Mimas"
+"en": "Deir Mimas",
+"country": "lebanon"
 },
 "ديرسريان": {
 "lat": 33.2908,
 "lon": 35.5064,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Siriane"
+"en": "Deir Siriane",
+"country": "lebanon"
 },
 "ديركيفا": {
 "lat": 33.2564,
 "lon": 35.3983,
 "precision": "town",
 "source": "wikidata",
-"en": "Deir Kifa"
+"en": "Deir Kifa",
+"country": "lebanon"
 },
 "ديشون": {
 "lat": 33.0816,
 "lon": 35.5169,
 "precision": "town",
 "source": "wikidata",
-"en": "Dishon"
+"en": "Dishon",
+"country": "israel"
 },
 "دِبعال": {
 "lat": 33.2517,
 "lon": 35.3489,
 "precision": "town",
 "source": "wikidata",
-"en": "Debaal"
+"en": "Debaal",
+"country": "lebanon"
 },
 "دِبل": {
 "lat": 33.1167,
 "lon": 35.3667,
 "precision": "town",
 "source": "wikidata",
-"en": "Debel"
+"en": "Debel",
+"country": "lebanon"
 },
 "رأس العين": {
 "lat": 33.23,
@@ -1937,28 +2140,32 @@
 "lon": 35.1136,
 "precision": "town",
 "source": "wikidata",
-"en": "Rosh HaNikra"
+"en": "Rosh HaNikra",
+"country": "israel"
 },
 "رأس النّاقورة": {
 "lat": 33.0861,
 "lon": 35.1136,
 "precision": "town",
 "source": "wikidata",
-"en": "Rosh HaNikra"
+"en": "Rosh HaNikra",
+"country": "israel"
 },
 "راس الناقورة": {
 "lat": 33.0861,
 "lon": 35.1136,
 "precision": "town",
 "source": "wikidata",
-"en": "Rosh HaNikra"
+"en": "Rosh HaNikra",
+"country": "israel"
 },
 "راشيا الفخار": {
 "lat": 33.3533,
 "lon": 35.6672,
 "precision": "town",
 "source": "wikidata",
-"en": "Rachaya Al Foukhar"
+"en": "Rachaya Al Foukhar",
+"country": "lebanon"
 },
 "رامات ديفيد الجوية": {
 "lat": 32.665,
@@ -1971,7 +2178,8 @@
 "lon": 35.5534,
 "precision": "town",
 "source": "wikidata",
-"en": "Ramot Naftali"
+"en": "Ramot Naftali",
+"country": "israel"
 },
 "راميا": {
 "lat": 33.105,
@@ -1984,7 +2192,8 @@
 "lon": 35.3106,
 "precision": "town",
 "source": "wikidata",
-"en": "Ramyah"
+"en": "Ramyah",
+"country": "lebanon"
 },
 "راميم": {
 "lat": 33.23,
@@ -1997,91 +2206,104 @@
 "lon": 35.5183,
 "precision": "town",
 "source": "wikidata",
-"en": "Rab El Thalathine"
+"en": "Rab El Thalathine",
+"country": "lebanon"
 },
 "رب ثلاثين": {
 "lat": 33.2492,
 "lon": 35.5183,
 "precision": "town",
 "source": "wikidata",
-"en": "Rab El Thalathine"
+"en": "Rab El Thalathine",
+"country": "lebanon"
 },
 "ربّ ثلاثين": {
 "lat": 33.2492,
 "lon": 35.5183,
 "precision": "town",
 "source": "wikidata",
-"en": "Rab El Thalathine"
+"en": "Rab El Thalathine",
+"country": "lebanon"
 },
 "رشاف": {
 "lat": 33.15,
 "lon": 35.3667,
 "precision": "town",
 "source": "wikidata",
-"en": "Rachaf"
+"en": "Rachaf",
+"country": "lebanon"
 },
 "رشكنانيه": {
 "lat": 33.1897,
 "lon": 35.3228,
 "precision": "town",
 "source": "wikidata",
-"en": "Rechknanay"
+"en": "Rechknanay",
+"country": "lebanon"
 },
 "رميش": {
 "lat": 33.09,
 "lon": 35.4,
 "precision": "town",
 "source": "wikidata",
-"en": "Rmaich"
+"en": "Rmaich",
+"country": "lebanon"
 },
 "روش بينا": {
 "lat": 32.9691,
 "lon": 35.5425,
 "precision": "town",
 "source": "wikidata",
-"en": "Rosh Pinna"
+"en": "Rosh Pinna",
+"country": "israel"
 },
 "رومين": {
 "lat": 33.4617,
 "lon": 35.4425,
 "precision": "town",
 "source": "wikidata",
-"en": "Roumine"
+"en": "Roumine",
+"country": "lebanon"
 },
 "زبدين": {
 "lat": 33.3742,
 "lon": 35.4611,
 "precision": "town",
 "source": "wikidata",
-"en": "Zibdine (Nabatiyeh)"
+"en": "Zibdine (Nabatiyeh)",
+"country": "lebanon"
 },
 "زبقين": {
 "lat": 33.1667,
 "lon": 35.2667,
 "precision": "town",
 "source": "wikidata",
-"en": "Zibqin"
+"en": "Zibqin",
+"country": "lebanon"
 },
 "زحلة": {
 "lat": 33.8439,
 "lon": 35.9072,
 "precision": "town",
 "source": "wikidata",
-"en": "Zahlé"
+"en": "Zahlé",
+"country": "lebanon"
 },
 "زرعيت": {
 "lat": 33.1,
 "lon": 35.2885,
 "precision": "town",
 "source": "wikidata",
-"en": "Zar'it"
+"en": "Zar'it",
+"country": "israel"
 },
 "زفتا": {
 "lat": 33.4483,
 "lon": 35.3982,
 "precision": "town",
 "source": "wikidata",
-"en": "Zefta"
+"en": "Zefta",
+"country": "lebanon"
 },
 "زقاق البلاط": {
 "lat": 33.89,
@@ -2094,7 +2316,8 @@
 "lon": 35.6706,
 "precision": "town",
 "source": "wikidata",
-"en": "Zilaya"
+"en": "Zilaya",
+"country": "lebanon"
 },
 "زوطر": {
 "lat": 33.316,
@@ -2107,28 +2330,32 @@
 "lon": 35.4764,
 "precision": "town",
 "source": "wikidata",
-"en": "Zaoutar Ech Charqiyeh"
+"en": "Zaoutar Ech Charqiyeh",
+"country": "lebanon"
 },
 "زوطر الشرقيّة": {
 "lat": 33.3236,
 "lon": 35.4764,
 "precision": "town",
 "source": "wikidata",
-"en": "Zaoutar Ech Charqiyeh"
+"en": "Zaoutar Ech Charqiyeh",
+"country": "lebanon"
 },
 "زوطر الغربية": {
 "lat": 33.3222,
 "lon": 35.4625,
 "precision": "town",
 "source": "wikidata",
-"en": "Zaoutar El Gharbiyeh"
+"en": "Zaoutar El Gharbiyeh",
+"country": "lebanon"
 },
 "زيتا": {
 "lat": 33.4997,
 "lon": 35.4042,
 "precision": "town",
 "source": "wikidata",
-"en": "Zeita"
+"en": "Zeita",
+"country": "lebanon"
 },
 "ستيلا ماريس": {
 "lat": 32.826,
@@ -2141,14 +2368,16 @@
 "lon": 35.5353,
 "precision": "town",
 "source": "wikidata",
-"en": "Sejoud"
+"en": "Sejoud",
+"country": "lebanon"
 },
 "سحمر": {
 "lat": 33.5186,
 "lon": 35.6856,
 "precision": "town",
 "source": "wikidata",
-"en": "Sohmor"
+"en": "Sohmor",
+"country": "lebanon"
 },
 "سد القرعون": {
 "lat": 33.56,
@@ -2173,7 +2402,8 @@
 "lon": 35.38,
 "precision": "town",
 "source": "wikidata",
-"en": "Selaa"
+"en": "Selaa",
+"country": "lebanon"
 },
 "سهل الحولة": {
 "lat": 33.1,
@@ -2192,7 +2422,8 @@
 "lon": 35.6607,
 "precision": "town",
 "source": "wikidata",
-"en": "Shamir"
+"en": "Shamir",
+"country": "israel"
 },
 "شبريحا": {
 "lat": 33.302,
@@ -2205,7 +2436,8 @@
 "lon": 35.75,
 "precision": "town",
 "source": "wikidata",
-"en": "Shebaa"
+"en": "Shebaa",
+"country": "lebanon"
 },
 "شتولا": {
 "lat": 33.087,
@@ -2218,28 +2450,32 @@
 "lon": 35.3667,
 "precision": "town",
 "source": "wikidata",
-"en": "Chehour"
+"en": "Chehour",
+"country": "lebanon"
 },
 "شعث": {
 "lat": 34.1417,
 "lon": 36.2322,
 "precision": "town",
 "source": "wikidata",
-"en": "Chaat"
+"en": "Chaat",
+"country": "lebanon"
 },
 "شفا عمرو": {
 "lat": 32.8056,
 "lon": 35.1694,
 "precision": "town",
 "source": "wikidata",
-"en": "Shefa-Amr"
+"en": "Shefa-Amr",
+"country": "israel"
 },
 "شقرا": {
 "lat": 33.1932,
 "lon": 35.4672,
 "precision": "town",
 "source": "wikidata",
-"en": "Chaqra/harare"
+"en": "Chaqra/harare",
+"country": "lebanon"
 },
 "شلومي": {
 "lat": 33.077,
@@ -2252,7 +2488,8 @@
 "lon": 36.0167,
 "precision": "town",
 "source": "wikidata",
-"en": "Chmestar"
+"en": "Chmestar",
+"country": "lebanon"
 },
 "شمع": {
 "lat": 33.172,
@@ -2265,14 +2502,16 @@
 "lon": 35.4667,
 "precision": "town",
 "source": "wikidata",
-"en": "Choukine"
+"en": "Choukine",
+"country": "lebanon"
 },
 "شومرا": {
 "lat": 33.0829,
 "lon": 35.2842,
 "precision": "town",
 "source": "wikidata",
-"en": "Shomera"
+"en": "Shomera",
+"country": "israel"
 },
 "شوميرا": {
 "lat": 33.0829,
@@ -2291,70 +2530,80 @@
 "lon": 35.7164,
 "precision": "town",
 "source": "wikidata",
-"en": "Chouaya"
+"en": "Chouaya",
+"country": "lebanon"
 },
 "شيحين": {
 "lat": 33.1244,
 "lon": 35.2517,
 "precision": "town",
 "source": "wikidata",
-"en": "Chihine"
+"en": "Chihine",
+"country": "lebanon"
 },
 "صديقين": {
 "lat": 33.19,
 "lon": 35.3103,
 "precision": "town",
 "source": "wikidata",
-"en": "Siddikine"
+"en": "Siddikine",
+"country": "lebanon"
 },
 "صربا": {
 "lat": 33.4667,
 "lon": 35.4744,
 "precision": "town",
 "source": "wikidata",
-"en": "Sarba (Nabatiyeh)"
+"en": "Sarba (Nabatiyeh)",
+"country": "lebanon"
 },
 "صربين": {
 "lat": 33.1539,
 "lon": 35.3589,
 "precision": "town",
 "source": "wikidata",
-"en": "Srobbine"
+"en": "Srobbine",
+"country": "lebanon"
 },
 "صريفا": {
 "lat": 33.2814,
 "lon": 35.3964,
 "precision": "town",
 "source": "wikidata",
-"en": "Srifa"
+"en": "Srifa",
+"country": "lebanon"
 },
 "صفد": {
 "lat": 32.9658,
 "lon": 35.4983,
 "precision": "town",
 "source": "wikidata",
-"en": "Safed"
+"en": "Safed",
+"country": "israel"
 },
 "صفد البطيخ": {
 "lat": 33.2,
 "lon": 35.4328,
 "precision": "town",
 "source": "wikidata",
-"en": "Safad El Battikh"
+"en": "Safad El Battikh",
+"country": "lebanon"
 },
 "صور": {
 "lat": 33.2667,
 "lon": 35.2,
 "precision": "town",
 "source": "wikidata",
-"en": "Tyre"
+"en": "Tyre",
+"country": "lebanon"
 },
 "صيدا": {
 "lat": 33.5606,
 "lon": 35.3758,
 "precision": "town",
 "source": "wikidata",
-"en": "Sidon"
+"en": "Sidon",
+"country": "lebanon"
 },
 "صير الغربية": {
 "lat": 33.367,
@@ -2373,84 +2622,96 @@
 "lon": 36.0236,
 "precision": "town",
 "source": "wikidata",
-"en": "Taraya"
+"en": "Taraya",
+"country": "lebanon"
 },
 "طبريا": {
 "lat": 32.7897,
 "lon": 35.5247,
 "precision": "town",
 "source": "wikidata",
-"en": "Tiberias"
+"en": "Tiberias",
+"country": "israel"
 },
 "طرابلس": {
 "lat": 34.4367,
 "lon": 35.8344,
 "precision": "town",
 "source": "wikidata",
-"en": "Tripoli"
+"en": "Tripoli",
+"country": "lebanon"
 },
 "طلوسة": {
 "lat": 33.2328,
 "lon": 35.4847,
 "precision": "town",
 "source": "wikidata",
-"en": "Talloussa"
+"en": "Talloussa",
+"country": "lebanon"
 },
 "طورا": {
 "lat": 33.2936,
 "lon": 35.2978,
 "precision": "town",
 "source": "wikidata",
-"en": "Toura"
+"en": "Toura",
+"country": "lebanon"
 },
 "طير حرفا": {
 "lat": 33.1281,
 "lon": 35.2122,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Harfa"
+"en": "Tayr Harfa",
+"country": "lebanon"
 },
 "طير دبا": {
 "lat": 33.275,
 "lon": 35.28,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Debba"
+"en": "Tayr Debba",
+"country": "lebanon"
 },
 "طير دبّا": {
 "lat": 33.275,
 "lon": 35.28,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Debba"
+"en": "Tayr Debba",
+"country": "lebanon"
 },
 "طير فلسيه": {
 "lat": 33.3089,
 "lon": 35.3481,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Falsay"
+"en": "Tayr Falsay",
+"country": "lebanon"
 },
 "طيرحرفا": {
 "lat": 33.1281,
 "lon": 35.2122,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Harfa"
+"en": "Tayr Harfa",
+"country": "lebanon"
 },
 "طيردبا": {
 "lat": 33.275,
 "lon": 35.28,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Debba"
+"en": "Tayr Debba",
+"country": "lebanon"
 },
 "طيرفلسيه": {
 "lat": 33.3089,
 "lon": 35.3481,
 "precision": "town",
 "source": "wikidata",
-"en": "Tayr Falsay"
+"en": "Tayr Falsay",
+"country": "lebanon"
 },
 "عائشة بكار": {
 "lat": 33.882,
@@ -2463,14 +2724,16 @@
 "lon": 35.4,
 "precision": "town",
 "source": "wikidata",
-"en": "Ebba"
+"en": "Ebba",
+"country": "lebanon"
 },
 "عدشيت": {
 "lat": 33.2772,
 "lon": 35.4808,
 "precision": "town",
 "source": "wikidata",
-"en": "Aadchit"
+"en": "Aadchit",
+"country": "lebanon"
 },
 "عدشيت القصير": {
 "lat": 33.26,
@@ -2489,14 +2752,16 @@
 "lon": 35.5425,
 "precision": "town",
 "source": "wikidata",
-"en": "Adaisseh"
+"en": "Adaisseh",
+"country": "lebanon"
 },
 "عرب العرامشة": {
 "lat": 33.09,
 "lon": 35.2286,
 "precision": "town",
 "source": "wikidata",
-"en": "Arab al-Aramshe"
+"en": "Arab al-Aramshe",
+"country": "israel"
 },
 "عرب اللويزة": {
 "lat": 33.36,
@@ -2509,63 +2774,72 @@
 "lon": 35.5164,
 "precision": "town",
 "source": "wikidata",
-"en": "Arabsalim"
+"en": "Arabsalim",
+"country": "lebanon"
 },
 "عربصاليم": {
 "lat": 33.4289,
 "lon": 35.5164,
 "precision": "town",
 "source": "wikidata",
-"en": "Arabsalim"
+"en": "Arabsalim",
+"country": "lebanon"
 },
 "عرمتى": {
 "lat": 33.4639,
 "lon": 35.5764,
 "precision": "town",
 "source": "wikidata",
-"en": "Aaramta"
+"en": "Aaramta",
+"country": "lebanon"
 },
 "عرمتي": {
 "lat": 33.4639,
 "lon": 35.5764,
 "precision": "town",
 "source": "wikidata",
-"en": "Aaramta"
+"en": "Aaramta",
+"country": "lebanon"
 },
 "عرمون": {
 "lat": 33.7597,
 "lon": 35.5208,
 "precision": "town",
 "source": "wikidata",
-"en": "Aramoun"
+"en": "Aramoun",
+"country": "lebanon"
 },
 "عسقلان": {
 "lat": 31.6658,
 "lon": 34.5664,
 "precision": "town",
 "source": "wikidata",
-"en": "Ashkelon"
+"en": "Ashkelon",
+"country": "israel"
 },
 "عكا": {
 "lat": 32.9261,
 "lon": 35.0839,
 "precision": "town",
 "source": "wikidata",
-"en": "Acre"
+"en": "Acre",
+"country": "israel"
 },
 "علما الشعب": {
 "lat": 33.105,
 "lon": 35.1711,
 "precision": "town",
 "source": "wikidata",
-"en": "Aalma ech Chaab"
+"en": "Aalma ech Chaab",
+"country": "lebanon"
 },
 "علمان": {
 "lat": 33.3025,
 "lon": 35.4711,
 "precision": "town",
 "source": "wikidata",
-"en": "Alman, Marjeyoun"
+"en": "Alman, Marjeyoun",
+"country": "lebanon"
 },
 "علي الطاهر": {
 "lat": 33.388,
@@ -2578,56 +2852,64 @@
 "lon": 36.0306,
 "precision": "town",
 "source": "wikidata",
-"en": "Ali el Nahri"
+"en": "Ali el Nahri",
+"country": "lebanon"
 },
 "عميعاد": {
 "lat": 32.9282,
 "lon": 35.5407,
 "precision": "town",
 "source": "wikidata",
-"en": "Ami'ad"
+"en": "Ami'ad",
+"country": "israel"
 },
 "عنقون": {
 "lat": 33.4989,
 "lon": 35.4286,
 "precision": "town",
 "source": "wikidata",
-"en": "Anqoun"
+"en": "Anqoun",
+"country": "lebanon"
 },
 "عيتا الجبل": {
 "lat": 33.1756,
 "lon": 35.4078,
 "precision": "town",
 "source": "wikidata",
-"en": "Ayta al-Jabal"
+"en": "Ayta al-Jabal",
+"country": "lebanon"
 },
 "عيتا الشعب": {
 "lat": 33.0972,
 "lon": 35.3344,
 "precision": "town",
 "source": "wikidata",
-"en": "Ayta ash Shab"
+"en": "Ayta ash Shab",
+"country": "lebanon"
 },
 "عيترون": {
 "lat": 33.1167,
 "lon": 35.4667,
 "precision": "town",
 "source": "wikidata",
-"en": "Aitaroun"
+"en": "Aitaroun",
+"country": "lebanon"
 },
 "عيتيت": {
 "lat": 33.2256,
 "lon": 35.3322,
 "precision": "town",
 "source": "wikidata",
-"en": "Aitit"
+"en": "Aitit",
+"country": "lebanon"
 },
 "عين إبل": {
 "lat": 33.1097,
 "lon": 35.4028,
 "precision": "town",
 "source": "wikidata",
-"en": "Ain Ebel"
+"en": "Ain Ebel",
+"country": "lebanon"
 },
 "عين الحلوة": {
 "lat": 33.543,
@@ -2640,7 +2922,8 @@
 "lon": 35.2703,
 "precision": "town",
 "source": "wikidata",
-"en": "Ain Baal"
+"en": "Ain Baal",
+"country": "lebanon"
 },
 "عين زيتيم": {
 "lat": 32.99,
@@ -2653,28 +2936,32 @@
 "lon": 35.5951,
 "precision": "town",
 "source": "wikidata",
-"en": "Ain Saadeh"
+"en": "Ain Saadeh",
+"country": "lebanon"
 },
 "عين عرب": {
 "lat": 33.2967,
 "lon": 35.6228,
 "precision": "town",
 "source": "wikidata",
-"en": "Ain Arab"
+"en": "Ain Arab",
+"country": "lebanon"
 },
 "عين قانا": {
 "lat": 33.4822,
 "lon": 35.4994,
 "precision": "town",
 "source": "wikidata",
-"en": "Ain Qana"
+"en": "Ain Qana",
+"country": "lebanon"
 },
 "عيناتا": {
 "lat": 33.1288,
 "lon": 35.4351,
 "precision": "town",
 "source": "wikidata",
-"en": "Aynata"
+"en": "Aynata",
+"country": "lebanon"
 },
 "غابة عيترون": {
 "lat": 33.12,
@@ -2693,7 +2980,8 @@
 "lon": 35.4286,
 "precision": "town",
 "source": "wikidata",
-"en": "Froun"
+"en": "Froun",
+"country": "lebanon"
 },
 "قاقعية الجسر": {
 "lat": 33.33,
@@ -2706,28 +2994,32 @@
 "lon": 35.2992,
 "precision": "town",
 "source": "wikidata",
-"en": "Qana"
+"en": "Qana",
+"country": "lebanon"
 },
 "قبريخا": {
 "lat": 33.2524,
 "lon": 35.4296,
 "precision": "town",
 "source": "wikidata",
-"en": "Qabrikha"
+"en": "Qabrikha",
+"country": "lebanon"
 },
 "قصرنبا": {
 "lat": 33.9111,
 "lon": 35.9919,
 "precision": "town",
 "source": "wikidata",
-"en": "Kasarnaba"
+"en": "Kasarnaba",
+"country": "lebanon"
 },
 "قعقعية الجسر": {
 "lat": 33.3256,
 "lon": 35.4181,
 "precision": "town",
 "source": "wikidata",
-"en": "Qaaqaait Al Jisr"
+"en": "Qaaqaait Al Jisr",
+"country": "lebanon"
 },
 "قعقعية الصنوبر": {
 "lat": 33.48,
@@ -2776,21 +3068,24 @@
 "lon": 35.3792,
 "precision": "town",
 "source": "wikidata",
-"en": "Qennarit"
+"en": "Qennarit",
+"country": "lebanon"
 },
 "قيسارية": {
 "lat": 32.5,
 "lon": 34.9,
 "precision": "town",
 "source": "wikidata",
-"en": "Caesarea"
+"en": "Caesarea",
+"country": "israel"
 },
 "كابري": {
 "lat": 33.0155,
 "lon": 35.1509,
 "precision": "town",
 "source": "wikidata",
-"en": "Al-Kabri"
+"en": "Al-Kabri",
+"country": "israel"
 },
 "كتسرين": {
 "lat": 32.99,
@@ -2809,7 +3104,8 @@
 "lon": 35.2833,
 "precision": "town",
 "source": "wikidata",
-"en": "Karmiel"
+"en": "Karmiel",
+"country": "israel"
 },
 "كرميئيل": {
 "lat": 32.9,
@@ -2822,21 +3118,24 @@
 "lon": 35.1,
 "precision": "town",
 "source": "wikidata",
-"en": "Kiryat Ata"
+"en": "Kiryat Ata",
+"country": "israel"
 },
 "كريات شمونة": {
 "lat": 33.2075,
 "lon": 35.5697,
 "precision": "town",
 "source": "wikidata",
-"en": "Kiryat Shmona"
+"en": "Kiryat Shmona",
+"country": "israel"
 },
 "كريات شمونه": {
 "lat": 33.2075,
 "lon": 35.5697,
 "precision": "town",
 "source": "wikidata",
-"en": "Kiryat Shmona"
+"en": "Kiryat Shmona",
+"country": "israel"
 },
 "كريات موتسكين": {
 "lat": 32.84,
@@ -2849,14 +3148,16 @@
 "lon": 35.0664,
 "precision": "town",
 "source": "wikidata",
-"en": "Kiryat Yam"
+"en": "Kiryat Yam",
+"country": "israel"
 },
 "كفار جلعادي": {
 "lat": 33.2425,
 "lon": 35.575,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Giladi"
+"en": "Kfar Giladi",
+"country": "israel"
 },
 "كفار غلعادي": {
 "lat": 33.2425,
@@ -2887,35 +3188,40 @@
 "lon": 35.4522,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Hatta"
+"en": "Kfar Hatta",
+"country": "lebanon"
 },
 "كفر حمام": {
 "lat": 33.3439,
 "lon": 35.6789,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarhamam"
+"en": "Kfarhamam",
+"country": "lebanon"
 },
 "كفر رمان": {
 "lat": 33.3862,
 "lon": 35.4966,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Remen"
+"en": "Kfar Remen",
+"country": "lebanon"
 },
 "كفر صير": {
 "lat": 33.325,
 "lon": 35.4008,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Sir"
+"en": "Kfar Sir",
+"country": "lebanon"
 },
 "كفرا": {
 "lat": 33.1758,
 "lon": 35.3514,
 "precision": "town",
 "source": "wikidata",
-"en": "Kafra,  Bint Jbeil District"
+"en": "Kafra,  Bint Jbeil District",
+"country": "lebanon"
 },
 "كفرتبنيت": {
 "lat": 33.372,
@@ -2940,28 +3246,32 @@
 "lon": 35.8975,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarhata Zgharta"
+"en": "Kfarhata Zgharta",
+"country": "lebanon"
 },
 "كفرحتى": {
 "lat": 33.5025,
 "lon": 35.4522,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Hatta"
+"en": "Kfar Hatta",
+"country": "lebanon"
 },
 "كفرحمام": {
 "lat": 33.3439,
 "lon": 35.6789,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarhamam"
+"en": "Kfarhamam",
+"country": "lebanon"
 },
 "كفرحونة": {
 "lat": 33.4931,
 "lon": 35.5861,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarhouna"
+"en": "Kfarhouna",
+"country": "lebanon"
 },
 "كفردجال": {
 "lat": 33.39,
@@ -2974,56 +3284,64 @@
 "lon": 35.4,
 "precision": "town",
 "source": "wikidata",
-"en": "Kafr Dunin"
+"en": "Kafr Dunin",
+"country": "lebanon"
 },
 "كفررمان": {
 "lat": 33.3862,
 "lon": 35.4966,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Remen"
+"en": "Kfar Remen",
+"country": "lebanon"
 },
 "كفرشوبا": {
 "lat": 33.328,
 "lon": 35.6918,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarchouba"
+"en": "Kfarchouba",
+"country": "lebanon"
 },
 "كفرصير": {
 "lat": 33.325,
 "lon": 35.4008,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Sir"
+"en": "Kfar Sir",
+"country": "lebanon"
 },
 "كفرفيلا": {
 "lat": 33.4822,
 "lon": 35.4994,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarfila"
+"en": "Kfarfila",
+"country": "lebanon"
 },
 "كفركلا": {
 "lat": 33.2833,
 "lon": 35.55,
 "precision": "town",
 "source": "wikidata",
-"en": "Kafr Kila"
+"en": "Kafr Kila",
+"country": "lebanon"
 },
 "كفرمان": {
 "lat": 33.3862,
 "lon": 35.4966,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfar Remen"
+"en": "Kfar Remen",
+"country": "lebanon"
 },
 "كفرملكي": {
 "lat": 33.5,
 "lon": 35.48,
 "precision": "town",
 "source": "wikidata",
-"en": "Kfarmelki"
+"en": "Kfarmelki",
+"country": "lebanon"
 },
 "كوثرية الرز": {
 "lat": 33.45,
@@ -3036,28 +3354,32 @@
 "lon": 35.3831,
 "precision": "town",
 "source": "wikidata",
-"en": "Kaouthariyat as-Siyad"
+"en": "Kaouthariyat as-Siyad",
+"country": "lebanon"
 },
 "كونين": {
 "lat": 33.1489,
 "lon": 35.4381,
 "precision": "town",
 "source": "wikidata",
-"en": "Kunin"
+"en": "Kunin",
+"country": "lebanon"
 },
 "كيفون": {
 "lat": 33.7853,
 "lon": 35.5592,
 "precision": "town",
 "source": "wikidata",
-"en": "Kaifun"
+"en": "Kaifun",
+"country": "lebanon"
 },
 "لبايا": {
 "lat": 33.4825,
 "lon": 35.7239,
 "precision": "town",
 "source": "wikidata",
-"en": "Libbaya"
+"en": "Libbaya",
+"country": "lebanon"
 },
 "ليمان": {
 "lat": 33.06,
@@ -3076,63 +3398,72 @@
 "lon": 35.4439,
 "precision": "town",
 "source": "wikidata",
-"en": "Maroun al-Ras"
+"en": "Maroun al-Ras",
+"country": "lebanon"
 },
 "مارون الراس": {
 "lat": 33.1011,
 "lon": 35.4439,
 "precision": "town",
 "source": "wikidata",
-"en": "Maroun al-Ras"
+"en": "Maroun al-Ras",
+"country": "lebanon"
 },
 "مالكية": {
 "lat": 33.0982,
 "lon": 35.5111,
 "precision": "town",
 "source": "wikidata",
-"en": "Malkia"
+"en": "Malkia",
+"country": "israel"
 },
 "مجادل": {
 "lat": 33.2294,
 "lon": 35.3601,
 "precision": "town",
 "source": "wikidata",
-"en": "Majadel"
+"en": "Majadel",
+"country": "lebanon"
 },
 "مجدل زون": {
 "lat": 33.1519,
 "lon": 35.2275,
 "precision": "town",
 "source": "wikidata",
-"en": "Majdel Zoun"
+"en": "Majdel Zoun",
+"country": "lebanon"
 },
 "مجدل سلم": {
 "lat": 33.2217,
 "lon": 35.4644,
 "precision": "town",
 "source": "wikidata",
-"en": "Majdal Selem"
+"en": "Majdal Selem",
+"country": "lebanon"
 },
 "مجدلزون": {
 "lat": 33.1519,
 "lon": 35.2275,
 "precision": "town",
 "source": "wikidata",
-"en": "Majdel Zoun"
+"en": "Majdel Zoun",
+"country": "lebanon"
 },
 "مجدلون": {
 "lat": 33.9889,
 "lon": 36.1361,
 "precision": "town",
 "source": "wikidata",
-"en": "Majdaloun"
+"en": "Majdaloun",
+"country": "lebanon"
 },
 "محرونة": {
 "lat": 33.219,
 "lon": 35.3428,
 "precision": "town",
 "source": "wikidata",
-"en": "Mahrouna"
+"en": "Mahrouna",
+"country": "lebanon"
 },
 "مخيم البداوي": {
 "lat": 34.45,
@@ -3145,7 +3476,8 @@
 "lon": 35.2369,
 "precision": "town",
 "source": "wikidata",
-"en": "Burj el-Shemali"
+"en": "Burj el-Shemali",
+"country": "lebanon"
 },
 "مخيم البص": {
 "lat": 33.275,
@@ -3164,7 +3496,8 @@
 "lon": 35.5675,
 "precision": "town",
 "source": "wikidata",
-"en": "Al Rihan"
+"en": "Al Rihan",
+"country": "lebanon"
 },
 "مرج الخيام": {
 "lat": 33.3,
@@ -3177,7 +3510,8 @@
 "lon": 35.7461,
 "precision": "town",
 "source": "wikidata",
-"en": "Marj Ez Zouhour (Dnaibeh)"
+"en": "Marj Ez Zouhour (Dnaibeh)",
+"country": "lebanon"
 },
 "مرج حاروف": {
 "lat": 33.345,
@@ -3190,7 +3524,8 @@
 "lon": 35.5833,
 "precision": "town",
 "source": "wikidata",
-"en": "Marjayoun"
+"en": "Marjayoun",
+"country": "lebanon"
 },
 "مرجليوت": {
 "lat": 33.2144,
@@ -3209,21 +3544,24 @@
 "lon": 35.5167,
 "precision": "town",
 "source": "wikidata",
-"en": "Markaba"
+"en": "Markaba",
+"country": "lebanon"
 },
 "مروحين": {
 "lat": 33.1083,
 "lon": 35.2778,
 "precision": "town",
 "source": "wikidata",
-"en": "Marwahin"
+"en": "Marwahin",
+"country": "lebanon"
 },
 "مزارع شبعا": {
 "lat": 33.2833,
 "lon": 35.7,
 "precision": "town",
 "source": "wikidata",
-"en": "Shebaa farms"
+"en": "Shebaa farms",
+"country": "israel"
 },
 "مزرعة العاقبية": {
 "lat": 33.47,
@@ -3248,14 +3586,16 @@
 "lon": 35.3361,
 "precision": "town",
 "source": "wikidata",
-"en": "Mazraat El Mechref"
+"en": "Mazraat El Mechref",
+"country": "lebanon"
 },
 "مسغاف عام": {
 "lat": 33.2478,
 "lon": 35.5483,
 "precision": "town",
 "source": "wikidata",
-"en": "Misgav Am"
+"en": "Misgav Am",
+"country": "israel"
 },
 "مسكاف عام": {
 "lat": 33.248,
@@ -3286,7 +3626,8 @@
 "lon": 35.6517,
 "precision": "town",
 "source": "wikidata",
-"en": "Machgara"
+"en": "Machgara",
+"country": "lebanon"
 },
 "مطار رفيق الحريري": {
 "lat": 33.82,
@@ -3299,7 +3640,8 @@
 "lon": 35.2708,
 "precision": "town",
 "source": "wikidata",
-"en": "Ma'alot-Tarshiha"
+"en": "Ma'alot-Tarshiha",
+"country": "israel"
 },
 "معالوت تشريحا": {
 "lat": 33.0167,
@@ -3318,35 +3660,40 @@
 "lon": 35.3097,
 "precision": "town",
 "source": "wikidata",
-"en": "Maarakeh"
+"en": "Maarakeh",
+"country": "lebanon"
 },
 "معروب": {
 "lat": 33.2842,
 "lon": 35.3472,
 "precision": "town",
 "source": "wikidata",
-"en": "Maaroub"
+"en": "Maaroub",
+"country": "lebanon"
 },
 "معشوق": {
 "lat": 33.2672,
 "lon": 35.2242,
 "precision": "town",
 "source": "wikidata",
-"en": "معشوق"
+"en": "معشوق",
+"country": "lebanon"
 },
 "معيان باروخ": {
 "lat": 33.2411,
 "lon": 35.6088,
 "precision": "town",
 "source": "wikidata",
-"en": "Ma'ayan Baruch"
+"en": "Ma'ayan Baruch",
+"country": "israel"
 },
 "مغدوشة": {
 "lat": 33.5217,
 "lon": 35.3858,
 "precision": "town",
 "source": "wikidata",
-"en": "Maghdouché"
+"en": "Maghdouché",
+"country": "lebanon"
 },
 "مفرق معركة": {
 "lat": 33.27,
@@ -3359,14 +3706,16 @@
 "lon": 35.5536,
 "precision": "town",
 "source": "wikidata",
-"en": "Mlikh"
+"en": "Mlikh",
+"country": "lebanon"
 },
 "منارة": {
 "lat": 33.6481,
 "lon": 35.8861,
 "precision": "town",
 "source": "wikidata",
-"en": "Manara"
+"en": "Manara",
+"country": "lebanon"
 },
 "ميدون": {
 "lat": 33.5,
@@ -3379,7 +3728,8 @@
 "lon": 35.4381,
 "precision": "town",
 "source": "wikidata",
-"en": "Meiron"
+"en": "Meiron",
+"country": "israel"
 },
 "ميرون للمراقبة وادارة العمليات الجوية": {
 "lat": 32.99,
@@ -3392,21 +3742,24 @@
 "lon": 35.5256,
 "precision": "town",
 "source": "wikidata",
-"en": "Meiss Ej Jabal"
+"en": "Meiss Ej Jabal",
+"country": "lebanon"
 },
 "ميفدون": {
 "lat": 33.3486,
 "lon": 35.4764,
 "precision": "town",
 "source": "wikidata",
-"en": "Mayfadoun"
+"en": "Mayfadoun",
+"country": "lebanon"
 },
 "نتانيا": {
 "lat": 32.3286,
 "lon": 34.8567,
 "precision": "town",
 "source": "wikidata",
-"en": "Netanya"
+"en": "Netanya",
+"country": "israel"
 },
 "نحلة": {
 "lat": 34.03,
@@ -3425,7 +3778,8 @@
 "lon": 35.3861,
 "precision": "town",
 "source": "wikidata",
-"en": "Naffakhiyeh"
+"en": "Naffakhiyeh",
+"country": "lebanon"
 },
 "نمر الجمل": {
 "lat": 33.0965,
@@ -3439,35 +3793,40 @@
 "lon": 35.0925,
 "precision": "town",
 "source": "wikidata",
-"en": "Nahariya"
+"en": "Nahariya",
+"country": "israel"
 },
 "نهاريّا": {
 "lat": 33.0036,
 "lon": 35.0925,
 "precision": "town",
 "source": "wikidata",
-"en": "Nahariya"
+"en": "Nahariya",
+"country": "israel"
 },
 "نيوت مردخاي": {
 "lat": 33.1599,
 "lon": 35.5967,
 "precision": "town",
 "source": "wikidata",
-"en": "Neot Mordechai"
+"en": "Neot Mordechai",
+"country": "israel"
 },
 "هونين": {
 "lat": 33.2144,
 "lon": 35.5447,
 "precision": "town",
 "source": "wikidata",
-"en": "Margaliot"
+"en": "Margaliot",
+"country": "israel"
 },
 "وادي الحجير": {
 "lat": 33.3079,
 "lon": 35.4386,
 "precision": "town",
 "source": "wikidata",
-"en": "Oued Hejir"
+"en": "Oued Hejir",
+"country": "lebanon"
 },
 "وادي الخردلي": {
 "lat": 33.335,
@@ -3493,56 +3852,64 @@
 "lon": 35.3086,
 "precision": "town",
 "source": "wikidata",
-"en": "Ouadi Jilo"
+"en": "Ouadi Jilo",
+"country": "lebanon"
 },
 "وادي زبقين": {
 "lat": 33.1667,
 "lon": 35.2667,
 "precision": "town",
 "source": "wikidata",
-"en": "Zibqin"
+"en": "Zibqin",
+"country": "lebanon"
 },
 "يارؤن": {
 "lat": 33.0833,
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Yaroun"
+"en": "Yaroun",
+"country": "lebanon"
 },
 "يارون": {
 "lat": 33.0833,
 "lon": 35.4167,
 "precision": "town",
 "source": "wikidata",
-"en": "Yaroun"
+"en": "Yaroun",
+"country": "lebanon"
 },
 "يارين": {
 "lat": 33.1064,
 "lon": 35.2336,
 "precision": "town",
 "source": "wikidata",
-"en": "Jarine"
+"en": "Jarine",
+"country": "lebanon"
 },
 "ياطر": {
 "lat": 33.1538,
 "lon": 35.3286,
 "precision": "town",
 "source": "wikidata",
-"en": "Yater"
+"en": "Yater",
+"country": "lebanon"
 },
 "يانوح": {
 "lat": 33.2594,
 "lon": 35.3044,
 "precision": "town",
 "source": "wikidata",
-"en": "Yanouh (Sour)"
+"en": "Yanouh (Sour)",
+"country": "lebanon"
 },
 "يحمر": {
 "lat": 33.3125,
 "lon": 35.5175,
 "precision": "town",
 "source": "wikidata",
-"en": "Yohmor"
+"en": "Yohmor",
+"country": "lebanon"
 },
 "يحمر الشقيف": {
 "lat": 33.343,
@@ -3567,7 +3934,8 @@
 "lon": 35.4549,
 "precision": "town",
 "source": "wikidata",
-"en": "Yir'on"
+"en": "Yir'on",
+"country": "israel"
 },
 "يسود همعلاه": {
 "lat": 33.06,
@@ -3586,13 +3954,15 @@
 "lon": 35.5517,
 "precision": "town",
 "source": "wikidata",
-"en": "Yiftah"
+"en": "Yiftah",
+"country": "israel"
 },
 "يوكنعام": {
 "lat": 32.6594,
 "lon": 35.11,
 "precision": "town",
 "source": "wikidata",
-"en": "Yokneam Illit"
+"en": "Yokneam Illit",
+"country": "israel"
 }
 }
