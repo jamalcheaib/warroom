@@ -1,34 +1,10 @@
+import fs from 'fs';
+import path from 'path';
 import { NextResponse } from 'next/server';
 import { LossesData, EnemyLoss } from '@/lib/types';
 
-export const dynamic = 'force-dynamic';
-
-async function fetchFromGitHub(): Promise<LossesData | null> {
-  const repo = process.env.GITHUB_REPO || 'jamalcheaib/warroom';
-  const token = process.env.GITHUB_TOKEN;
-  const filePath = 'data/losses/current.json';
-
-  try {
-    const headers: Record<string, string> = {
-      Accept: 'application/vnd.github.v3+json',
-    };
-    if (token) headers.Authorization = `token ${token}`;
-
-    const res = await fetch(
-      `https://api.github.com/repos/${repo}/contents/${filePath}`,
-      { headers, next: { revalidate: 60 } }
-    );
-
-    if (res.status === 404) return null;
-    if (!res.ok) return null;
-
-    const data = await res.json();
-    const content = Buffer.from(data.content, 'base64').toString('utf-8');
-    return JSON.parse(content);
-  } catch {
-    return null;
-  }
-}
+// أرشيف ثابت: يُقرأ من ملف المستودع عند البناء، بلا اتصال بـGitHub ولا مفتاح.
+export const dynamic = 'force-static';
 
 function aggregateTotals(losses: EnemyLoss[]): Record<string, number> {
   const totals: Record<string, number> = {};
@@ -38,19 +14,13 @@ function aggregateTotals(losses: EnemyLoss[]): Record<string, number> {
   return totals;
 }
 
-export async function GET() {
-  const data = await fetchFromGitHub();
-
-  if (data) {
-    // Recalculate totals
+export function GET() {
+  const file = path.join(process.cwd(), 'data', 'losses', 'current.json');
+  if (fs.existsSync(file)) {
+    const data = JSON.parse(fs.readFileSync(file, 'utf-8')) as LossesData;
     data.totals = aggregateTotals(data.losses);
     return NextResponse.json(data);
   }
-
-  const empty: LossesData = {
-    lastUpdated: new Date().toISOString(),
-    losses: [],
-    totals: {},
-  };
+  const empty: LossesData = { lastUpdated: '', losses: [], totals: {} };
   return NextResponse.json(empty);
 }
