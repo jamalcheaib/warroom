@@ -62,7 +62,13 @@ export const PLACE_KIND: Record<PlaceKind, string> = {
   farm: 'مزرعة',
   position: 'موقع عسكري',
   area: 'منطقة',
+  region: 'منطقة واسعة',
+  river: 'نهر',
+  concept: 'مفهوم عملياتي',
 };
+
+/** أنواع لا تُمثَّل بنقطة على الخريطة */
+export const NO_POINT_KINDS: PlaceKind[] = ['region', 'river', 'concept'];
 
 /** كل أماكن الحدث (قد يذكر الحدث أكثر من مكان) */
 export function placesOf(o: { location?: string; lat?: number; lon?: number; geo?: GeoPrecision; kind?: PlaceKind; places?: Place[] }): Place[] {

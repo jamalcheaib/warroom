@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useMemo, useState } from 'react';
 import type { Category, DayFile, FieldEvent, Verification } from '@/lib/field-data';
-import { CATEGORY, CATEGORY_ORDER, PLACE_KIND, VERIFICATION, formatCoords, formatGap, placesOf, shortCode } from '@/lib/field-format';
+import { CATEGORY, CATEGORY_ORDER, NO_POINT_KINDS, PLACE_KIND, VERIFICATION, formatCoords, formatGap, placesOf, shortCode } from '@/lib/field-format';
 
 const FieldMap = dynamic(() => import('./FieldMap'), {
   ssr: false,
@@ -221,7 +221,7 @@ export default function FieldLog({ day }: { day: DayFile }) {
                           {i > 0 && <span className="text-wr-dim">·</span>}
                           <span className="text-sm font-semibold">{p.name}</span>
                           {p.kind && p.kind !== 'area' && <span className="text-[11px] text-wr-gold border border-wr-line2 px-1">{PLACE_KIND[p.kind]}</span>}
-                          {(i === 0 || p.lat == null) && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(p.lat, p.lon, p.geo)}</span>}
+                          {(i === 0 || p.lat == null) && !(p.kind && NO_POINT_KINDS.includes(p.kind)) && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(p.lat, p.lon, p.geo)}</span>}
                         </span>
                       ))}
                       <span className="mr-auto font-wrmono text-[11px] text-wr-dim">{shortCode(e.id)}</span>

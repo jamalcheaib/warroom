@@ -82,6 +82,8 @@ class Geocoder:
         self.gaz = load_geomelon(geomelon_dir) if geomelon_dir else {}
         self.used = {}
         self.unresolved = collections.Counter()
+        # أماكن معروفة بلا نقطة: مناطق واسعة، مفاهيم عملياتية، أنهار
+        self.nopoint = json.load(open(os.path.join(DATA, 'geo', 'manual.json'), encoding='utf-8')).get('pending', {})
 
     def _manual(self, name, depth=0):
         m = self.manual.get(name)
@@ -108,6 +110,8 @@ class Geocoder:
 
     def known(self, name):
         """هل الاسم مكان معروف (يدوياً أو في القاموس)؟ بلا أثر جانبي."""
+        if name in self.nopoint:
+            return True
         if self.used.get(name):
             return self.used[name].get('source') != 'excel'
         return bool(self._manual(name) or self._gaz(name))
@@ -119,6 +123,10 @@ class Geocoder:
             if self.used[name] is None:
                 self.unresolved[name] += 1
             return self.used[name]
+        if name in self.nopoint:
+            r = {'lat': None, 'lon': None, 'precision': None, 'source': 'manual', 'kind': self.nopoint[name].get('kind'), 'nopoint': True}
+            self.used[name] = r
+            return r
         r = self._manual(name) or self._gaz(name)
         if r is None and name in self.cache and self.cache[name].get('source') != 'excel':
             r = self.cache[name]
@@ -227,10 +235,10 @@ def main():
         for n in names:
             g = geo.resolve(n, excel_lat, excel_lon) if len(names) == 1 else geo.resolve(n)
             p = {'name': n}
-            if g:
+            if g and g.get('lat') is not None:
                 p.update({'lat': g['lat'], 'lon': g['lon'], 'geo': g['precision']})
-                if g.get('kind'):
-                    p['kind'] = g['kind']
+            if g and g.get('kind'):
+                p['kind'] = g['kind']
             places.append(p)
         first = next((p for p in places if 'lat' in p), places[0] if places else {})
         return {
@@ -378,7 +386,7 @@ def main():
         json.dump({'days': day_list, 'subtypes': subs_list, 'locations': locs_list, 'points': pts},
                   fh, ensure_ascii=False, separators=(',', ':'))
 
-    places = {k: v for k, v in sorted(geo.used.items()) if v}
+    places = {k: v for k, v in sorted(geo.used.items()) if v and v.get('lat') is not None}
     with open(os.path.join(DATA, 'geo', 'places.json'), 'w', encoding='utf-8') as fh:
         json.dump(places, fh, ensure_ascii=False, indent=0)
     with open(os.path.join(DATA, 'geo', 'location-report.json'), 'w', encoding='utf-8') as fh:

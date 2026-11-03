@@ -4,7 +4,7 @@ import path from 'path';
 export type Category = 'resistance' | 'enemy' | 'political';
 export type Verification = 'official' | 'multi' | 'single';
 export type GeoPrecision = 'town' | 'approx' | 'area';
-export type PlaceKind = 'farm' | 'position' | 'area';
+export type PlaceKind = 'farm' | 'position' | 'area' | 'region' | 'river' | 'concept';
 
 export interface Place {
   name: string;

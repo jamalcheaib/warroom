@@ -27,11 +27,15 @@ KINDS = {
     'مزرعة': 'farm',
     'موقع عسكري': 'position',
     'منطقة': 'area',
-    'نهر / معلم طبيعي': 'area',
+    'منطقة واسعة (بلا نقطة)': 'region',
+    'نهر / معلم طبيعي': 'river',
+    'مفهوم عملياتي (بلا نقطة)': 'concept',
     'اسم آخر لمكان موجود': 'alias',
     'ليس مكاناً (يُحذف)': 'drop',
 }
-KIND_BACK = {'farm': 'مزرعة', 'position': 'موقع عسكري', 'area': 'منطقة'}
+KIND_BACK = {'farm': 'مزرعة', 'position': 'موقع عسكري', 'area': 'منطقة', 'region': 'منطقة واسعة (بلا نقطة)',
+             'river': 'نهر / معلم طبيعي', 'concept': 'مفهوم عملياتي (بلا نقطة)'}
+NO_POINT = {'region', 'concept'}
 
 HEAD = ['الاسم كما ورد', 'عدد الذكر', 'أول ذكر', 'رابط السجل', 'مثال من نص الخبر',
         'النوع', 'خط العرض', 'خط الطول', 'اسم بديل لـ', 'ملاحظات',
@@ -40,7 +44,7 @@ COL = {h: i + 1 for i, h in enumerate(HEAD)}
 
 # ملاحظات أولية من توضيحات جمال شعيب
 PREFILL = {
-    'الليطاني': ('نهر / معلم طبيعي', '', '', '', 'نهر يقسم الجنوب جغرافياً؛ «جنوب الليطاني» الأراضي بين النهر وفلسطين المحتلة، و«شمال النهر» ما يقع شماله'),
+    'الليطاني': ('نهر / معلم طبيعي', '', '', '', 'نهر يقسم الجنوب جغرافياً؛ «جنوب الليطاني» الأراضي بين النهر وفلسطين المحتلة، و«شمال النهر» ما يقع شماله. لا يُمثَّل بنقطة واحدة'),
     'نهر الليطاني': ('اسم آخر لمكان موجود', '', '', 'الليطاني', ''),
     'جنوب الليطاني': ('منطقة', '', '', '', 'الأراضي الواقعة بين نهر الليطاني وحدود فلسطين المحتلة'),
     'الشمال': ('اسم آخر لمكان موجود', '', '', 'شمال فلسطين المحتلة', 'حين ترد «الشمال» فهي في الأغلب شمال فلسطين المحتلة'),
@@ -65,7 +69,8 @@ def collect():
 def export(out):
     seen = collect()
     places = json.load(open(os.path.join(GEO, 'places.json'), encoding='utf-8'))
-    manual = json.load(open(os.path.join(GEO, 'manual.json'), encoding='utf-8'))['places']
+    manual_all = json.load(open(os.path.join(GEO, 'manual.json'), encoding='utf-8'))
+    manual = manual_all['places']
 
     wb = openpyxl.Workbook()
     intro = wb.active
@@ -84,6 +89,8 @@ def export(out):
         '  يمكن لصق الرقمين معاً في خانة «خط العرض» بصيغة: 33.0965, 35.1744',
         '• «اسم آخر لمكان موجود»: اكتب في «اسم بديل لـ» الاسم الصحيح (مثل: ديين ← دبين).',
         '• «ليس مكاناً»: يُحذف من خانة الموقع في كل الأحداث.',
+        '• «منطقة واسعة» و«مفهوم عملياتي» (مثل جنوب الليطاني، الخط الأصفر): يظهر الاسم ونوعه على البطاقة دون نقطة على الخريطة.',
+        '• «نهر / معلم طبيعي»: بلا نقطة إن تُركت الإحداثيات فارغة، أو بنقطة إن وضعت إحداثيات لمقطع محدد.',
         '• «ملاحظات»: أي توضيح (مثل: مزرعة شرق الجرمق). تُحفظ مع المكان.',
         '• اترك الصف فارغاً إن لم تكن متأكداً؛ لن يتغير شيء.',
         '',
@@ -132,7 +139,14 @@ def export(out):
                 kind, lat, lon, alias, note, current, source]
 
     missing = sorted(((k, v) for k, v in seen.items() if v['lat'] is None), key=lambda x: -x[1]['n'])
-    sheet('بلا إحداثيات', [row(k, v, *PREFILL.get(k, ('', '', '', '', ''))) for k, v in missing], 'B54708')
+    pending = manual_all.get('pending', {})
+    def pre(k):
+        if k in PREFILL:
+            return PREFILL[k]
+        if k in pending:
+            return (KIND_BACK.get(pending[k].get('kind'), ''), '', '', '', pending[k].get('note', ''))
+        return ('', '', '', '', '')
+    sheet('بلا إحداثيات', [row(k, v, *pre(k)) for k, v in missing], 'B54708')
 
     guessed = []
     for k, v in sorted(seen.items(), key=lambda x: -x[1]['n']):
@@ -197,13 +211,19 @@ def apply(path):
                 if note:
                     fixes.setdefault('notes', {})[name] = note
                 continue
+            if kind in NO_POINT:
+                manual.setdefault('pending', {})[name] = {'kind': kind, **({'note': note} if note else {})}
+                manual['places'].pop(name, None)
+                stats['بلا نقطة'] += 1
+                continue
             entry = manual['places'].get(name)
             entry = dict(entry) if isinstance(entry, dict) and 'alias' not in entry else {}
             if lat is not None and lon is not None:
                 if not (29 < lat < 37 and 33 < lon < 39):
                     print(f'  ! إحداثيات خارج المنطقة، تُركت: {name} {lat}, {lon}')
                     continue
-                entry.update({'lat': lat, 'lon': lon, 'precision': 'area' if kind == 'area' else 'town'})
+                entry.update({'lat': lat, 'lon': lon, 'precision': 'area' if kind in ('area', 'river') else 'town'})
+                manual.get('pending', {}).pop(name, None)
                 stats['إحداثيات'] += 1
             elif 'lat' not in entry:
                 old = manual['places'].get(name)
