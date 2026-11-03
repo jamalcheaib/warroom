@@ -29,6 +29,7 @@ export interface FieldEvent {
   geo?: GeoPrecision;
   kind?: PlaceKind;
   places?: Place[];
+  mentions?: Place[];
   source?: string;
   url?: string;
   duplicates?: string[];
@@ -49,6 +50,7 @@ export interface ImpactItem {
   geo?: GeoPrecision;
   kind?: PlaceKind;
   places?: Place[];
+  mentions?: Place[];
   source?: string;
   url?: string;
   duplicates?: string[];
@@ -97,13 +99,13 @@ export interface PlaceRecord {
   kind?: PlaceKind;
   source?: string;
   note?: string;
-  counts: Partial<Record<Category | 'impact', number>>;
+  counts: Partial<Record<Category | 'impact' | 'mention', number>>;
   months: Record<string, number>;
   first: string;
   last: string;
   total: number;
   side: 'lb' | 'il' | 'none';
-  refs: [string, string][];
+  refs: ([string, string] | [string, string, 'm'])[];
 }
 
 /** الحد الأدنى من الذكر لتوليد صفحة مكان */

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T22:12:56+00:00",
+ "generatedAt": "2026-11-03T22:22:47+00:00",
  "sourceFile": "a7076b22-warroom_2026-02-28_2026-06-19_v6_1.xlsx",
  "firstDate": "2026-02-28",
  "lastDate": "2026-06-19",
@@ -10,6 +10,8 @@
   "resistance": 2739,
   "impact": 2407,
   "geolocated": 7884,
+  "mentions": 3441,
+  "withMentions": 2401,
   "withLocation": 8232
  },
  "verification": {

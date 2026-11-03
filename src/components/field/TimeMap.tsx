@@ -28,6 +28,7 @@ export default function TimeMap() {
   const [mode, setMode] = useState<Mode>('week');
   const [layers, setLayers] = useState<Set<number>>(new Set([0, 1, 3]));
   const [playing, setPlaying] = useState(false);
+  const [showMentions, setShowMentions] = useState(true);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -59,15 +60,15 @@ export default function TimeMap() {
   const from = mode === 'day' ? day : mode === 'week' ? Math.max(0, day - 6) : 0;
   const visible = useMemo(() => {
     if (!data) return [];
-    return data.points.filter((p) => p[0] >= from && p[0] <= day && layers.has(p[1]));
-  }, [data, from, day, layers]);
+    return data.points.filter((p) => p[0] >= from && p[0] <= day && layers.has(p[1]) && (showMentions || p[6] !== 3));
+  }, [data, from, day, layers, showMentions]);
 
   const stats = useMemo(() => {
     const byLayer = [0, 0, 0, 0];
     const byLoc = new Map<number, number>();
     for (const p of visible) {
-      byLayer[p[1]]++;
-      if (p[6] !== 2 && p[1] < 3) byLoc.set(p[5], (byLoc.get(p[5]) ?? 0) + 1);
+      if (p[6] !== 3) byLayer[p[1]]++;
+      if (p[6] < 2 && p[1] < 3) byLoc.set(p[5], (byLoc.get(p[5]) ?? 0) + 1);
     }
     return { byLayer, top: [...byLoc.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8) };
   }, [visible]);
@@ -98,13 +99,16 @@ export default function TimeMap() {
             {visible.map((p, i) => {
               const L = LAYERS[p[1]];
               const area = p[6] === 2;
+              const mention = p[6] === 3;
               const today = p[0] === day;
               return (
                 <CircleMarker
                   key={`${p[0]}-${i}`}
                   center={[p[2], p[3]]}
                   radius={area ? 12 : today ? 6 : 4}
-                  pathOptions={{ color: L.color, fillColor: L.color, weight: today ? 1.5 : 0.5, opacity: today ? 1 : 0.5, fillOpacity: area ? 0.08 : today ? 0.7 : 0.3 }}
+                  pathOptions={mention
+                    ? { color: L.color, weight: today ? 1.5 : 0.8, opacity: today ? 0.9 : 0.4, fillOpacity: 0, dashArray: '2 3' }
+                    : { color: L.color, fillColor: L.color, weight: today ? 1.5 : 0.5, opacity: today ? 1 : 0.5, fillOpacity: area ? 0.08 : today ? 0.7 : 0.3 }}
                 >
                   <Popup>
                     <div dir="rtl" className="text-right" style={{ minWidth: 180 }}>
@@ -158,7 +162,11 @@ export default function TimeMap() {
               <span className="mr-auto font-wrmono" style={{ color: L.color }}>{stats.byLayer[L.key]}</span>
             </label>
           ))}
-          <p className="text-xs text-wr-muted leading-6 border-t border-wr-soft pt-3">النقاط المضيئة: أحداث اليوم المحدد. الباهتة: الأيام السابقة ضمن النطاق. الدوائر الكبيرة الشفافة: مناطق لا بلدات محددة.</p>
+          <label className="flex items-center gap-2.5 text-sm cursor-pointer border-t border-wr-soft pt-3">
+            <input type="checkbox" checked={showMentions} onChange={() => setShowMentions(!showMentions)} className="w-[18px] h-[18px] accent-[#C9A227]" />
+            أماكن مذكورة في نص الخبر
+          </label>
+          <p className="text-xs text-wr-muted leading-6">النقاط المضيئة: أحداث اليوم المحدد. الباهتة: الأيام السابقة ضمن النطاق. الدوائر الكبيرة الشفافة: مناطق. الدوائر المفرغة: أماكن مذكورة في النص غير الموقع المسجّل.</p>
         </div>
         <div className="bg-wr-panel/95 border border-wr-line p-4 flex flex-col gap-2">
           <h2 className="font-kufi text-base font-bold">الأكثر ذكراً في النطاق</h2>

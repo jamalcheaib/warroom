@@ -14,17 +14,19 @@ export default function PlacePage({ slug }: { slug: string }) {
   const idx = getIndex();
 
   // اجلب الأحداث والأثر من ملفات الأيام
-  const items: ({ t: 'e'; o: FieldEvent } | { t: 'i'; o: ImpactItem })[] = [];
-  const wanted = new Map<string, Set<string>>();
-  for (const [d, id] of place.refs) {
-    if (!wanted.has(d)) wanted.set(d, new Set());
-    wanted.get(d)!.add(id);
+  const items: ({ t: 'e'; o: FieldEvent; m: boolean } | { t: 'i'; o: ImpactItem; m: boolean })[] = [];
+  const wanted = new Map<string, Map<string, boolean>>();
+  for (const r of place.refs) {
+    const [d, id] = r;
+    if (!wanted.has(d)) wanted.set(d, new Map());
+    const cur = wanted.get(d)!;
+    cur.set(id, (cur.get(id) ?? true) && r[2] === 'm');
   }
   for (const [d, ids] of wanted) {
     const day = getDay(d);
     if (!day) continue;
-    for (const e of day.events) if (ids.has(e.id)) items.push({ t: 'e', o: e });
-    for (const i of day.impact) if (ids.has(i.id)) items.push({ t: 'i', o: i });
+    for (const e of day.events) if (ids.has(e.id)) items.push({ t: 'e', o: e, m: ids.get(e.id)! });
+    for (const i of day.impact) if (ids.has(i.id)) items.push({ t: 'i', o: i, m: ids.get(i.id)! });
   }
   items.sort((a, b) => (b.o.date + b.o.time).localeCompare(a.o.date + a.o.time));
   const byDate = new Map<string, typeof items>();
@@ -44,6 +46,7 @@ export default function PlacePage({ slug }: { slug: string }) {
     { v: c.political ?? 0, l: 'سياسي', color: CATEGORY.political.text },
     { v: c.impact ?? 0, l: 'أثر معلن', color: GOLD },
   ];
+  const mentioned = c.mention ?? 0;
 
   return (
     <PageFrame>
@@ -56,7 +59,7 @@ export default function PlacePage({ slug }: { slug: string }) {
               <Kicker>{kindLabel}{place.lat != null ? ` · ${formatCoords(place.lat, place.lon, place.geo === 'town' ? undefined : place.geo)}` : ''}</Kicker>
               <h1 className="font-kufi text-3xl md:text-[42px] font-extrabold leading-tight">{place.name}</h1>
               {place.note && <p className="text-wr-sub leading-7 max-w-[680px]">{place.note}</p>}
-              <p className="text-sm text-wr-muted">أول ذكر: {formatDateLong(place.first)} · آخر ذكر: {formatDateLong(place.last)}</p>
+              <p className="text-sm text-wr-muted">أول ذكر: {formatDateLong(place.first)} · آخر ذكر: {formatDateLong(place.last)}{mentioned ? ` · منها ${fmt(mentioned)} ذكراً في نص أخبار عن أماكن أخرى` : ''}</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-wr-line2 border border-wr-line2">
               {readouts.map((r, i) => (
@@ -102,7 +105,7 @@ export default function PlacePage({ slug }: { slug: string }) {
                 <Link href={`/log/${d}`} className="font-kufi font-bold hover:text-wr-gold">{formatDateLong(d)}</Link>
                 <span className="font-wrmono text-xs text-wr-muted">{list.length}</span>
               </h3>
-              {list.map(({ t, o }) => {
+              {list.map(({ t, o, m }) => {
                 const color = t === 'e' ? CATEGORY[(o as FieldEvent).category].color : GOLD;
                 const label = t === 'e' ? (o as FieldEvent).subtype : `أثر معلن · ${(o as ImpactItem).type}`;
                 return (
@@ -110,7 +113,7 @@ export default function PlacePage({ slug }: { slug: string }) {
                     <span className="font-wrmono text-[13px] text-wr-dim w-11 flex-none pt-0.5">{o.time}</span>
                     <span className="w-1 self-stretch flex-none" style={{ background: color }} />
                     <span className="flex flex-col gap-1 min-w-0">
-                      <span className="text-xs font-semibold" style={{ color: t === 'e' ? CATEGORY[(o as FieldEvent).category].text : GOLD }}>{label}</span>
+                      <span className="text-xs font-semibold flex flex-wrap gap-2" style={{ color: t === 'e' ? CATEGORY[(o as FieldEvent).category].text : GOLD }}>{label}{m && <span className="text-wr-muted font-normal border border-dashed border-wr-line2 px-1.5">مذكور في النص</span>}</span>
                       <span className="text-[15px] leading-7 line-clamp-3">{o.text}</span>
                       <span className="text-xs text-wr-muted">{t === 'e' ? VERIFICATION[(o as FieldEvent).verification].label + ' · ' : ''}{o.source}</span>
                     </span>
