@@ -5,6 +5,7 @@ import SiteHeader from './SiteHeader';
 import DayStrip from './DayStrip';
 import SitrepPanel from './SitrepPanel';
 import FieldLog from './FieldLog';
+import { Footer, PageFrame } from './ui';
 
 export default function LogPage({ date }: { date: string }) {
   const idx = getIndex();
@@ -16,7 +17,7 @@ export default function LogPage({ date }: { date: string }) {
   const no = dayNumber(date);
 
   return (
-    <div className="wr-field wr-grid min-h-screen text-wr-text font-plex" dir="rtl">
+    <PageFrame>
       <SiteHeader
         active="log"
         band={{ right: `موقف ميداني يومي · SITREP ${no}`, left: `الجبهة اللبنانية · ${date} · توقيت بيروت` }}
@@ -26,15 +27,7 @@ export default function LogPage({ date }: { date: string }) {
         <SitrepPanel day={day} dayNo={no} prev={prev} next={next} />
         <FieldLog day={day} />
       </main>
-      <footer className="border-t border-wr-line bg-wr-deep/95">
-        <div className="max-w-[1320px] mx-auto px-4 md:px-6 py-6 flex flex-wrap justify-between gap-3 text-[13px] text-wr-muted">
-          <span>غرفة الحرب · رصد وتوثيق: جمال شعيب</span>
-          <span>
-            {fmt(idx.totals.events)} حدثاً موثّقاً من {formatDateLong(idx.firstDate)} إلى {formatDateLong(idx.lastDate)} · المصادر:{' '}
-            {Object.keys(idx.sources).join(' · ')}
-          </span>
-        </div>
-      </footer>
-    </div>
+      <Footer text={`${fmt(idx.totals.events)} حدثاً موثّقاً من ${formatDateLong(idx.firstDate)} إلى ${formatDateLong(idx.lastDate)} · المصادر: ${Object.keys(idx.sources).join(' · ')}`} />
+    </PageFrame>
   );
 }

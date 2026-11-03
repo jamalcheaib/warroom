@@ -262,6 +262,35 @@ def main():
     with open(os.path.join(DATA, 'index.json'), 'w', encoding='utf-8') as fh:
         json.dump(index, fh, ensure_ascii=False, indent=1)
 
+    # بيانات الخريطة الزمنية (مضغوطة) — public/data/map.json
+    day_list = [d['date'] for d in index_days]
+    day_pos = {d: i for i, d in enumerate(day_list)}
+    subs_list, locs_list = [], []
+    sub_pos, loc_pos = {}, {}
+    def pos(table, lookup, v):
+        if v not in lookup:
+            lookup[v] = len(table)
+            table.append(v)
+        return lookup[v]
+    CAT_N = {'enemy': 0, 'resistance': 1, 'political': 2}
+    GEO_N = {'town': 0, 'approx': 1, 'area': 2}
+    pts = []
+    for e in sorted(events, key=lambda x: (x['date'], x['time'])):
+        if e['lat'] is None:
+            continue
+        pts.append([day_pos[e['date']], CAT_N[e['category']], e['lat'], e['lon'],
+                    pos(subs_list, sub_pos, e['subtype']), pos(locs_list, loc_pos, e['location']), GEO_N.get(e['geo'], 1)])
+    for im in sorted(impacts, key=lambda x: (x['date'], x['time'])):
+        if im['lat'] is None:
+            continue
+        pts.append([day_pos[im['date']], 3, im['lat'], im['lon'],
+                    pos(subs_list, sub_pos, im['type']), pos(locs_list, loc_pos, im['location']), GEO_N.get(im['geo'], 1)])
+    pub = os.path.join(ROOT, 'public', 'data')
+    os.makedirs(pub, exist_ok=True)
+    with open(os.path.join(pub, 'map.json'), 'w', encoding='utf-8') as fh:
+        json.dump({'days': day_list, 'subtypes': subs_list, 'locations': locs_list, 'points': pts},
+                  fh, ensure_ascii=False, separators=(',', ':'))
+
     places = {k: v for k, v in sorted(geo.used.items()) if v}
     with open(os.path.join(DATA, 'geo', 'places.json'), 'w', encoding='utf-8') as fh:
         json.dump(places, fh, ensure_ascii=False, indent=0)

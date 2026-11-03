@@ -1,8 +1,10 @@
 import Link from 'next/link';
 
 const NAV = [
-  { href: '/', key: 'log', label: 'السجل الميداني' },
-  { href: '/losses', key: 'losses', label: 'الخسائر الإسرائيلية' },
+  { href: '/', key: 'home', label: 'لوحة الجبهة' },
+  { href: '/log', key: 'log', label: 'السجل الميداني' },
+  { href: '/map', key: 'map', label: 'الخريطة' },
+  { href: '/impact', key: 'impact', label: 'الأثر المعلن' },
   { href: '/analysis', key: 'analysis', label: 'تحليلات' },
   { href: '/archive', key: 'archive', label: 'الأرشيف' },
 ];

@@ -17,7 +17,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${baseUrl}/analysis`, lastModified: generated, changeFrequency: 'weekly', priority: 0.7 },
     ...articles.map((a) => ({ url: `${baseUrl}/analysis/${a.slug}`, lastModified: new Date(a.date), changeFrequency: 'monthly' as const, priority: 0.6 })),
-    { url: `${baseUrl}/losses`, lastModified: generated, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${baseUrl}/log`, lastModified: generated, changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/map`, lastModified: generated, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/impact`, lastModified: generated, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/archive`, lastModified: generated, changeFrequency: 'yearly', priority: 0.3 },
   ];
 }

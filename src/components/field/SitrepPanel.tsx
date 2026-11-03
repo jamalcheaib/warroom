@@ -1,17 +1,6 @@
 import type { DayFile } from '@/lib/field-data';
+import { Corners } from './ui';
 import { CATEGORY, fmt, formatDateLong, weekday, formatCoords } from '@/lib/field-format';
-
-function Corners() {
-  const c = 'absolute w-[18px] h-[18px] border-wr-gold pointer-events-none';
-  return (
-    <>
-      <span aria-hidden="true" className={`${c} -top-px -right-px border-t-2 border-r-2`} />
-      <span aria-hidden="true" className={`${c} -top-px -left-px border-t-2 border-l-2`} />
-      <span aria-hidden="true" className={`${c} -bottom-px -right-px border-b-2 border-r-2`} />
-      <span aria-hidden="true" className={`${c} -bottom-px -left-px border-b-2 border-l-2`} />
-    </>
-  );
-}
 
 export default function SitrepPanel({ day, dayNo, prev, next }: { day: DayFile; dayNo: number; prev?: string; next?: string }) {
   const ev = day.events;
