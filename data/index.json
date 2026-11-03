@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T21:31:45+00:00",
+ "generatedAt": "2026-11-03T21:42:14+00:00",
  "sourceFile": "a7076b22-warroom_2026-02-28_2026-06-19_v6_1.xlsx",
  "firstDate": "2026-02-28",
  "lastDate": "2026-06-19",
@@ -9,7 +9,7 @@
   "political": 547,
   "resistance": 2739,
   "impact": 2407,
-  "geolocated": 7893,
+  "geolocated": 7903,
   "withLocation": 8232
  },
  "verification": {

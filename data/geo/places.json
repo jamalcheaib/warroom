@@ -931,9 +931,9 @@
 "en": "Majdel el-Aqoura"
 },
 "المحمودية": {
-"lat": 33.43,
-"lon": 35.575,
-"precision": "approx",
+"lat": 33.3879,
+"lon": 35.5533,
+"precision": "town",
 "source": "manual",
 "kind": "farm"
 },
@@ -3492,6 +3492,13 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Naffakhiyeh"
+},
+"نمر الجمل": {
+"lat": 33.0965,
+"lon": 35.1744,
+"precision": "town",
+"source": "manual",
+"kind": "position"
 },
 "نهاريا": {
 "lat": 33.0036,
