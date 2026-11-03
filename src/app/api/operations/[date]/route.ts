@@ -1,65 +1,33 @@
-import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { NextResponse } from 'next/server';
 import { DailyOperations } from '@/lib/types';
 
-export const dynamic = 'force-dynamic';
+// أرشيف ثابت (28 شباط – 17 نيسان 2026): يُولَّد عند البناء من data/operations،
+// بلا اتصال بـGitHub ولا مفتاح.
+export const dynamic = 'force-static';
+export const dynamicParams = false;
 
-async function fetchFromGitHub(date: string): Promise<DailyOperations | null> {
-  const repo = process.env.GITHUB_REPO || 'jamalcheaib/warroom';
-  const token = process.env.GITHUB_TOKEN;
-  const filePath = `data/operations/${date}.json`;
+const FIRST = '2026-02-28';
+const LAST = '2026-04-17';
 
-  try {
-    const headers: Record<string, string> = {
-      Accept: 'application/vnd.github.v3+json',
-    };
-    if (token) headers.Authorization = `token ${token}`;
-
-    const res = await fetch(
-      `https://api.github.com/repos/${repo}/contents/${filePath}`,
-      { headers, next: { revalidate: 60 } }
-    );
-
-    if (res.status === 404) return null;
-    if (!res.ok) return null;
-
-    const data = await res.json();
-    const content = Buffer.from(data.content, 'base64').toString('utf-8');
-    return JSON.parse(content);
-  } catch {
-    return null;
+export function generateStaticParams() {
+  const out: { date: string }[] = [];
+  const d = new Date(`${FIRST}T00:00:00Z`);
+  const end = new Date(`${LAST}T00:00:00Z`);
+  while (d <= end) {
+    out.push({ date: d.toISOString().slice(0, 10) });
+    d.setUTCDate(d.getUTCDate() + 1);
   }
+  return out;
 }
 
-export async function GET(
-  _request: NextRequest,
-  { params }: { params: Promise<{ date: string }> }
-) {
+export async function GET(_request: Request, { params }: { params: Promise<{ date: string }> }) {
   const { date } = await params;
-
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-    return NextResponse.json({ error: 'Invalid date format. Use YYYY-MM-DD' }, { status: 400 });
+  const file = path.join(process.cwd(), 'data', 'operations', `${date}.json`);
+  if (fs.existsSync(file)) {
+    return NextResponse.json(JSON.parse(fs.readFileSync(file, 'utf-8')) as DailyOperations);
   }
-
-  // Try local file first (works in dev)
-  const filePath = path.join(process.cwd(), 'data', 'operations', `${date}.json`);
-  if (fs.existsSync(filePath)) {
-    const raw = fs.readFileSync(filePath, 'utf-8');
-    return NextResponse.json(JSON.parse(raw));
-  }
-
-  // Try GitHub (works on Vercel where filesystem is read-only)
-  const ghData = await fetchFromGitHub(date);
-  if (ghData) {
-    return NextResponse.json(ghData);
-  }
-
-  // Empty
-  const empty: DailyOperations = {
-    date,
-    operations: [],
-    lastUpdated: new Date().toISOString(),
-  };
+  const empty: DailyOperations = { date, operations: [], lastUpdated: '' };
   return NextResponse.json(empty);
 }
