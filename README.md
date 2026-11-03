@@ -31,6 +31,14 @@ curl -sL https://registry.npmjs.org/@geomelon/lebanon/-/lebanon-1.0.0.tgz | tar 
 curl -sL https://registry.npmjs.org/@geomelon/israel/-/israel-1.0.0.tgz | tar xz -C geomelon/israel
 ```
 
+### مراجعة الأماكن عبر Excel
+
+```bash
+python3 scripts/places_sheet.py export places-review.xlsx   # أماكن بلا إحداثيات + تقديرات للتحقق + مطابقات القاموس
+python3 scripts/places_sheet.py apply  places-review.xlsx   # يكتب التعديلات إلى manual.json و location-fixes.json
+python3 scripts/import_xlsx.py path/to/warroom.xlsx --geomelon path/to/geomelon
+```
+
 ## الصفحات
 
 | المسار | المحتوى |

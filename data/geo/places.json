@@ -1609,6 +1609,13 @@
 "source": "wikidata",
 "en": "Jenta"
 },
+"جنوب الليطاني": {
+"lat": 33.22,
+"lon": 35.38,
+"precision": "area",
+"source": "manual",
+"kind": "area"
+},
 "جنوب لبنان": {
 "lat": 33.28,
 "lon": 35.4,
@@ -2312,6 +2319,13 @@
 "lon": 35.75,
 "precision": "area",
 "source": "manual"
+},
+"شمال فلسطين المحتلة": {
+"lat": 33.0,
+"lon": 35.4,
+"precision": "area",
+"source": "manual",
+"kind": "area"
 },
 "شمسطار": {
 "lat": 33.9667,
