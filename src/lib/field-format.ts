@@ -1,4 +1,4 @@
-import type { Category, Verification, GeoPrecision } from './field-data';
+import type { Category, Verification, GeoPrecision, Place, PlaceKind } from './field-data';
 
 export const MONTHS = [
   'كانون الثاني', 'شباط', 'آذار', 'نيسان', 'أيار', 'حزيران',
@@ -56,6 +56,18 @@ export function formatCoords(lat?: number, lon?: number, geo?: GeoPrecision): st
   if (geo === 'area') return `منطقة · ${c}`;
   if (geo === 'approx') return `≈ ${c}`;
   return c;
+}
+
+export const PLACE_KIND: Record<PlaceKind, string> = {
+  farm: 'مزرعة',
+  position: 'موقع عسكري',
+  area: 'منطقة',
+};
+
+/** كل أماكن الحدث (قد يذكر الحدث أكثر من مكان) */
+export function placesOf(o: { location?: string; lat?: number; lon?: number; geo?: GeoPrecision; kind?: PlaceKind; places?: Place[] }): Place[] {
+  if (o.places && o.places.length) return o.places;
+  return o.location ? [{ name: o.location, lat: o.lat, lon: o.lon, geo: o.geo, kind: o.kind }] : [];
 }
 
 export function shortCode(id: string): string {

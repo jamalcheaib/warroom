@@ -1,6 +1,6 @@
 import type { DayFile } from '@/lib/field-data';
 import { Corners } from './ui';
-import { CATEGORY, fmt, formatDateLong, weekday, formatCoords } from '@/lib/field-format';
+import { CATEGORY, placesOf, fmt, formatDateLong, weekday, formatCoords } from '@/lib/field-format';
 
 export default function SitrepPanel({ day, dayNo, prev, next }: { day: DayFile; dayNo: number; prev?: string; next?: string }) {
   const ev = day.events;
@@ -13,10 +13,11 @@ export default function SitrepPanel({ day, dayNo, prev, next }: { day: DayFile; 
     const h = Math.min(23, parseInt(e.time.slice(0, 2), 10) || 0);
     hours[h][e.category]++;
     if (e.category === 'enemy') enemySub.set(e.subtype, (enemySub.get(e.subtype) ?? 0) + 1);
-    if (e.location && e.geo !== 'area') {
-      const l = locs.get(e.location) ?? { n: 0, lat: e.lat, lon: e.lon };
+    for (const p of placesOf(e)) {
+      if (p.geo === 'area') continue;
+      const l = locs.get(p.name) ?? { n: 0, lat: p.lat, lon: p.lon };
       l.n++;
-      locs.set(e.location, l);
+      locs.set(p.name, l);
     }
   }
   const topEnemy = [...enemySub.entries()].sort((a, b) => b[1] - a[1])[0];

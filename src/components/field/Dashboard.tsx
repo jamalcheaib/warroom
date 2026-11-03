@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getDay, getIndex } from '@/lib/field-data';
-import { CATEGORY, CATEGORY_ORDER, MONTHS, VERIFICATION, fmt, formatDateLong, formatDayShort } from '@/lib/field-format';
+import { CATEGORY, CATEGORY_ORDER, MONTHS, VERIFICATION, fmt, formatDateLong, formatDayShort, placesOf } from '@/lib/field-format';
 import { ANNOTATIONS } from '@/data/annotations';
 import { articles } from '@/data/articles';
 import SiteHeader from './SiteHeader';
@@ -192,7 +192,7 @@ export default function Dashboard() {
                     <span className="text-[15px] leading-7 line-clamp-3">{e.text}</span>
                     <span className="flex flex-wrap gap-2 text-xs text-wr-muted">
                       <span className="bg-wr-soft px-2 py-0.5">{e.subtype}</span>
-                      {e.location && <span className="bg-wr-soft px-2 py-0.5">{e.location}</span>}
+                      {placesOf(e).map((p) => <span key={p.name} className="bg-wr-soft px-2 py-0.5">{p.name}</span>)}
                       <span className="border border-wr-line2 px-2">{VERIFICATION[e.verification].label}</span>
                       <span>{e.source}</span>
                     </span>

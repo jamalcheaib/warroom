@@ -244,13 +244,6 @@
 "source": "wikidata",
 "en": "Bayyada"
 },
-"البياضة وشمع": {
-"lat": 33.1628,
-"lon": 35.1817,
-"precision": "town",
-"source": "wikidata",
-"en": "Bayyada"
-},
 "البيسارية": {
 "lat": 33.4444,
 "lon": 35.3236,
@@ -416,13 +409,6 @@
 "en": "Hadera"
 },
 "الخيام": {
-"lat": 33.3272,
-"lon": 35.6111,
-"precision": "town",
-"source": "wikidata",
-"en": "Khiam"
-},
-"الخيام بين الملعب والمعتقل": {
 "lat": 33.3272,
 "lon": 35.6111,
 "precision": "town",
@@ -681,12 +667,6 @@
 "precision": "approx",
 "source": "manual"
 },
-"العباد ومحيطه": {
-"lat": 33.2,
-"lon": 35.535,
-"precision": "approx",
-"source": "manual"
-},
 "العباسية": {
 "lat": 33.2986,
 "lon": 35.2831,
@@ -708,13 +688,6 @@
 "en": "Aaddoussiyeh"
 },
 "العديسة": {
-"lat": 33.2542,
-"lon": 35.5425,
-"precision": "town",
-"source": "wikidata",
-"en": "Adaisseh"
-},
-"العديسة علي الحدود اللبنانية الفلسطينية": {
 "lat": 33.2542,
 "lon": 35.5425,
 "precision": "town",
@@ -956,6 +929,13 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Majdel el-Aqoura"
+},
+"المحمودية": {
+"lat": 33.43,
+"lon": 35.575,
+"precision": "approx",
+"source": "manual",
+"kind": "farm"
 },
 "المرج": {
 "lat": 33.7639,
@@ -1287,6 +1267,13 @@
 "source": "wikidata",
 "en": "Bar'am"
 },
+"برغز": {
+"lat": 33.38,
+"lon": 35.66,
+"precision": "area",
+"source": "manual",
+"kind": "area"
+},
 "بريتال": {
 "lat": 33.9353,
 "lon": 36.1508,
@@ -1341,13 +1328,6 @@
 "source": "wikidata",
 "en": "Bint Jbeil"
 },
-"بنت جبيل علي النحو الاتي": {
-"lat": 33.1258,
-"lon": 35.4428,
-"precision": "town",
-"source": "wikidata",
-"en": "Bint Jbeil"
-},
 "بنعفول": {
 "lat": 33.4828,
 "lon": 35.4217,
@@ -1369,13 +1349,6 @@
 "source": "manual"
 },
 "بيت ليف": {
-"lat": 33.1336,
-"lon": 35.3328,
-"precision": "town",
-"source": "wikidata",
-"en": "Bayt Lif"
-},
-"بيت ليف والقوزح": {
 "lat": 33.1336,
 "lon": 35.3328,
 "precision": "town",
@@ -1421,6 +1394,12 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Beit She'an"
+},
+"بيوت السياد": {
+"lat": 33.168,
+"lon": 35.195,
+"precision": "approx",
+"source": "manual"
 },
 "بِرانيت": {
 "lat": 33.08,
@@ -1814,20 +1793,6 @@
 "source": "wikidata",
 "en": "Haifa"
 },
-"حيفا المحتلة بعشرات الصواريخ": {
-"lat": 32.8192,
-"lon": 34.9992,
-"precision": "town",
-"source": "wikidata",
-"en": "Haifa"
-},
-"حيفا المحتلة)": {
-"lat": 32.8192,
-"lon": 34.9992,
-"precision": "town",
-"source": "wikidata",
-"en": "Haifa"
-},
 "خربة المنارة": {
 "lat": 32.6455,
 "lon": 34.9644,
@@ -1889,6 +1854,12 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Dibbine"
+},
+"دفنا": {
+"lat": 33.233,
+"lon": 35.635,
+"precision": "approx",
+"source": "manual"
 },
 "دورس": {
 "lat": 34.0,
@@ -2081,6 +2052,13 @@
 "precision": "area",
 "source": "manual"
 },
+"رب الثلاثين": {
+"lat": 33.2492,
+"lon": 35.5183,
+"precision": "town",
+"source": "wikidata",
+"en": "Rab El Thalathine"
+},
 "رب ثلاثين": {
 "lat": 33.2492,
 "lon": 35.5183,
@@ -2096,13 +2074,6 @@
 "en": "Rab El Thalathine"
 },
 "رشاف": {
-"lat": 33.15,
-"lon": 35.3667,
-"precision": "town",
-"source": "wikidata",
-"en": "Rachaf"
-},
-"رشاف وبيت ليف": {
 "lat": 33.15,
 "lon": 35.3667,
 "precision": "town",
@@ -2350,8 +2321,8 @@
 "en": "Chmestar"
 },
 "شمع": {
-"lat": 33.157,
-"lon": 35.215,
+"lat": 33.172,
+"lon": 35.218,
 "precision": "approx",
 "source": "manual"
 },
@@ -2620,6 +2591,13 @@
 "source": "wikidata",
 "en": "Aaramta"
 },
+"عرمتي": {
+"lat": 33.4639,
+"lon": 35.5764,
+"precision": "town",
+"source": "wikidata",
+"en": "Aaramta"
+},
 "عرمون": {
 "lat": 33.7597,
 "lon": 35.5208,
@@ -2758,20 +2736,6 @@
 "en": "Ain Qana"
 },
 "عيناتا": {
-"lat": 33.1288,
-"lon": 35.4351,
-"precision": "town",
-"source": "wikidata",
-"en": "Aynata"
-},
-"عيناتا بثلاث دفعات": {
-"lat": 33.1288,
-"lon": 35.4351,
-"precision": "town",
-"source": "wikidata",
-"en": "Aynata"
-},
-"عيناثا": {
 "lat": 33.1288,
 "lon": 35.4351,
 "precision": "town",
@@ -2952,12 +2916,6 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Kiryat Yam"
-},
-"كسارة كفرجلعادي،": {
-"lat": 33.2425,
-"lon": 35.575,
-"precision": "approx",
-"source": "manual"
 },
 "كفار جلعادي": {
 "lat": 33.2425,
@@ -3200,13 +3158,6 @@
 "source": "wikidata",
 "en": "Malkia"
 },
-"مبني بلدية الناقورة": {
-"lat": 33.12,
-"lon": 35.1342,
-"precision": "town",
-"source": "wikidata",
-"en": "Naqoura"
-},
 "مجادل": {
 "lat": 33.2294,
 "lon": 35.3601,
@@ -3416,13 +3367,6 @@
 "source": "wikidata",
 "en": "Ma'alot-Tarshiha"
 },
-"معالوت ترشيحا،": {
-"lat": 33.0167,
-"lon": 35.2708,
-"precision": "town",
-"source": "wikidata",
-"en": "Ma'alot-Tarshiha"
-},
 "معالوت تشريحا": {
 "lat": 33.0167,
 "lon": 35.2708,
@@ -3596,11 +3540,12 @@
 "precision": "area",
 "source": "manual"
 },
-"وادي السلوقي جنوبي لبنان": {
-"lat": 33.25,
-"lon": 35.47,
+"وادي برغز": {
+"lat": 33.38,
+"lon": 35.66,
 "precision": "area",
-"source": "manual"
+"source": "manual",
+"kind": "area"
 },
 "وادي جيلو": {
 "lat": 33.245,

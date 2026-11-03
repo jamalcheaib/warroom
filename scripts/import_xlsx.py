@@ -14,6 +14,7 @@
     data/index.json               فهرس الأيام والإحصاءات المجمّعة
     data/geo/places.json          قاموس الأماكن المستعمل (اسم ← إحداثيات)
     data/geo/unresolved.json      أماكن بلا إحداثيات بعد (للاستكمال اليدوي)
+    data/geo/location-report.json ما عُدّل في عمود «الموقع» (لتصحيحه في ملف Excel أيضاً)
 """
 import argparse
 import collections
@@ -86,9 +87,14 @@ class Geocoder:
         m = self.manual.get(name)
         if m is None or depth > 3:
             return None
-        if isinstance(m, dict):
+        if isinstance(m, dict) and 'alias' in m:
             target = m['alias']
             return self._manual(target, depth + 1) or self._gaz(target) or self.cache.get(target)
+        if isinstance(m, dict):
+            r = {'lat': m['lat'], 'lon': m['lon'], 'precision': m['precision'], 'source': 'manual'}
+            if m.get('kind') and m['kind'] != 'town':
+                r['kind'] = m['kind']
+            return r
         return {'lat': m[0], 'lon': m[1], 'precision': m[2], 'source': 'manual'}
 
     def _gaz(self, name):
@@ -99,6 +105,12 @@ class Geocoder:
             return None
         c = sorted(cands)[0]
         return {'lat': c[2], 'lon': c[3], 'precision': 'town', 'source': 'wikidata', 'en': c[4]}
+
+    def known(self, name):
+        """هل الاسم مكان معروف (يدوياً أو في القاموس)؟ بلا أثر جانبي."""
+        if self.used.get(name):
+            return self.used[name].get('source') != 'excel'
+        return bool(self._manual(name) or self._gaz(name))
 
     def resolve(self, name, excel_lat=None, excel_lon=None):
         if not name:
@@ -116,6 +128,61 @@ class Geocoder:
             self.unresolved[name] += 1
         self.used[name] = r
         return r
+
+
+class LocationCleaner:
+    """ينظّف عمود «الموقع»: يحذف العبارات، يقصّ اللواحق، يصحّح الإملاء، ويقسّم الأماكن المتعددة."""
+
+    def __init__(self, geo):
+        f = json.load(open(os.path.join(DATA, 'geo', 'location-fixes.json'), encoding='utf-8'))
+        self.geo = geo
+        self.drop = set(f['drop'])
+        self.rename = f['rename']
+        self.keep = set(f['keep'])
+        self.trailing = [re.compile(x) for x in f['trailing']]
+        self.report = {}
+
+    @staticmethod
+    def basic(v):
+        v = v.replace('ی', 'ي').replace('ک', 'ك')
+        return re.sub(r'\s+', ' ', v).strip()
+
+    def clean_one(self, v):
+        v = self.rename.get(self.basic(v), self.basic(v))
+        if v in self.keep:
+            return v
+        prev = None
+        while prev != v:
+            prev = v
+            for t in self.trailing:
+                v = t.sub('', v).strip()
+        return self.rename.get(v, v)
+
+    def parts(self, raw):
+        if not raw:
+            return []
+        v = self.basic(raw)
+        out = self._parts(v)
+        if out != [raw]:
+            rec = self.report.setdefault(raw, {'result': out, 'count': 0})
+            rec['count'] += 1
+        return out
+
+    def _parts(self, v):
+        if v in self.drop:
+            return []
+        v = self.clean_one(v)
+        if not v or v in self.drop:
+            return []
+        if v in self.keep or ' و' not in v or self.geo.known(v):
+            return [v]
+        pieces = re.split(r'\s+و(?:في\s+(?:بلدة|مستوطنة)\s+|قاعدة\s+|ثكنة\s+)?', v)
+        pieces = [self.clean_one(p) for p in pieces if p.strip()]
+        pieces = [p for p in pieces if p and p not in self.drop]
+        known = [p for p in pieces if self.geo.known(p)]
+        if len(pieces) > 1 and known:
+            return list(dict.fromkeys(pieces))
+        return [v]
 
 
 # ---------------------------------------------------------------- أدوات
@@ -152,6 +219,26 @@ def main():
 
     wb = openpyxl.load_workbook(a.xlsx, read_only=True)
     geo = Geocoder(a.geomelon)
+    cleaner = LocationCleaner(geo)
+
+    def locate(raw, excel_lat=None, excel_lon=None):
+        names = cleaner.parts(raw)
+        places = []
+        for n in names:
+            g = geo.resolve(n, excel_lat, excel_lon) if len(names) == 1 else geo.resolve(n)
+            p = {'name': n}
+            if g:
+                p.update({'lat': g['lat'], 'lon': g['lon'], 'geo': g['precision']})
+                if g.get('kind'):
+                    p['kind'] = g['kind']
+            places.append(p)
+        first = next((p for p in places if 'lat' in p), places[0] if places else {})
+        return {
+            'location': places[0]['name'] if places else None,
+            'lat': first.get('lat'), 'lon': first.get('lon'), 'geo': first.get('geo'),
+            'kind': places[0].get('kind') if places else None,
+            'places': places if len(places) > 1 else [],
+        }
 
     events, impacts = [], []
     for r in list(wb['الأحداث'].iter_rows(values_only=True))[1:]:
@@ -161,13 +248,11 @@ def main():
         if not cat:
             print('  ! تصنيف غير معروف:', r[0], r[3], file=sys.stderr)
             continue
-        loc = s(r[8])
-        g = geo.resolve(loc, r[9], r[10]) if loc else None
+        L = locate(s(r[8]), r[9], r[10])
         events.append({
             'id': s(r[0]), 'date': str(r[1])[:10], 'time': hhmm(r[2]) or '00:00',
             'category': cat, 'subtype': s(r[4]) or 'أخرى', 'text': s(r[5]) or '',
-            'target': s(r[6]), 'impact': s(r[7]), 'location': loc,
-            'lat': g and g['lat'], 'lon': g and g['lon'], 'geo': g and g['precision'],
+            'target': s(r[6]), 'impact': s(r[7]), **L,
             'source': s(r[11]), 'url': s(r[12]), 'duplicates': split_refs(r[13]),
             'related': s(r[14]), 'verification': VERIFY.get(s(r[15]), 'single'),
         })
@@ -175,13 +260,11 @@ def main():
     for r in list(wb['الأثر المعلن'].iter_rows(values_only=True))[1:]:
         if not r[0]:
             continue
-        loc = s(r[5])
-        g = geo.resolve(loc) if loc else None
+        L = locate(s(r[5]))
         link = LINK.get(s(r[9]), 'unlinked')
         impacts.append({
             'id': s(r[0]), 'date': str(r[1])[:10], 'time': hhmm(r[2]) or '00:00',
-            'type': s(r[3]) or 'أخرى', 'text': s(r[4]) or '', 'location': loc,
-            'lat': g and g['lat'], 'lon': g and g['lon'], 'geo': g and g['precision'],
+            'type': s(r[3]) or 'أخرى', 'text': s(r[4]) or '', **L,
             'source': s(r[6]), 'url': s(r[7]), 'duplicates': split_refs(r[8]),
             'link': link, 'linkedEvents': split_refs(r[10]) if link != 'unlinked' else [],
         })
@@ -231,7 +314,9 @@ def main():
     cat_sub = collections.defaultdict(collections.Counter)
     for e in events:
         cat_sub[e['category']][e['subtype']] += 1
-    loc_count = collections.Counter(e['location'] for e in events if e['location'] and e['geo'] not in ('area', None))
+    def all_places(o):
+        return o['places'] or ([{'name': o['location'], 'lat': o['lat'], 'lon': o['lon'], 'geo': o['geo']}] if o['location'] else [])
+    loc_count = collections.Counter(p['name'] for e in events for p in all_places(e) if p.get('geo') not in ('area', None))
     top_locations = []
     for name, n in loc_count.most_common(30):
         g = geo.used.get(name)
@@ -276,15 +361,17 @@ def main():
     GEO_N = {'town': 0, 'approx': 1, 'area': 2}
     pts = []
     for e in sorted(events, key=lambda x: (x['date'], x['time'])):
-        if e['lat'] is None:
-            continue
-        pts.append([day_pos[e['date']], CAT_N[e['category']], e['lat'], e['lon'],
-                    pos(subs_list, sub_pos, e['subtype']), pos(locs_list, loc_pos, e['location']), GEO_N.get(e['geo'], 1)])
+        for p in all_places(e):
+            if p.get('lat') is None:
+                continue
+            pts.append([day_pos[e['date']], CAT_N[e['category']], p['lat'], p['lon'],
+                        pos(subs_list, sub_pos, e['subtype']), pos(locs_list, loc_pos, p['name']), GEO_N.get(p['geo'], 1)])
     for im in sorted(impacts, key=lambda x: (x['date'], x['time'])):
-        if im['lat'] is None:
-            continue
-        pts.append([day_pos[im['date']], 3, im['lat'], im['lon'],
-                    pos(subs_list, sub_pos, im['type']), pos(locs_list, loc_pos, im['location']), GEO_N.get(im['geo'], 1)])
+        for p in all_places(im):
+            if p.get('lat') is None:
+                continue
+            pts.append([day_pos[im['date']], 3, p['lat'], p['lon'],
+                        pos(subs_list, sub_pos, im['type']), pos(locs_list, loc_pos, p['name']), GEO_N.get(p['geo'], 1)])
     pub = os.path.join(ROOT, 'public', 'data')
     os.makedirs(pub, exist_ok=True)
     with open(os.path.join(pub, 'map.json'), 'w', encoding='utf-8') as fh:
@@ -294,6 +381,8 @@ def main():
     places = {k: v for k, v in sorted(geo.used.items()) if v}
     with open(os.path.join(DATA, 'geo', 'places.json'), 'w', encoding='utf-8') as fh:
         json.dump(places, fh, ensure_ascii=False, indent=0)
+    with open(os.path.join(DATA, 'geo', 'location-report.json'), 'w', encoding='utf-8') as fh:
+        json.dump(dict(sorted(cleaner.report.items(), key=lambda x: -x[1]['count'])), fh, ensure_ascii=False, indent=1)
     with open(os.path.join(DATA, 'geo', 'unresolved.json'), 'w', encoding='utf-8') as fh:
         json.dump(dict(geo.unresolved.most_common()), fh, ensure_ascii=False, indent=0)
 
@@ -301,6 +390,9 @@ def main():
     print(f"أحداث: {t['events']} · أثر معلن: {t['impact']} · أيام: {len(index_days)}")
     print(f"أحداث بموقع: {t['withLocation']} · منها بإحداثيات: {t['geolocated']}")
     print(f"أماكن بلا إحداثيات: {len(geo.unresolved)} ({sum(geo.unresolved.values())} ذكر)")
+    print(f"تصحيحات الموقع: {len(cleaner.report)} قيمة · {sum(r['count'] for r in cleaner.report.values())} ذكر"
+          f" · محذوفة {sum(r['count'] for r in cleaner.report.values() if not r['result'])}"
+          f" · مقسّمة {sum(r['count'] for r in cleaner.report.values() if len(r['result']) > 1)}")
     print('مصادر الإحداثيات:', dict(collections.Counter(v['source'] for v in places.values())))
 
 
