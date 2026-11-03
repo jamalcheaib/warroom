@@ -3,9 +3,14 @@
 الحالة في 3 تشرين الثاني 2026. ضع ✓ أمام ما تنجزه. التفاصيل والقواعد في [`PROJECT.md`](PROJECT.md).
 
 ## عاجل
-- [ ] **دمج طلب الدمج jamalcheaib/warroom#3.** يضم المرحلة الثالثة ووقف النشر الآلي: https://github.com/jamalcheaib/warroom/pull/3
-- [ ] **التأكد من توقف المهمة المجدولة في Vercel بعد الدمج.** في لوحة Vercel، داخل المشروع: Settings، ثم Cron Jobs. يجب ألا تظهر مهمة `/api/scrape`.
-- [ ] **بعد دمج jamalcheaib/warroom#4:** حذف `GITHUB_TOKEN` و`CRON_SECRET` و`WARROOM_SECRET` من إعدادات Vercel، ثم إلغاء المفتاح من GitHub. الموقع لم يعد يحتاج أياً منها، والخطوات في رد Claude. ولا تُضِف `AUTO_SCRAPE_ENABLED` قبل أن تُقرّ آلية التدقيق.
+- [ ] **تفعيل التحقق بخطوتين (2FA) في حسابَي GitHub وVercel.** وعد به جمال في 3 تشرين الثاني 2026.
+  - GitHub: Settings ← Password and authentication ← Two-factor authentication.
+  - Vercel: Account Settings ← Authentication ← Two-Factor Authentication.
+- [x] دمج jamalcheaib/warroom#3 وjamalcheaib/warroom#4.
+- [x] Vercel: لا مهام مجدولة، وحُذفت المتغيّرات `GITHUB_TOKEN` و`CRON_SECRET` و`WARROOM_SECRET`.
+- [x] GitHub: حُذف المفتاحان الكلاسيكيان، و«Fine-grained tokens» فارغ.
+  - «Agency» كان على الأرجح مفتاح الموقع، وانتهت صلاحيته في 24 نيسان 2026. وهذا يفسّر أصفار صفحة الخسائر القديمة.
+  - «wataawano» كان لموقع آخر، ولم يُستعمل قط. سيُعمل على ذلك الموقع لاحقاً، وإن احتاج مفتاحاً يُنشأ له مفتاح Fine-grained محصور بمستودعه وبتاريخ انتهاء.
 - [ ] **قرار تحريري:** هل يبقى المستودع عاماً لأجل الشفافية أم يصير خاصاً؟ لا أثر للقرار على الأمان ولا على عمل الموقع.
 
 ## الأماكن
