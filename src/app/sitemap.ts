@@ -1,39 +1,23 @@
 import { MetadataRoute } from 'next';
-import fs from 'fs';
-import path from 'path';
+import { getIndex } from '@/lib/field-data';
+import { articles } from '@/data/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const dataDir = path.join(process.cwd(), 'data', 'operations');
-  let dates: string[] = [];
-
-  try {
-    dates = fs.readdirSync(dataDir)
-      .filter(f => f.endsWith('.json'))
-      .map(f => f.replace('.json', ''))
-      .sort();
-  } catch {
-    dates = [];
-  }
-
   const baseUrl = 'https://warroom-ecru.vercel.app';
+  const idx = getIndex();
+  const generated = new Date(idx.generatedAt);
 
-  const routes: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'hourly',
-      priority: 1,
-    },
-  ];
-
-  for (const date of dates) {
-    routes.push({
-      url: `${baseUrl}?date=${date}`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
+  return [
+    { url: baseUrl, lastModified: generated, changeFrequency: 'daily', priority: 1 },
+    ...idx.days.map((d) => ({
+      url: `${baseUrl}/log/${d.date}`,
+      lastModified: generated,
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
-    });
-  }
-
-  return routes;
+    })),
+    { url: `${baseUrl}/analysis`, lastModified: generated, changeFrequency: 'weekly', priority: 0.7 },
+    ...articles.map((a) => ({ url: `${baseUrl}/analysis/${a.slug}`, lastModified: new Date(a.date), changeFrequency: 'monthly' as const, priority: 0.6 })),
+    { url: `${baseUrl}/losses`, lastModified: generated, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${baseUrl}/archive`, lastModified: generated, changeFrequency: 'yearly', priority: 0.3 },
+  ];
 }
