@@ -5,7 +5,10 @@ const NAV = [
   { href: '/log', key: 'log', label: 'السجل الميداني' },
   { href: '/map', key: 'map', label: 'الخريطة' },
   { href: '/impact', key: 'impact', label: 'الأثر المعلن' },
+  { href: '/political', key: 'political', label: 'المسار السياسي' },
+  { href: '/places', key: 'places', label: 'الأماكن' },
   { href: '/analysis', key: 'analysis', label: 'تحليلات' },
+  { href: '/methodology', key: 'methodology', label: 'المنهجية' },
   { href: '/archive', key: 'archive', label: 'الأرشيف' },
 ];
 

@@ -7,6 +7,6 @@ const MiniMap = dynamic(() => import('./MiniMap'), {
   loading: () => <div className="w-full h-full bg-wr-deep" />,
 });
 
-export default function MiniMapClient(props: { points: { name: string; count: number; lat: number; lon: number }[] }) {
+export default function MiniMapClient(props: { points: { name: string; count: number; lat: number; lon: number }[]; center?: [number, number]; zoom?: number }) {
   return <MiniMap {...props} />;
 }

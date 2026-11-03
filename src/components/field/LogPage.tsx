@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getDay, getIndex, dayNumber } from '@/lib/field-data';
+import { getDay, getIndex, dayNumber, placePageMap } from '@/lib/field-data';
 import { fmt, formatDateLong } from '@/lib/field-format';
 import SiteHeader from './SiteHeader';
 import DayStrip from './DayStrip';
@@ -25,7 +25,7 @@ export default function LogPage({ date }: { date: string }) {
       <DayStrip days={idx.days} selected={date} />
       <main className="max-w-[1320px] mx-auto px-4 md:px-6 pt-7 pb-16 flex flex-col gap-6">
         <SitrepPanel day={day} dayNo={no} prev={prev} next={next} />
-        <FieldLog day={day} />
+        <FieldLog day={day} placeLinks={placePageMap()} />
       </main>
       <Footer text={`${fmt(idx.totals.events)} حدثاً موثّقاً من ${formatDateLong(idx.firstDate)} إلى ${formatDateLong(idx.lastDate)} · المصادر: ${Object.keys(idx.sources).join(' · ')}`} />
     </PageFrame>

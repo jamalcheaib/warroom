@@ -84,8 +84,30 @@ export interface IndexData {
   impactByMonth: Record<string, Record<string, number>>;
   sources: Record<string, number>;
   topLocations: { name: string; count: number; lat: number; lon: number }[];
+  excluded: { total: number; reasons: Record<string, number>; sources: Record<string, number> };
   days: DaySummary[];
 }
+
+export interface PlaceRecord {
+  name: string;
+  slug: string;
+  lat?: number;
+  lon?: number;
+  geo?: GeoPrecision;
+  kind?: PlaceKind;
+  source?: string;
+  note?: string;
+  counts: Partial<Record<Category | 'impact', number>>;
+  months: Record<string, number>;
+  first: string;
+  last: string;
+  total: number;
+  side: 'lb' | 'il' | 'none';
+  refs: [string, string][];
+}
+
+/** الحد الأدنى من الذكر لتوليد صفحة مكان */
+export const PLACE_PAGE_MIN = 2;
 
 const DATA = path.join(process.cwd(), 'data');
 
@@ -98,11 +120,48 @@ export function getIndex(): IndexData {
   return indexCache;
 }
 
+const dayCache = new Map<string, DayFile | null>();
+
 export function getDay(date: string): DayFile | null {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+  if (dayCache.has(date)) return dayCache.get(date)!;
   const p = path.join(DATA, 'events', `${date}.json`);
-  if (!fs.existsSync(p)) return null;
-  return JSON.parse(fs.readFileSync(p, 'utf-8')) as DayFile;
+  const v = fs.existsSync(p) ? (JSON.parse(fs.readFileSync(p, 'utf-8')) as DayFile) : null;
+  dayCache.set(date, v);
+  return v;
+}
+
+let placesCache: PlaceRecord[] | null = null;
+
+export function getPlaces(): PlaceRecord[] {
+  if (!placesCache) placesCache = JSON.parse(fs.readFileSync(path.join(DATA, 'places.json'), 'utf-8')) as PlaceRecord[];
+  return placesCache;
+}
+
+/** أسماء الأماكن التي لها صفحة ← slug */
+export function placePageMap(): Record<string, string> {
+  const m: Record<string, string> = {};
+  for (const p of getPlaces()) if (p.total >= PLACE_PAGE_MIN) m[p.name] = p.slug;
+  return m;
+}
+
+export function getPlace(slug: string): PlaceRecord | undefined {
+  let s = slug;
+  try {
+    s = decodeURIComponent(slug);
+  } catch {
+    /* already decoded */
+  }
+  return getPlaces().find((p) => p.slug === s);
+}
+
+/** كل الأحداث (لصفحات تجمع أكثر من يوم) */
+export function getAllEvents(): FieldEvent[] {
+  return getIndex().days.flatMap((d) => getDay(d.date)?.events ?? []);
+}
+
+export function getAllImpact(): ImpactItem[] {
+  return getIndex().days.flatMap((d) => getDay(d.date)?.impact ?? []);
 }
 
 /** رقم اليوم من بداية الرصد (1-based) */

@@ -70,7 +70,7 @@ def load_geomelon(d):
                 continue
             dist = math.hypot(c['latitude'] - FRONT[0], c['longitude'] - FRONT[1]) if pref == 0 else 0
             for k in keys(ar):
-                idx.setdefault(k, []).append((pref, dist, round(c['latitude'], 4), round(c['longitude'], 4), c['name']))
+                idx.setdefault(k, []).append((pref, dist, round(c['latitude'], 4), round(c['longitude'], 4), c['name'], country))
     return idx
 
 
@@ -106,7 +106,7 @@ class Geocoder:
         if not cands:
             return None
         c = sorted(cands)[0]
-        return {'lat': c[2], 'lon': c[3], 'precision': 'town', 'source': 'wikidata', 'en': c[4]}
+        return {'lat': c[2], 'lon': c[3], 'precision': 'town', 'source': 'wikidata', 'en': c[4], 'country': c[5]}
 
     def known(self, name):
         """هل الاسم مكان معروف (يدوياً أو في القاموس)؟ بلا أثر جانبي."""
@@ -277,6 +277,17 @@ def main():
             'link': link, 'linkedEvents': split_refs(r[10]) if link != 'unlinked' else [],
         })
 
+    # المستبعَد: إحصاءات فقط (لصفحة المنهجية)
+    excluded = collections.Counter()
+    excluded_src = collections.Counter()
+    if 'المستبعَد' in wb.sheetnames:
+        for r in wb['المستبعَد'].iter_rows(min_row=2, values_only=True):
+            if not r[0]:
+                continue
+            reason = re.sub(r'\s*\(.*\)$', '', s(r[4]) or 'غير محدد')
+            excluded[reason] += 1
+            excluded_src[s(r[2]) or '—'] += 1
+
     # ربط الأثر بالعمليات
     by_id = {e['id']: e for e in events}
     for im in impacts:
@@ -350,6 +361,7 @@ def main():
         'impactByMonth': {k: dict(v) for k, v in sorted(impact_month.items())},
         'sources': dict(collections.Counter(e['source'] for e in events).most_common()),
         'topLocations': top_locations,
+        'excluded': {'total': sum(excluded.values()), 'reasons': dict(excluded.most_common()), 'sources': dict(excluded_src.most_common())},
         'days': index_days,
     }
     with open(os.path.join(DATA, 'index.json'), 'w', encoding='utf-8') as fh:
@@ -385,6 +397,54 @@ def main():
     with open(os.path.join(pub, 'map.json'), 'w', encoding='utf-8') as fh:
         json.dump({'days': day_list, 'subtypes': subs_list, 'locations': locs_list, 'points': pts},
                   fh, ensure_ascii=False, separators=(',', ':'))
+
+    # فهرس الأماكن — data/places.json (لصفحات البلدات)
+    notes = {}
+    for k, v in geo.manual.items():
+        if isinstance(v, dict) and v.get('note'):
+            notes[k] = v['note']
+    for k, v in geo.nopoint.items():
+        if v.get('note'):
+            notes[k] = v['note']
+    pidx = {}
+    def touch(name, o, cat):
+        g = geo.used.get(name) or {}
+        rec = pidx.setdefault(name, {
+            'name': name, 'slug': re.sub(r'\s+', '-', name.strip()),
+            'lat': g.get('lat'), 'lon': g.get('lon'), 'geo': g.get('precision'), 'kind': g.get('kind'),
+            'source': g.get('source'), 'note': notes.get(name),
+            'counts': collections.Counter(), 'months': collections.Counter(), 'first': o['date'], 'last': o['date'], 'refs': []})
+        rec['counts'][cat] += 1
+        rec['months'][o['date'][:7]] += 1
+        rec['first'] = min(rec['first'], o['date'])
+        rec['last'] = max(rec['last'], o['date'])
+        rec['refs'].append([o['date'], o['id']])
+    for e in events:
+        for p in all_places(e):
+            touch(p['name'], e, e['category'])
+    for im in impacts:
+        for p in all_places(im):
+            touch(p['name'], im, 'impact')
+    plist = []
+    for rec in pidx.values():
+        rec['total'] = sum(rec['counts'].values())
+        g = geo.used.get(rec['name']) or {}
+        if g.get('country') == 'lebanon':
+            rec['side'] = 'lb'
+        elif g.get('country') == 'israel':
+            rec['side'] = 'il'
+        elif rec['counts'].get('enemy'):
+            rec['side'] = 'lb'  # اعتداءات العدو تقع في لبنان
+        elif rec['counts'].get('impact') or rec['counts'].get('resistance'):
+            rec['side'] = 'il'
+        else:
+            rec['side'] = 'none'
+        rec['counts'] = dict(rec['counts'])
+        rec['months'] = dict(sorted(rec['months'].items()))
+        plist.append({k: v for k, v in rec.items() if v is not None})
+    plist.sort(key=lambda x: -x['total'])
+    with open(os.path.join(DATA, 'places.json'), 'w', encoding='utf-8') as fh:
+        json.dump(plist, fh, ensure_ascii=False, separators=(',', ':'))
 
     places = {k: v for k, v in sorted(geo.used.items()) if v and v.get('lat') is not None}
     with open(os.path.join(DATA, 'geo', 'places.json'), 'w', encoding='utf-8') as fh:

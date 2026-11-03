@@ -57,7 +57,7 @@ function toCsv(rows: FieldEvent[]): string {
   return '﻿' + [head.join(','), ...lines].join('\n');
 }
 
-export default function FieldLog({ day }: { day: DayFile }) {
+export default function FieldLog({ day, placeLinks = {} }: { day: DayFile; placeLinks?: Record<string, string> }) {
   const [q, setQ] = useState('');
   const [cats, setCats] = useState<Set<Category>>(new Set(CATEGORY_ORDER));
   const [subs, setSubs] = useState<Set<string>>(new Set());
@@ -219,7 +219,11 @@ export default function FieldLog({ day }: { day: DayFile }) {
                       {placesOf(e).map((p, i) => (
                         <span key={p.name} className="flex items-center gap-1.5">
                           {i > 0 && <span className="text-wr-dim">·</span>}
-                          <span className="text-sm font-semibold">{p.name}</span>
+                          {placeLinks[p.name] ? (
+                            <a href={`/places/${placeLinks[p.name]}`} className="text-sm font-semibold hover:text-wr-gold underline decoration-wr-line2 underline-offset-4">{p.name}</a>
+                          ) : (
+                            <span className="text-sm font-semibold">{p.name}</span>
+                          )}
                           {p.kind && p.kind !== 'area' && <span className="text-[11px] text-wr-gold border border-wr-line2 px-1">{PLACE_KIND[p.kind]}</span>}
                           {(i === 0 || p.lat == null) && !(p.kind && NO_POINT_KINDS.includes(p.kind)) && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(p.lat, p.lon, p.geo)}</span>}
                         </span>
