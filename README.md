@@ -15,7 +15,13 @@ python3 scripts/import_xlsx.py path/to/warroom_YYYY-MM-DD.xlsx --geomelon path/t
   1. `data/geo/manual.json`: تصحيحات يدوية وأسماء بديلة وأماكن على مستوى المنطقة.
   2. قاموس Wikidata المفتوح (CC0)، أي حزم npm ‏`@geomelon/lebanon` و`@geomelon/israel`، ويُمرَّر مجلدها عبر `--geomelon`.
   3. الإحداثيات المكتوبة في ملف Excel، إن وُجدت.
-- الأماكن التي لم تُحسم تُكتب في `data/geo/unresolved.json` لاستكمالها يدوياً في `manual.json`.
+- قبل تحديد الإحداثيات، يُنظَّف عمود «الموقع» وفق `data/geo/location-fixes.json`:
+  - حذف العبارات التي ليست أماكن، مثل «العدو الاسرائيلي» و«5 كلم».
+  - قصّ اللواحق، مثل «علي النحو الاتي» و«بدفعات».
+  - تصحيح الإملاء.
+  - تقسيم الخانة التي تذكر عدة أماكن، فيظهر الحدث على الخريطة في كل مكان منها.
+- كل تعديل من هذا النوع يُسجَّل في `data/geo/location-report.json`، لتصحيحه في ملف Excel الأصلي أيضاً.
+- الأماكن التي لم تُحسم تُكتب في `data/geo/unresolved.json` لاستكمالها يدوياً في `manual.json`. يمكن هناك تحديد نوع المكان (`kind`): مزرعة `farm`، أو موقع عسكري `position`، أو منطقة `area`.
 
 لتنزيل القاموس:
 
@@ -23,6 +29,14 @@ python3 scripts/import_xlsx.py path/to/warroom_YYYY-MM-DD.xlsx --geomelon path/t
 mkdir -p geomelon/lebanon geomelon/israel
 curl -sL https://registry.npmjs.org/@geomelon/lebanon/-/lebanon-1.0.0.tgz | tar xz -C geomelon/lebanon
 curl -sL https://registry.npmjs.org/@geomelon/israel/-/israel-1.0.0.tgz | tar xz -C geomelon/israel
+```
+
+### مراجعة الأماكن عبر Excel
+
+```bash
+python3 scripts/places_sheet.py export places-review.xlsx   # أماكن بلا إحداثيات + تقديرات للتحقق + مطابقات القاموس
+python3 scripts/places_sheet.py apply  places-review.xlsx   # يكتب التعديلات إلى manual.json و location-fixes.json
+python3 scripts/import_xlsx.py path/to/warroom.xlsx --geomelon path/to/geomelon
 ```
 
 ## الصفحات

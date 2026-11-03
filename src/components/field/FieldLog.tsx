@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useMemo, useState } from 'react';
 import type { Category, DayFile, FieldEvent, Verification } from '@/lib/field-data';
-import { CATEGORY, CATEGORY_ORDER, VERIFICATION, formatCoords, formatGap, shortCode } from '@/lib/field-format';
+import { CATEGORY, CATEGORY_ORDER, NO_POINT_KINDS, PLACE_KIND, VERIFICATION, formatCoords, formatGap, placesOf, shortCode } from '@/lib/field-format';
 
 const FieldMap = dynamic(() => import('./FieldMap'), {
   ssr: false,
@@ -53,7 +53,7 @@ function toCsv(rows: FieldEvent[]): string {
     const s = v == null ? '' : String(v);
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
   };
-  const lines = rows.map((e) => [e.id, e.date, e.time, CATEGORY[e.category].label, e.subtype, e.text, e.location, e.lat, e.lon, e.geo, VERIFICATION[e.verification].label, e.source, e.url].map(esc).join(','));
+  const lines = rows.map((e) => [e.id, e.date, e.time, CATEGORY[e.category].label, e.subtype, e.text, placesOf(e).map((p) => p.name).join('، '), e.lat, e.lon, e.geo, VERIFICATION[e.verification].label, e.source, e.url].map(esc).join(','));
   return '﻿' + [head.join(','), ...lines].join('\n');
 }
 
@@ -88,7 +88,7 @@ export default function FieldLog({ day }: { day: DayFile }) {
       .filter((e) => cats.has(e.category) && vers.has(e.verification))
       .filter((e) => subs.size === 0 || subs.has(e.subtype))
       .filter((e) => !src || e.source === src)
-      .filter((e) => !qq || e.text.includes(qq) || (e.location ?? '').includes(qq) || e.subtype.includes(qq))
+      .filter((e) => !qq || e.text.includes(qq) || placesOf(e).some((p) => p.name.includes(qq)) || e.subtype.includes(qq))
       .sort((a, b) => b.time.localeCompare(a.time));
   }, [day.events, q, cats, subs, vers, src]);
 
@@ -216,8 +216,14 @@ export default function FieldLog({ day }: { day: DayFile }) {
                     <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 px-4 py-2.5 border-b border-wr-soft bg-wr-bg/60">
                       <span className="w-[30px] h-[30px] border flex items-center justify-center" style={{ borderColor: C.color, color: C.text }}><CategoryIcon c={e.category} /></span>
                       <span className="font-kufi text-sm font-bold" style={{ color: C.text }}>{e.subtype}</span>
-                      {e.location && <span className="text-sm font-semibold">{e.location}</span>}
-                      {e.location && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(e.lat, e.lon, e.geo)}</span>}
+                      {placesOf(e).map((p, i) => (
+                        <span key={p.name} className="flex items-center gap-1.5">
+                          {i > 0 && <span className="text-wr-dim">·</span>}
+                          <span className="text-sm font-semibold">{p.name}</span>
+                          {p.kind && p.kind !== 'area' && <span className="text-[11px] text-wr-gold border border-wr-line2 px-1">{PLACE_KIND[p.kind]}</span>}
+                          {(i === 0 || p.lat == null) && !(p.kind && NO_POINT_KINDS.includes(p.kind)) && <span className="font-wrmono text-[11px] text-wr-dim">{formatCoords(p.lat, p.lon, p.geo)}</span>}
+                        </span>
+                      ))}
                       <span className="mr-auto font-wrmono text-[11px] text-wr-dim">{shortCode(e.id)}</span>
                     </div>
                     <EventText text={e.text} />
@@ -254,7 +260,7 @@ export default function FieldLog({ day }: { day: DayFile }) {
                   <div className="flex-[1_1_320px] min-w-0 flex flex-col gap-1.5">
                     <p className="text-[15px] leading-7">{im.text}</p>
                     <div className="flex flex-wrap gap-3 text-xs text-wr-muted">
-                      {im.location && <span>{im.location}</span>}
+                      {placesOf(im).length > 0 && <span>{placesOf(im).map((p) => p.name).join('، ')}</span>}
                       {im.url ? <a href={im.url} target="_blank" rel="noopener noreferrer" className="text-wr-sub hover:text-white">{im.source} ↗</a> : <span>{im.source}</span>}
                       {im.events?.map((ev) => (
                         <a key={ev.id} href={ev.date === day.date ? `#${ev.id}` : `/log/${ev.date}#${ev.id}`} className="text-wr-res hover:underline">→ العملية: {ev.subtype} {ev.time}</a>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getDay, getIndex, type FieldEvent, type ImpactItem } from '@/lib/field-data';
-import { CATEGORY, MONTHS, fmt, formatDateLong, formatGap } from '@/lib/field-format';
+import { CATEGORY, MONTHS, fmt, formatDateLong, formatGap, placesOf } from '@/lib/field-format';
 import SiteHeader from './SiteHeader';
 import { BarList, Footer, Kicker, PageFrame, Panel, PanelTitle } from './ui';
 
@@ -18,7 +18,7 @@ export default function ImpactPage() {
   }
 
   const places = new Map<string, number>();
-  for (const im of all) if (im.location) places.set(im.location, (places.get(im.location) ?? 0) + 1);
+  for (const im of all) for (const p of placesOf(im)) places.set(p.name, (places.get(p.name) ?? 0) + 1);
   const topPlaces = [...places.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([label, value]) => ({ label, value }));
 
   const types = Object.entries(idx.impactTypes).map(([label, value]) => ({ label, value }));
@@ -120,7 +120,7 @@ export default function ImpactPage() {
             return (
               <div key={link.id} className="flex flex-wrap items-stretch bg-wr-panel/95 border border-wr-line">
                 <Link href={`/log/${link.date}#${link.id}`} className="flex-[1_1_420px] min-w-0 px-5 py-4 flex flex-col gap-2 border-l border-wr-soft hover:bg-white/[0.02]">
-                  <span className="flex flex-wrap gap-2 text-xs"><span className="font-semibold" style={{ color: CATEGORY.resistance.text }}>العملية</span><span className="text-wr-muted">{formatDateLong(link.date)} · {link.time} · {link.subtype}{ev?.location ? ` · ${ev.location}` : ''}</span></span>
+                  <span className="flex flex-wrap gap-2 text-xs"><span className="font-semibold" style={{ color: CATEGORY.resistance.text }}>العملية</span><span className="text-wr-muted">{formatDateLong(link.date)} · {link.time} · {link.subtype}{ev && placesOf(ev).length ? ` · ${placesOf(ev).map((p) => p.name).join('، ')}` : ''}</span></span>
                   <span className="text-[15px] leading-7 line-clamp-4">{ev?.text ?? '—'}</span>
                 </Link>
                 <div className="flex-[1_1_420px] min-w-0 flex flex-col bg-[#141A12]">
@@ -133,7 +133,7 @@ export default function ImpactPage() {
                           <span className="font-wrmono text-xs">{formatGap(gap)}</span>
                         </span>
                         <span className="flex flex-col gap-1 min-w-0">
-                          <span className="flex flex-wrap gap-2 text-xs"><span className="font-semibold text-wr-gold">{im.type}</span><span className="text-wr-muted">{im.date !== link.date ? `${formatDateLong(im.date)} · ` : ''}{im.time}{im.location ? ` · ${im.location}` : ''}</span></span>
+                          <span className="flex flex-wrap gap-2 text-xs"><span className="font-semibold text-wr-gold">{im.type}</span><span className="text-wr-muted">{im.date !== link.date ? `${formatDateLong(im.date)} · ` : ''}{im.time}{placesOf(im).length ? ` · ${placesOf(im).map((p) => p.name).join('، ')}` : ''}</span></span>
                           <span className="text-[15px] leading-7 line-clamp-3">{im.text}</span>
                         </span>
                       </Link>

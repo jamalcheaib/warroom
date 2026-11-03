@@ -4,6 +4,15 @@ import path from 'path';
 export type Category = 'resistance' | 'enemy' | 'political';
 export type Verification = 'official' | 'multi' | 'single';
 export type GeoPrecision = 'town' | 'approx' | 'area';
+export type PlaceKind = 'farm' | 'position' | 'area' | 'region' | 'river' | 'concept';
+
+export interface Place {
+  name: string;
+  lat?: number;
+  lon?: number;
+  geo?: GeoPrecision;
+  kind?: PlaceKind;
+}
 
 export interface FieldEvent {
   id: string;
@@ -18,6 +27,8 @@ export interface FieldEvent {
   lat?: number;
   lon?: number;
   geo?: GeoPrecision;
+  kind?: PlaceKind;
+  places?: Place[];
   source?: string;
   url?: string;
   duplicates?: string[];
@@ -36,6 +47,8 @@ export interface ImpactItem {
   lat?: number;
   lon?: number;
   geo?: GeoPrecision;
+  kind?: PlaceKind;
+  places?: Place[];
   source?: string;
   url?: string;
   duplicates?: string[];
