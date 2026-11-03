@@ -14,6 +14,16 @@ export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
 export async function GET(request: NextRequest) {
+  // النشر الآلي موقوف بقرار تحريري: الموقع يُحدَّث من ملف Excel المدقَّق وحده
+  // (scripts/import_xlsx.py). لا يُعاد التفعيل قبل وجود آلية تدقيق مسبقة للنشر،
+  // وعندها يُضبط AUTO_SCRAPE_ENABLED=true في إعدادات Vercel ويُعاد جدول cron إلى vercel.json.
+  if (process.env.AUTO_SCRAPE_ENABLED !== 'true') {
+    return NextResponse.json(
+      { disabled: true, reason: 'الجمع الآلي موقوف. الموقع يُحدَّث من ملف Excel المدقَّق وحده.' },
+      { status: 503 }
+    );
+  }
+
   // Verify secret
   const secret = request.nextUrl.searchParams.get('secret');
   const cronSecret = process.env.CRON_SECRET;
