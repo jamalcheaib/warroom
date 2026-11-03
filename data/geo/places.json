@@ -81,12 +81,6 @@
 "source": "wikidata",
 "en": "Erkay"
 },
-"إصبع الجليل": {
-"lat": 33.2,
-"lon": 35.6,
-"precision": "area",
-"source": "manual"
-},
 "إقليم التفاح": {
 "lat": 33.48,
 "lon": 35.52,
@@ -212,12 +206,6 @@
 "precision": "approx",
 "source": "manual"
 },
-"البقاع": {
-"lat": 33.85,
-"lon": 36.05,
-"precision": "area",
-"source": "manual"
-},
 "البقاع الغربي": {
 "lat": 33.55,
 "lon": 35.72,
@@ -271,30 +259,6 @@
 "source": "wikidata",
 "en": "Jarmaq"
 },
-"الجليل": {
-"lat": 32.95,
-"lon": 35.35,
-"precision": "area",
-"source": "manual"
-},
-"الجليل الأسفل": {
-"lat": 32.75,
-"lon": 35.4,
-"precision": "area",
-"source": "manual"
-},
-"الجليل الأعلى": {
-"lat": 33.0,
-"lon": 35.45,
-"precision": "area",
-"source": "manual"
-},
-"الجليل الغربي": {
-"lat": 33.0,
-"lon": 35.15,
-"precision": "area",
-"source": "manual"
-},
 "الجميجمة": {
 "lat": 33.2037,
 "lon": 35.4388,
@@ -306,12 +270,6 @@
 "lat": 33.865,
 "lon": 35.485,
 "precision": "approx",
-"source": "manual"
-},
-"الجولان": {
-"lat": 33.0,
-"lon": 35.75,
-"precision": "area",
 "source": "manual"
 },
 "الجية": {
@@ -781,18 +739,6 @@
 "precision": "town",
 "source": "wikidata",
 "en": "Qoussair"
-},
-"القطاع الشرقي": {
-"lat": 33.28,
-"lon": 35.62,
-"precision": "area",
-"source": "manual"
-},
-"القطاع الغربي": {
-"lat": 33.15,
-"lon": 35.3,
-"precision": "area",
-"source": "manual"
 },
 "القطراني": {
 "lat": 33.4333,
@@ -1609,19 +1555,6 @@
 "source": "wikidata",
 "en": "Jenta"
 },
-"جنوب الليطاني": {
-"lat": 33.22,
-"lon": 35.38,
-"precision": "area",
-"source": "manual",
-"kind": "area"
-},
-"جنوب لبنان": {
-"lat": 33.28,
-"lon": 35.4,
-"precision": "area",
-"source": "manual"
-},
 "جويا": {
 "lat": 33.2365,
 "lon": 35.3385,
@@ -2313,19 +2246,6 @@
 "lon": 35.145,
 "precision": "approx",
 "source": "manual"
-},
-"شمال الجولان": {
-"lat": 33.15,
-"lon": 35.75,
-"precision": "area",
-"source": "manual"
-},
-"شمال فلسطين المحتلة": {
-"lat": 33.0,
-"lon": 35.4,
-"precision": "area",
-"source": "manual",
-"kind": "area"
 },
 "شمسطار": {
 "lat": 33.9667,
