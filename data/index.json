@@ -1,0 +1,1189 @@
+{
+ "generatedAt": "2026-11-03T21:13:04+00:00",
+ "sourceFile": "a7076b22-warroom_2026-02-28_2026-06-19_v6_1.xlsx",
+ "firstDate": "2026-02-28",
+ "lastDate": "2026-06-19",
+ "totals": {
+  "events": 9284,
+  "enemy": 5998,
+  "political": 547,
+  "resistance": 2739,
+  "impact": 2407,
+  "geolocated": 7799,
+  "withLocation": 8245
+ },
+ "verification": {
+  "multi": 2331,
+  "single": 4215,
+  "official": 2738
+ },
+ "subtypes": {
+  "enemy": {
+   "غارة جوية": 3839,
+   "قصف مدفعي": 695,
+   "استهداف بمسيّرة": 553,
+   "أخرى": 429,
+   "إنذار إخلاء": 185,
+   "تفجير/تجريف": 157,
+   "توغّل برّي": 96,
+   "اغتيال": 44
+  },
+  "political": {
+   "تصريح إسرائيلي: تصعيد": 149,
+   "قرار إسرائيلي": 108,
+   "المقاومة: بيان حزب الله": 73,
+   "تصريح إسرائيلي: تهديد": 67,
+   "قرار رسمي لبناني": 48,
+   "إعلان الوسيط": 46,
+   "يونيفيل: حادث ميداني": 26,
+   "المقاومة: الشيخ نعيم قاسم": 25,
+   "تصريح إسرائيلي: تهديد بتصفية": 5
+  },
+  "resistance": {
+   "صاروخي": 1397,
+   "مسيّرة انقضاضية": 850,
+   "مدفعي": 194,
+   "صاروخ موجّه": 130,
+   "دفاع جوي": 73,
+   "اشتباك مباشر": 50,
+   "تفجير عبوة": 28,
+   "أخرى": 17
+  }
+ },
+ "impactTypes": {
+  "صفارات واعتراض": 1666,
+  "جرحى": 236,
+  "حادث أمني": 159,
+  "أخرى": 158,
+  "آليات وأضرار": 110,
+  "قتلى": 78
+ },
+ "impactLinks": {
+  "unlinked": 1228,
+  "candidate": 591,
+  "linked": 588
+ },
+ "impactByMonth": {
+  "2026-02": {
+   "صفارات واعتراض": 2
+  },
+  "2026-03": {
+   "صفارات واعتراض": 852,
+   "آليات وأضرار": 55,
+   "أخرى": 82,
+   "حادث أمني": 24,
+   "جرحى": 72,
+   "قتلى": 24
+  },
+  "2026-04": {
+   "صفارات واعتراض": 448,
+   "حادث أمني": 26,
+   "جرحى": 61,
+   "قتلى": 16,
+   "آليات وأضرار": 29,
+   "أخرى": 28
+  },
+  "2026-05": {
+   "جرحى": 67,
+   "صفارات واعتراض": 266,
+   "حادث أمني": 76,
+   "آليات وأضرار": 23,
+   "أخرى": 39,
+   "قتلى": 20
+  },
+  "2026-06": {
+   "صفارات واعتراض": 98,
+   "قتلى": 18,
+   "جرحى": 36,
+   "أخرى": 9,
+   "حادث أمني": 33,
+   "آليات وأضرار": 3
+  }
+ },
+ "sources": {
+  "@almayadeen": 3086,
+  "@mmirleb": 2782,
+  "@unewschannel": 1718,
+  "@AjaNews": 1698
+ },
+ "topLocations": [
+  {
+   "name": "الخيام",
+   "count": 185,
+   "lat": 33.3272,
+   "lon": 35.6111
+  },
+  {
+   "name": "بنت جبيل",
+   "count": 164,
+   "lat": 33.1258,
+   "lon": 35.4428
+  },
+  {
+   "name": "النبطية",
+   "count": 148,
+   "lat": 33.3772,
+   "lon": 35.4836
+  },
+  {
+   "name": "القنطرة",
+   "count": 135,
+   "lat": 33.2725,
+   "lon": 35.4653
+  },
+  {
+   "name": "البيّاضة",
+   "count": 126,
+   "lat": 33.1628,
+   "lon": 35.1817
+  },
+  {
+   "name": "يحمر الشقيف",
+   "count": 125,
+   "lat": 33.343,
+   "lon": 35.548
+  },
+  {
+   "name": "المنصوري",
+   "count": 110,
+   "lat": 33.1736,
+   "lon": 35.21
+  },
+  {
+   "name": "الطيبة",
+   "count": 106,
+   "lat": 33.282,
+   "lon": 35.528
+  },
+  {
+   "name": "كفرتبنيت",
+   "count": 105,
+   "lat": 33.372,
+   "lon": 35.527
+  },
+  {
+   "name": "زوطر الشرقية",
+   "count": 105,
+   "lat": 33.3236,
+   "lon": 35.4764
+  },
+  {
+   "name": "كريات شمونة",
+   "count": 104,
+   "lat": 33.2075,
+   "lon": 35.5697
+  },
+  {
+   "name": "صور",
+   "count": 97,
+   "lat": 33.2667,
+   "lon": 35.2
+  },
+  {
+   "name": "رشاف",
+   "count": 94,
+   "lat": 33.15,
+   "lon": 35.3667
+  },
+  {
+   "name": "مجدل زون",
+   "count": 91,
+   "lat": 33.1519,
+   "lon": 35.2275
+  },
+  {
+   "name": "كفرا",
+   "count": 89,
+   "lat": 33.1758,
+   "lon": 35.3514
+  },
+  {
+   "name": "حبوش",
+   "count": 81,
+   "lat": 33.4,
+   "lon": 35.4833
+  },
+  {
+   "name": "النبطية الفوقا",
+   "count": 81,
+   "lat": 33.385,
+   "lon": 35.505
+  },
+  {
+   "name": "العديسة",
+   "count": 80,
+   "lat": 33.2542,
+   "lon": 35.5425
+  },
+  {
+   "name": "صريفا",
+   "count": 72,
+   "lat": 33.2814,
+   "lon": 35.3964
+  },
+  {
+   "name": "القليلة",
+   "count": 69,
+   "lat": 33.1964,
+   "lon": 35.2311
+  },
+  {
+   "name": "دبين",
+   "count": 68,
+   "lat": 33.3694,
+   "lon": 35.5947
+  },
+  {
+   "name": "جبشيت",
+   "count": 68,
+   "lat": 33.3657,
+   "lon": 35.4343
+  },
+  {
+   "name": "ميفدون",
+   "count": 66,
+   "lat": 33.3486,
+   "lon": 35.4764
+  },
+  {
+   "name": "الناقورة",
+   "count": 66,
+   "lat": 33.12,
+   "lon": 35.1342
+  },
+  {
+   "name": "دير الزهراني",
+   "count": 64,
+   "lat": 33.4311,
+   "lon": 35.4594
+  },
+  {
+   "name": "حاريص",
+   "count": 62,
+   "lat": 33.1745,
+   "lon": 35.3766
+  },
+  {
+   "name": "بلاط",
+   "count": 61,
+   "lat": 33.3861,
+   "lon": 35.6006
+  },
+  {
+   "name": "سحمر",
+   "count": 61,
+   "lat": 33.5186,
+   "lon": 35.6856
+  },
+  {
+   "name": "دير سريان",
+   "count": 61,
+   "lat": 33.2908,
+   "lon": 35.5064
+  },
+  {
+   "name": "بيروت",
+   "count": 61,
+   "lat": 33.8869,
+   "lon": 35.5131
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-02-28",
+   "total": 12,
+   "resistance": 0,
+   "enemy": 8,
+   "political": 4,
+   "impact": 2
+  },
+  {
+   "date": "2026-03-01",
+   "total": 6,
+   "resistance": 0,
+   "enemy": 1,
+   "political": 5,
+   "impact": 1
+  },
+  {
+   "date": "2026-03-02",
+   "total": 116,
+   "resistance": 1,
+   "enemy": 98,
+   "political": 17,
+   "impact": 12
+  },
+  {
+   "date": "2026-03-03",
+   "total": 109,
+   "resistance": 16,
+   "enemy": 82,
+   "political": 11,
+   "impact": 27
+  },
+  {
+   "date": "2026-03-04",
+   "total": 101,
+   "resistance": 20,
+   "enemy": 72,
+   "political": 9,
+   "impact": 52
+  },
+  {
+   "date": "2026-03-05",
+   "total": 112,
+   "resistance": 11,
+   "enemy": 93,
+   "political": 8,
+   "impact": 31
+  },
+  {
+   "date": "2026-03-06",
+   "total": 149,
+   "resistance": 19,
+   "enemy": 120,
+   "political": 10,
+   "impact": 35
+  },
+  {
+   "date": "2026-03-07",
+   "total": 127,
+   "resistance": 33,
+   "enemy": 87,
+   "political": 7,
+   "impact": 43
+  },
+  {
+   "date": "2026-03-08",
+   "total": 90,
+   "resistance": 20,
+   "enemy": 67,
+   "political": 3,
+   "impact": 41
+  },
+  {
+   "date": "2026-03-09",
+   "total": 90,
+   "resistance": 23,
+   "enemy": 62,
+   "political": 5,
+   "impact": 33
+  },
+  {
+   "date": "2026-03-10",
+   "total": 95,
+   "resistance": 31,
+   "enemy": 64,
+   "political": 0,
+   "impact": 35
+  },
+  {
+   "date": "2026-03-11",
+   "total": 91,
+   "resistance": 22,
+   "enemy": 62,
+   "political": 7,
+   "impact": 39
+  },
+  {
+   "date": "2026-03-12",
+   "total": 96,
+   "resistance": 25,
+   "enemy": 65,
+   "political": 6,
+   "impact": 32
+  },
+  {
+   "date": "2026-03-13",
+   "total": 94,
+   "resistance": 22,
+   "enemy": 65,
+   "political": 7,
+   "impact": 34
+  },
+  {
+   "date": "2026-03-14",
+   "total": 102,
+   "resistance": 46,
+   "enemy": 52,
+   "political": 4,
+   "impact": 44
+  },
+  {
+   "date": "2026-03-15",
+   "total": 67,
+   "resistance": 25,
+   "enemy": 38,
+   "political": 4,
+   "impact": 30
+  },
+  {
+   "date": "2026-03-16",
+   "total": 73,
+   "resistance": 21,
+   "enemy": 44,
+   "political": 8,
+   "impact": 20
+  },
+  {
+   "date": "2026-03-17",
+   "total": 114,
+   "resistance": 36,
+   "enemy": 69,
+   "political": 9,
+   "impact": 27
+  },
+  {
+   "date": "2026-03-18",
+   "total": 98,
+   "resistance": 33,
+   "enemy": 62,
+   "political": 3,
+   "impact": 27
+  },
+  {
+   "date": "2026-03-19",
+   "total": 80,
+   "resistance": 41,
+   "enemy": 38,
+   "political": 1,
+   "impact": 45
+  },
+  {
+   "date": "2026-03-20",
+   "total": 83,
+   "resistance": 42,
+   "enemy": 38,
+   "political": 3,
+   "impact": 42
+  },
+  {
+   "date": "2026-03-21",
+   "total": 65,
+   "resistance": 37,
+   "enemy": 25,
+   "political": 3,
+   "impact": 33
+  },
+  {
+   "date": "2026-03-22",
+   "total": 110,
+   "resistance": 62,
+   "enemy": 42,
+   "political": 6,
+   "impact": 58
+  },
+  {
+   "date": "2026-03-23",
+   "total": 92,
+   "resistance": 54,
+   "enemy": 35,
+   "political": 3,
+   "impact": 32
+  },
+  {
+   "date": "2026-03-24",
+   "total": 123,
+   "resistance": 54,
+   "enemy": 62,
+   "political": 7,
+   "impact": 41
+  },
+  {
+   "date": "2026-03-25",
+   "total": 138,
+   "resistance": 85,
+   "enemy": 50,
+   "political": 3,
+   "impact": 49
+  },
+  {
+   "date": "2026-03-26",
+   "total": 134,
+   "resistance": 96,
+   "enemy": 35,
+   "political": 3,
+   "impact": 57
+  },
+  {
+   "date": "2026-03-27",
+   "total": 95,
+   "resistance": 46,
+   "enemy": 47,
+   "political": 2,
+   "impact": 34
+  },
+  {
+   "date": "2026-03-28",
+   "total": 105,
+   "resistance": 41,
+   "enemy": 62,
+   "political": 2,
+   "impact": 37
+  },
+  {
+   "date": "2026-03-29",
+   "total": 109,
+   "resistance": 66,
+   "enemy": 39,
+   "political": 4,
+   "impact": 31
+  },
+  {
+   "date": "2026-03-30",
+   "total": 86,
+   "resistance": 40,
+   "enemy": 41,
+   "political": 5,
+   "impact": 42
+  },
+  {
+   "date": "2026-03-31",
+   "total": 119,
+   "resistance": 46,
+   "enemy": 54,
+   "political": 19,
+   "impact": 45
+  },
+  {
+   "date": "2026-04-01",
+   "total": 107,
+   "resistance": 63,
+   "enemy": 43,
+   "political": 1,
+   "impact": 42
+  },
+  {
+   "date": "2026-04-02",
+   "total": 69,
+   "resistance": 44,
+   "enemy": 23,
+   "political": 2,
+   "impact": 54
+  },
+  {
+   "date": "2026-04-03",
+   "total": 91,
+   "resistance": 43,
+   "enemy": 42,
+   "political": 6,
+   "impact": 40
+  },
+  {
+   "date": "2026-04-04",
+   "total": 114,
+   "resistance": 40,
+   "enemy": 72,
+   "political": 2,
+   "impact": 28
+  },
+  {
+   "date": "2026-04-05",
+   "total": 85,
+   "resistance": 25,
+   "enemy": 56,
+   "political": 4,
+   "impact": 29
+  },
+  {
+   "date": "2026-04-06",
+   "total": 116,
+   "resistance": 52,
+   "enemy": 62,
+   "political": 2,
+   "impact": 34
+  },
+  {
+   "date": "2026-04-07",
+   "total": 93,
+   "resistance": 52,
+   "enemy": 39,
+   "political": 2,
+   "impact": 47
+  },
+  {
+   "date": "2026-04-08",
+   "total": 96,
+   "resistance": 0,
+   "enemy": 80,
+   "political": 16,
+   "impact": 4
+  },
+  {
+   "date": "2026-04-09",
+   "total": 110,
+   "resistance": 53,
+   "enemy": 46,
+   "political": 11,
+   "impact": 33
+  },
+  {
+   "date": "2026-04-10",
+   "total": 129,
+   "resistance": 56,
+   "enemy": 62,
+   "political": 11,
+   "impact": 39
+  },
+  {
+   "date": "2026-04-11",
+   "total": 96,
+   "resistance": 34,
+   "enemy": 58,
+   "political": 4,
+   "impact": 23
+  },
+  {
+   "date": "2026-04-12",
+   "total": 101,
+   "resistance": 41,
+   "enemy": 56,
+   "political": 4,
+   "impact": 21
+  },
+  {
+   "date": "2026-04-13",
+   "total": 121,
+   "resistance": 49,
+   "enemy": 68,
+   "political": 4,
+   "impact": 31
+  },
+  {
+   "date": "2026-04-14",
+   "total": 105,
+   "resistance": 36,
+   "enemy": 65,
+   "political": 4,
+   "impact": 31
+  },
+  {
+   "date": "2026-04-15",
+   "total": 124,
+   "resistance": 42,
+   "enemy": 76,
+   "political": 6,
+   "impact": 26
+  },
+  {
+   "date": "2026-04-16",
+   "total": 153,
+   "resistance": 45,
+   "enemy": 95,
+   "political": 13,
+   "impact": 30
+  },
+  {
+   "date": "2026-04-17",
+   "total": 25,
+   "resistance": 0,
+   "enemy": 16,
+   "political": 9,
+   "impact": 2
+  },
+  {
+   "date": "2026-04-18",
+   "total": 30,
+   "resistance": 0,
+   "enemy": 18,
+   "political": 12,
+   "impact": 3
+  },
+  {
+   "date": "2026-04-19",
+   "total": 18,
+   "resistance": 1,
+   "enemy": 12,
+   "political": 5,
+   "impact": 3
+  },
+  {
+   "date": "2026-04-20",
+   "total": 19,
+   "resistance": 0,
+   "enemy": 15,
+   "political": 4,
+   "impact": 2
+  },
+  {
+   "date": "2026-04-21",
+   "total": 13,
+   "resistance": 1,
+   "enemy": 12,
+   "political": 0,
+   "impact": 1
+  },
+  {
+   "date": "2026-04-22",
+   "total": 30,
+   "resistance": 4,
+   "enemy": 23,
+   "political": 3,
+   "impact": 7
+  },
+  {
+   "date": "2026-04-23",
+   "total": 28,
+   "resistance": 6,
+   "enemy": 20,
+   "political": 2,
+   "impact": 9
+  },
+  {
+   "date": "2026-04-24",
+   "total": 29,
+   "resistance": 5,
+   "enemy": 20,
+   "political": 4,
+   "impact": 5
+  },
+  {
+   "date": "2026-04-25",
+   "total": 35,
+   "resistance": 1,
+   "enemy": 32,
+   "political": 2,
+   "impact": 7
+  },
+  {
+   "date": "2026-04-26",
+   "total": 58,
+   "resistance": 5,
+   "enemy": 44,
+   "political": 9,
+   "impact": 4
+  },
+  {
+   "date": "2026-04-27",
+   "total": 64,
+   "resistance": 3,
+   "enemy": 55,
+   "political": 6,
+   "impact": 9
+  },
+  {
+   "date": "2026-04-28",
+   "total": 62,
+   "resistance": 8,
+   "enemy": 49,
+   "political": 5,
+   "impact": 11
+  },
+  {
+   "date": "2026-04-29",
+   "total": 66,
+   "resistance": 3,
+   "enemy": 59,
+   "political": 4,
+   "impact": 18
+  },
+  {
+   "date": "2026-04-30",
+   "total": 78,
+   "resistance": 10,
+   "enemy": 64,
+   "political": 4,
+   "impact": 15
+  },
+  {
+   "date": "2026-05-01",
+   "total": 53,
+   "resistance": 10,
+   "enemy": 42,
+   "political": 1,
+   "impact": 17
+  },
+  {
+   "date": "2026-05-02",
+   "total": 71,
+   "resistance": 5,
+   "enemy": 65,
+   "political": 1,
+   "impact": 8
+  },
+  {
+   "date": "2026-05-03",
+   "total": 56,
+   "resistance": 11,
+   "enemy": 44,
+   "political": 1,
+   "impact": 7
+  },
+  {
+   "date": "2026-05-04",
+   "total": 49,
+   "resistance": 13,
+   "enemy": 34,
+   "political": 2,
+   "impact": 7
+  },
+  {
+   "date": "2026-05-05",
+   "total": 58,
+   "resistance": 19,
+   "enemy": 38,
+   "political": 1,
+   "impact": 5
+  },
+  {
+   "date": "2026-05-06",
+   "total": 70,
+   "resistance": 18,
+   "enemy": 50,
+   "political": 2,
+   "impact": 10
+  },
+  {
+   "date": "2026-05-07",
+   "total": 87,
+   "resistance": 11,
+   "enemy": 72,
+   "political": 4,
+   "impact": 13
+  },
+  {
+   "date": "2026-05-08",
+   "total": 95,
+   "resistance": 25,
+   "enemy": 66,
+   "political": 4,
+   "impact": 11
+  },
+  {
+   "date": "2026-05-09",
+   "total": 95,
+   "resistance": 22,
+   "enemy": 72,
+   "political": 1,
+   "impact": 18
+  },
+  {
+   "date": "2026-05-10",
+   "total": 70,
+   "resistance": 23,
+   "enemy": 45,
+   "political": 2,
+   "impact": 14
+  },
+  {
+   "date": "2026-05-11",
+   "total": 72,
+   "resistance": 22,
+   "enemy": 50,
+   "political": 0,
+   "impact": 16
+  },
+  {
+   "date": "2026-05-12",
+   "total": 77,
+   "resistance": 23,
+   "enemy": 53,
+   "political": 1,
+   "impact": 25
+  },
+  {
+   "date": "2026-05-13",
+   "total": 83,
+   "resistance": 17,
+   "enemy": 63,
+   "political": 3,
+   "impact": 11
+  },
+  {
+   "date": "2026-05-14",
+   "total": 59,
+   "resistance": 13,
+   "enemy": 45,
+   "political": 1,
+   "impact": 11
+  },
+  {
+   "date": "2026-05-15",
+   "total": 87,
+   "resistance": 28,
+   "enemy": 53,
+   "political": 6,
+   "impact": 29
+  },
+  {
+   "date": "2026-05-16",
+   "total": 82,
+   "resistance": 19,
+   "enemy": 61,
+   "political": 2,
+   "impact": 13
+  },
+  {
+   "date": "2026-05-17",
+   "total": 79,
+   "resistance": 10,
+   "enemy": 68,
+   "political": 1,
+   "impact": 15
+  },
+  {
+   "date": "2026-05-18",
+   "total": 56,
+   "resistance": 16,
+   "enemy": 40,
+   "political": 0,
+   "impact": 11
+  },
+  {
+   "date": "2026-05-19",
+   "total": 73,
+   "resistance": 25,
+   "enemy": 48,
+   "political": 0,
+   "impact": 8
+  },
+  {
+   "date": "2026-05-20",
+   "total": 76,
+   "resistance": 29,
+   "enemy": 45,
+   "political": 2,
+   "impact": 9
+  },
+  {
+   "date": "2026-05-21",
+   "total": 35,
+   "resistance": 11,
+   "enemy": 23,
+   "political": 1,
+   "impact": 8
+  },
+  {
+   "date": "2026-05-22",
+   "total": 76,
+   "resistance": 20,
+   "enemy": 56,
+   "political": 0,
+   "impact": 18
+  },
+  {
+   "date": "2026-05-23",
+   "total": 80,
+   "resistance": 11,
+   "enemy": 68,
+   "political": 1,
+   "impact": 14
+  },
+  {
+   "date": "2026-05-24",
+   "total": 108,
+   "resistance": 28,
+   "enemy": 77,
+   "political": 3,
+   "impact": 14
+  },
+  {
+   "date": "2026-05-25",
+   "total": 108,
+   "resistance": 22,
+   "enemy": 83,
+   "political": 3,
+   "impact": 29
+  },
+  {
+   "date": "2026-05-26",
+   "total": 122,
+   "resistance": 35,
+   "enemy": 81,
+   "political": 6,
+   "impact": 15
+  },
+  {
+   "date": "2026-05-27",
+   "total": 121,
+   "resistance": 34,
+   "enemy": 85,
+   "political": 2,
+   "impact": 19
+  },
+  {
+   "date": "2026-05-28",
+   "total": 106,
+   "resistance": 19,
+   "enemy": 82,
+   "political": 5,
+   "impact": 21
+  },
+  {
+   "date": "2026-05-29",
+   "total": 87,
+   "resistance": 17,
+   "enemy": 67,
+   "political": 3,
+   "impact": 14
+  },
+  {
+   "date": "2026-05-30",
+   "total": 119,
+   "resistance": 24,
+   "enemy": 91,
+   "political": 4,
+   "impact": 39
+  },
+  {
+   "date": "2026-05-31",
+   "total": 111,
+   "resistance": 24,
+   "enemy": 81,
+   "political": 6,
+   "impact": 42
+  },
+  {
+   "date": "2026-06-01",
+   "total": 125,
+   "resistance": 36,
+   "enemy": 72,
+   "political": 17,
+   "impact": 36
+  },
+  {
+   "date": "2026-06-02",
+   "total": 78,
+   "resistance": 17,
+   "enemy": 57,
+   "political": 4,
+   "impact": 14
+  },
+  {
+   "date": "2026-06-03",
+   "total": 103,
+   "resistance": 17,
+   "enemy": 80,
+   "political": 6,
+   "impact": 5
+  },
+  {
+   "date": "2026-06-04",
+   "total": 108,
+   "resistance": 17,
+   "enemy": 76,
+   "political": 15,
+   "impact": 20
+  },
+  {
+   "date": "2026-06-05",
+   "total": 116,
+   "resistance": 28,
+   "enemy": 81,
+   "political": 7,
+   "impact": 9
+  },
+  {
+   "date": "2026-06-06",
+   "total": 113,
+   "resistance": 23,
+   "enemy": 85,
+   "political": 5,
+   "impact": 15
+  },
+  {
+   "date": "2026-06-07",
+   "total": 83,
+   "resistance": 28,
+   "enemy": 50,
+   "political": 5,
+   "impact": 6
+  },
+  {
+   "date": "2026-06-08",
+   "total": 58,
+   "resistance": 17,
+   "enemy": 34,
+   "political": 7,
+   "impact": 4
+  },
+  {
+   "date": "2026-06-09",
+   "total": 66,
+   "resistance": 15,
+   "enemy": 46,
+   "political": 5,
+   "impact": 10
+  },
+  {
+   "date": "2026-06-10",
+   "total": 75,
+   "resistance": 12,
+   "enemy": 61,
+   "political": 2,
+   "impact": 8
+  },
+  {
+   "date": "2026-06-11",
+   "total": 54,
+   "resistance": 19,
+   "enemy": 33,
+   "political": 2,
+   "impact": 7
+  },
+  {
+   "date": "2026-06-12",
+   "total": 68,
+   "resistance": 15,
+   "enemy": 49,
+   "political": 4,
+   "impact": 9
+  },
+  {
+   "date": "2026-06-13",
+   "total": 87,
+   "resistance": 21,
+   "enemy": 62,
+   "political": 4,
+   "impact": 5
+  },
+  {
+   "date": "2026-06-14",
+   "total": 88,
+   "resistance": 28,
+   "enemy": 54,
+   "political": 6,
+   "impact": 17
+  },
+  {
+   "date": "2026-06-15",
+   "total": 29,
+   "resistance": 2,
+   "enemy": 17,
+   "political": 10,
+   "impact": 4
+  },
+  {
+   "date": "2026-06-16",
+   "total": 18,
+   "resistance": 0,
+   "enemy": 16,
+   "political": 2,
+   "impact": 3
+  },
+  {
+   "date": "2026-06-17",
+   "total": 15,
+   "resistance": 1,
+   "enemy": 9,
+   "political": 5,
+   "impact": 7
+  },
+  {
+   "date": "2026-06-18",
+   "total": 22,
+   "resistance": 1,
+   "enemy": 15,
+   "political": 6,
+   "impact": 10
+  },
+  {
+   "date": "2026-06-19",
+   "total": 111,
+   "resistance": 2,
+   "enemy": 92,
+   "political": 17,
+   "impact": 8
+  }
+ ]
+}

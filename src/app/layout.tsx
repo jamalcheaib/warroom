@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Noto_Kufi_Arabic } from 'next/font/google';
+import { Noto_Kufi_Arabic, IBM_Plex_Sans_Arabic, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
@@ -10,9 +10,21 @@ const notoKufi = Noto_Kufi_Arabic({
   variable: '--font-noto-kufi',
 });
 
+const plexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ['arabic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-plex-ar',
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  variable: '--font-plex-mono',
+});
+
 export const metadata: Metadata = {
-  title: 'غرفة الحرب | War Room — متابعة العمليات العسكرية',
-  description: 'لوحة متابعة يومية للعمليات العسكرية في لبنان وإيران والعراق — عمليات المقاومة الإسلامية، حزب الله، الحرس الثوري الإيراني، المقاومة العراقية، وعمليات العدو الأمريكي والصهيوني. تحديث مستمر من المصادر الرسمية.',
+  title: 'غرفة الحرب | السجل الميداني للجبهة اللبنانية',
+  description: 'رصد يومي موثّق للجبهة اللبنانية: عمليات المقاومة الإسلامية، اعتداءات العدو، المسار السياسي والأثر المعلن — مع مستوى التحقق ومصدر كل حدث وموقعه على الخريطة.',
   keywords: [
     'غرفة الحرب',
     'War Room',
@@ -68,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={`${notoKufi.variable} dark`} suppressHydrationWarning>
+    <html lang="ar" dir="rtl" className={`${notoKufi.variable} ${plexArabic.variable} ${plexMono.variable} dark`} suppressHydrationWarning>
       <body className="bg-white dark:bg-[#0a0f1a] text-zinc-900 dark:text-white font-[family-name:var(--font-noto-kufi)] antialiased min-h-screen">
         <ThemeProvider>
           {children}

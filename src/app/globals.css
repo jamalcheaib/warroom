@@ -35,3 +35,40 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
 }
+
+/* ===== غرفة الحرب — هوية السجل الميداني ===== */
+@theme {
+  --color-wr-bg: #080B0F;
+  --color-wr-panel: #11171F;
+  --color-wr-deep: #0D1218;
+  --color-wr-line: #222C38;
+  --color-wr-line2: #2A3644;
+  --color-wr-soft: #1B2430;
+  --color-wr-text: #E8ECF1;
+  --color-wr-sub: #B7C0CC;
+  --color-wr-muted: #9BA6B4;
+  --color-wr-dim: #8B96A5;
+  --color-wr-res: #45D39A;
+  --color-wr-enemy: #E8622C;
+  --color-wr-pol: #5B7BD6;
+  --color-wr-gold: #C9A227;
+  --font-plex: var(--font-plex-ar), system-ui, sans-serif;
+  --font-wrmono: var(--font-plex-mono), var(--font-plex-ar), ui-monospace, monospace;
+  --font-kufi: var(--font-noto-kufi), sans-serif;
+}
+
+.wr-grid {
+  background-color: #080B0F;
+  background-image:
+    linear-gradient(rgba(120, 140, 160, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 140, 160, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.wr-scroll-x { scrollbar-width: none; }
+.wr-scroll-x::-webkit-scrollbar { display: none; }
+
+.wr-field .leaflet-container { background: #0D1218; font-family: inherit; }
+.wr-field .leaflet-popup-content-wrapper,
+.wr-field .leaflet-popup-tip { background: #11171F; color: #E8ECF1; border: 1px solid #2A3644; border-radius: 4px; }
+.wr-field .leaflet-popup-content { margin: 10px 12px; }

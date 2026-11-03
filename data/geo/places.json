@@ -1,0 +1,3712 @@
+{
+"أدميت": {
+"lat": 33.0784,
+"lon": 35.211,
+"precision": "town",
+"source": "wikidata",
+"en": "Adamit"
+},
+"أرزون": {
+"lat": 33.2828,
+"lon": 35.3772,
+"precision": "town",
+"source": "wikidata",
+"en": "Arzoun"
+},
+"أرزي": {
+"lat": 33.44,
+"lon": 35.35,
+"precision": "approx",
+"source": "manual"
+},
+"أركي": {
+"lat": 33.4667,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Erkay"
+},
+"أرنون": {
+"lat": 33.3333,
+"lon": 35.5333,
+"precision": "town",
+"source": "wikidata",
+"en": "Arnoun"
+},
+"أفيفيم": {
+"lat": 33.0892,
+"lon": 35.4721,
+"precision": "town",
+"source": "wikidata",
+"en": "Avivim"
+},
+"أنصار": {
+"lat": 33.3833,
+"lon": 35.35,
+"precision": "town",
+"source": "wikidata",
+"en": "Ansar"
+},
+"أنصارية": {
+"lat": 33.4125,
+"lon": 35.2792,
+"precision": "town",
+"source": "wikidata",
+"en": "Ansariye"
+},
+"أيليت هشاحر": {
+"lat": 33.0228,
+"lon": 35.5776,
+"precision": "approx",
+"source": "manual"
+},
+"إبل السقي": {
+"lat": 33.3568,
+"lon": 35.6272,
+"precision": "town",
+"source": "wikidata",
+"en": "Ibl al-Saqi"
+},
+"إدميت": {
+"lat": 33.0784,
+"lon": 35.211,
+"precision": "town",
+"source": "wikidata",
+"en": "Adamit"
+},
+"إركي": {
+"lat": 33.4667,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Erkay"
+},
+"إصبع الجليل": {
+"lat": 33.2,
+"lon": 35.6,
+"precision": "area",
+"source": "manual"
+},
+"إقليم التفاح": {
+"lat": 33.48,
+"lon": 35.52,
+"precision": "area",
+"source": "manual"
+},
+"إيفن مناحيم": {
+"lat": 33.074,
+"lon": 35.29,
+"precision": "approx",
+"source": "manual"
+},
+"ابل السقي": {
+"lat": 33.3568,
+"lon": 35.6272,
+"precision": "town",
+"source": "wikidata",
+"en": "Ibl al-Saqi"
+},
+"ابل القمح": {
+"lat": 33.27,
+"lon": 35.58,
+"precision": "approx",
+"source": "manual"
+},
+"ادميت": {
+"lat": 33.0784,
+"lon": 35.211,
+"precision": "town",
+"source": "wikidata",
+"en": "Adamit"
+},
+"ارزي": {
+"lat": 33.44,
+"lon": 35.35,
+"precision": "approx",
+"source": "manual"
+},
+"اركي": {
+"lat": 33.4667,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Erkay"
+},
+"ارنون": {
+"lat": 33.3333,
+"lon": 35.5333,
+"precision": "town",
+"source": "wikidata",
+"en": "Arnoun"
+},
+"افيفيم": {
+"lat": 33.0892,
+"lon": 35.4721,
+"precision": "town",
+"source": "wikidata",
+"en": "Avivim"
+},
+"الأنصارية": {
+"lat": 33.4125,
+"lon": 35.2792,
+"precision": "town",
+"source": "wikidata",
+"en": "Ansariye"
+},
+"الأوزاعي": {
+"lat": 33.85,
+"lon": 35.48,
+"precision": "approx",
+"source": "manual"
+},
+"الإسكندرونة": {
+"lat": 33.137,
+"lon": 35.19,
+"precision": "approx",
+"source": "manual"
+},
+"البابلية": {
+"lat": 33.4211,
+"lon": 35.3431,
+"precision": "town",
+"source": "wikidata",
+"en": "Babliyeh"
+},
+"البازورية": {
+"lat": 33.2539,
+"lon": 35.2717,
+"precision": "town",
+"source": "wikidata",
+"en": "Bazouriyeh"
+},
+"الباشورة": {
+"lat": 33.887,
+"lon": 35.505,
+"precision": "approx",
+"source": "manual"
+},
+"البرج الشمالي": {
+"lat": 33.2625,
+"lon": 35.2389,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Bustan"
+},
+"البرغلية": {
+"lat": 33.3119,
+"lon": 35.2411,
+"precision": "town",
+"source": "wikidata",
+"en": "Bourgheliyeh"
+},
+"البزالية": {
+"lat": 34.1805,
+"lon": 36.3236,
+"precision": "town",
+"source": "wikidata",
+"en": "Toufiqiyeh"
+},
+"البص": {
+"lat": 33.275,
+"lon": 35.205,
+"precision": "approx",
+"source": "manual"
+},
+"البقاع": {
+"lat": 33.85,
+"lon": 36.05,
+"precision": "area",
+"source": "manual"
+},
+"البقاع الغربي": {
+"lat": 33.55,
+"lon": 35.72,
+"precision": "area",
+"source": "manual"
+},
+"البني شيت": {
+"lat": 33.885,
+"lon": 36.115,
+"precision": "approx",
+"source": "manual"
+},
+"البياض": {
+"lat": 33.2042,
+"lon": 35.3283,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayyad"
+},
+"البياضة": {
+"lat": 33.1628,
+"lon": 35.1817,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayyada"
+},
+"البياضة وشمع": {
+"lat": 33.1628,
+"lon": 35.1817,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayyada"
+},
+"البيسارية": {
+"lat": 33.4444,
+"lon": 35.3236,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Baisariyah"
+},
+"البيّاضة": {
+"lat": 33.1628,
+"lon": 35.1817,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayyada"
+},
+"الجامعة اللبنانية": {
+"lat": 33.83,
+"lon": 35.54,
+"precision": "approx",
+"source": "manual"
+},
+"الجرمق": {
+"lat": 33.3864,
+"lon": 35.535,
+"precision": "town",
+"source": "wikidata",
+"en": "Jarmaq"
+},
+"الجليل": {
+"lat": 32.95,
+"lon": 35.35,
+"precision": "area",
+"source": "manual"
+},
+"الجليل الأسفل": {
+"lat": 32.75,
+"lon": 35.4,
+"precision": "area",
+"source": "manual"
+},
+"الجليل الأعلى": {
+"lat": 33.0,
+"lon": 35.45,
+"precision": "area",
+"source": "manual"
+},
+"الجليل الغربي": {
+"lat": 33.0,
+"lon": 35.15,
+"precision": "area",
+"source": "manual"
+},
+"الجميجمة": {
+"lat": 33.2037,
+"lon": 35.4388,
+"precision": "town",
+"source": "wikidata",
+"en": "Jumayjimah"
+},
+"الجناح": {
+"lat": 33.865,
+"lon": 35.485,
+"precision": "approx",
+"source": "manual"
+},
+"الجولان": {
+"lat": 33.0,
+"lon": 35.75,
+"precision": "area",
+"source": "manual"
+},
+"الجية": {
+"lat": 33.6657,
+"lon": 35.4268,
+"precision": "town",
+"source": "wikidata",
+"en": "Jieh"
+},
+"الحازمية": {
+"lat": 33.8511,
+"lon": 35.5414,
+"precision": "town",
+"source": "wikidata",
+"en": "Hazmiyeh"
+},
+"الحامول": {
+"lat": 33.1261,
+"lon": 35.1669,
+"precision": "town",
+"source": "wikidata",
+"en": "Hamoul"
+},
+"الحدت": {
+"lat": 33.84,
+"lon": 35.53,
+"precision": "approx",
+"source": "manual"
+},
+"الحدث": {
+"lat": 33.9994,
+"lon": 36.025,
+"precision": "town",
+"source": "wikidata",
+"en": "Hadath Baalbek"
+},
+"الحلوسية": {
+"lat": 33.3081,
+"lon": 35.3264,
+"precision": "town",
+"source": "wikidata",
+"en": "Halloussiyeh"
+},
+"الحمادية": {
+"lat": 33.29,
+"lon": 35.25,
+"precision": "approx",
+"source": "manual"
+},
+"الحنية": {
+"lat": 33.1856,
+"lon": 35.2236,
+"precision": "town",
+"source": "wikidata",
+"en": "Henniyeh"
+},
+"الحوش": {
+"lat": 33.258,
+"lon": 35.215,
+"precision": "approx",
+"source": "manual"
+},
+"الخرايب": {
+"lat": 33.3431,
+"lon": 35.2997,
+"precision": "town",
+"source": "wikidata",
+"en": "Kharayeb (Sidon)"
+},
+"الخردلي": {
+"lat": 33.335,
+"lon": 35.57,
+"precision": "area",
+"source": "manual"
+},
+"الخرطوم": {
+"lat": 33.4064,
+"lon": 35.3717,
+"precision": "town",
+"source": "wikidata",
+"en": "Khartoum"
+},
+"الخريبة": {
+"lat": 33.8236,
+"lon": 35.7153,
+"precision": "town",
+"source": "wikidata",
+"en": "Khreibeh (Baabda)"
+},
+"الخضيرة": {
+"lat": 32.45,
+"lon": 34.9167,
+"precision": "town",
+"source": "wikidata",
+"en": "Hadera"
+},
+"الخيام": {
+"lat": 33.3272,
+"lon": 35.6111,
+"precision": "town",
+"source": "wikidata",
+"en": "Khiam"
+},
+"الخيام بين الملعب والمعتقل": {
+"lat": 33.3272,
+"lon": 35.6111,
+"precision": "town",
+"source": "wikidata",
+"en": "Khiam"
+},
+"الدامور": {
+"lat": 33.7333,
+"lon": 35.45,
+"precision": "town",
+"source": "wikidata",
+"en": "Damour"
+},
+"الدلافة": {
+"lat": 33.4,
+"lon": 35.62,
+"precision": "approx",
+"source": "manual"
+},
+"الدوير": {
+"lat": 33.3864,
+"lon": 35.4144,
+"precision": "town",
+"source": "wikidata",
+"en": "Doueir"
+},
+"الرابية": {
+"lat": 33.92,
+"lon": 35.6024,
+"precision": "town",
+"source": "wikidata",
+"en": "Rabieh"
+},
+"الرشيدية": {
+"lat": 33.236,
+"lon": 35.218,
+"precision": "approx",
+"source": "manual"
+},
+"الرفيد": {
+"lat": 33.5711,
+"lon": 35.8169,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Rafid"
+},
+"الرمادية": {
+"lat": 33.1994,
+"lon": 35.2758,
+"precision": "town",
+"source": "wikidata",
+"en": "Rmadiyeh"
+},
+"الرملة": {
+"lat": 31.9275,
+"lon": 34.8625,
+"precision": "town",
+"source": "wikidata",
+"en": "Ramla"
+},
+"الرملة البيضاء": {
+"lat": 33.88,
+"lon": 35.48,
+"precision": "approx",
+"source": "manual"
+},
+"الرملية": {
+"lat": 33.7498,
+"lon": 35.6505,
+"precision": "town",
+"source": "wikidata",
+"en": "Ramlieh"
+},
+"الروشة": {
+"lat": 33.89,
+"lon": 35.47,
+"precision": "approx",
+"source": "manual"
+},
+"الريحان": {
+"lat": 33.4444,
+"lon": 35.5675,
+"precision": "town",
+"source": "wikidata",
+"en": "Al Rihan"
+},
+"الزرارية": {
+"lat": 33.3417,
+"lon": 35.3328,
+"precision": "town",
+"source": "wikidata",
+"en": "Zrarieh"
+},
+"الزهراني": {
+"lat": 33.4972,
+"lon": 35.34,
+"precision": "town",
+"source": "wikidata",
+"en": "الزهراني"
+},
+"السريرة": {
+"lat": 33.4357,
+"lon": 35.6229,
+"precision": "town",
+"source": "wikidata",
+"en": "As-Srira"
+},
+"السعديات": {
+"lat": 33.66,
+"lon": 35.43,
+"precision": "approx",
+"source": "manual"
+},
+"السعيدة": {
+"lat": 34.0214,
+"lon": 36.0814,
+"precision": "town",
+"source": "wikidata",
+"en": "Saaideh"
+},
+"السكسكية": {
+"lat": 33.4369,
+"lon": 35.2847,
+"precision": "town",
+"source": "wikidata",
+"en": "Saksakiyeh"
+},
+"السلطانية": {
+"lat": 33.205,
+"lon": 35.4053,
+"precision": "town",
+"source": "wikidata",
+"en": "As-Sultaniyah"
+},
+"السماعية": {
+"lat": 33.2206,
+"lon": 35.2361,
+"precision": "town",
+"source": "wikidata",
+"en": "Smaiyeh"
+},
+"الشارون": {
+"lat": 33.7711,
+"lon": 35.6858,
+"precision": "town",
+"source": "wikidata",
+"en": "Charoun"
+},
+"الشرقية": {
+"lat": 33.3999,
+"lon": 35.4195,
+"precision": "town",
+"source": "wikidata",
+"en": "Charkiyeh"
+},
+"الشعيتية": {
+"lat": 33.1969,
+"lon": 35.2654,
+"precision": "town",
+"source": "wikidata",
+"en": "Chaaitiyeh"
+},
+"الشقيف": {
+"lat": 33.3285,
+"lon": 35.5323,
+"precision": "approx",
+"source": "manual"
+},
+"الشهابية": {
+"lat": 33.2425,
+"lon": 35.3819,
+"precision": "town",
+"source": "wikidata",
+"en": "Chehabiyeh"
+},
+"الشهابيّة": {
+"lat": 33.2425,
+"lon": 35.3819,
+"precision": "town",
+"source": "wikidata",
+"en": "Chehabiyeh"
+},
+"الشويفات": {
+"lat": 33.8167,
+"lon": 35.5167,
+"precision": "town",
+"source": "wikidata",
+"en": "Choueifat"
+},
+"الشيخ دنون": {
+"lat": 32.9916,
+"lon": 35.1478,
+"precision": "town",
+"source": "wikidata",
+"en": "Sheikh Danun"
+},
+"الصرفند": {
+"lat": 33.4517,
+"lon": 35.2908,
+"precision": "town",
+"source": "wikidata",
+"en": "Sarafand"
+},
+"الصوانة": {
+"lat": 33.217,
+"lon": 35.488,
+"precision": "approx",
+"source": "manual"
+},
+"الضاحية": {
+"lat": 33.85,
+"lon": 35.51,
+"precision": "area",
+"source": "manual"
+},
+"الضاحية الجنوبية": {
+"lat": 33.85,
+"lon": 35.51,
+"precision": "area",
+"source": "manual"
+},
+"الضهيرة": {
+"lat": 33.092,
+"lon": 35.178,
+"precision": "approx",
+"source": "manual"
+},
+"الطيبة": {
+"lat": 33.282,
+"lon": 35.528,
+"precision": "approx",
+"source": "manual"
+},
+"الطيري": {
+"lat": 33.1333,
+"lon": 35.4,
+"precision": "town",
+"source": "wikidata",
+"en": "At Tiri"
+},
+"الطّيبة": {
+"lat": 33.282,
+"lon": 35.528,
+"precision": "approx",
+"source": "manual"
+},
+"العاقبية": {
+"lat": 33.47,
+"lon": 35.32,
+"precision": "approx",
+"source": "manual"
+},
+"العباد": {
+"lat": 33.2,
+"lon": 35.535,
+"precision": "approx",
+"source": "manual"
+},
+"العباد ومحيطه": {
+"lat": 33.2,
+"lon": 35.535,
+"precision": "approx",
+"source": "manual"
+},
+"العباسية": {
+"lat": 33.2986,
+"lon": 35.2831,
+"precision": "town",
+"source": "wikidata",
+"en": "Aabbassiyeh"
+},
+"العبّاد": {
+"lat": 33.2,
+"lon": 35.535,
+"precision": "approx",
+"source": "manual"
+},
+"العدوسية": {
+"lat": 33.4692,
+"lon": 35.3444,
+"precision": "town",
+"source": "wikidata",
+"en": "Aaddoussiyeh"
+},
+"العديسة": {
+"lat": 33.2542,
+"lon": 35.5425,
+"precision": "town",
+"source": "wikidata",
+"en": "Adaisseh"
+},
+"العديسة علي الحدود اللبنانية الفلسطينية": {
+"lat": 33.2542,
+"lon": 35.5425,
+"precision": "town",
+"source": "wikidata",
+"en": "Adaisseh"
+},
+"العمروسية": {
+"lat": 33.83,
+"lon": 35.53,
+"precision": "approx",
+"source": "manual"
+},
+"العيشية": {
+"lat": 33.4086,
+"lon": 35.5561,
+"precision": "town",
+"source": "wikidata",
+"en": "Aishiya"
+},
+"العيشيّة": {
+"lat": 33.4086,
+"lon": 35.5561,
+"precision": "town",
+"source": "wikidata",
+"en": "Aishiya"
+},
+"الغازية": {
+"lat": 33.5189,
+"lon": 35.3597,
+"precision": "town",
+"source": "wikidata",
+"en": "Ghazieh"
+},
+"الغبيري": {
+"lat": 33.8589,
+"lon": 35.5042,
+"precision": "town",
+"source": "wikidata",
+"en": "Ghobeiry"
+},
+"الغجر": {
+"lat": 33.2727,
+"lon": 35.6235,
+"precision": "town",
+"source": "wikidata",
+"en": "Ghajar"
+},
+"الغسانية": {
+"lat": 33.4175,
+"lon": 35.3583,
+"precision": "town",
+"source": "wikidata",
+"en": "Ghassanieh"
+},
+"الغندورية": {
+"lat": 33.2722,
+"lon": 35.4311,
+"precision": "town",
+"source": "wikidata",
+"en": "Ghanduriyah"
+},
+"القاسمية": {
+"lat": 33.338,
+"lon": 35.247,
+"precision": "approx",
+"source": "manual"
+},
+"القاطراني": {
+"lat": 33.44,
+"lon": 35.58,
+"precision": "approx",
+"source": "manual"
+},
+"القرعون": {
+"lat": 33.5633,
+"lon": 35.7219,
+"precision": "town",
+"source": "wikidata",
+"en": "Qaraoun"
+},
+"القصيبة": {
+"lat": 33.3339,
+"lon": 35.3967,
+"precision": "town",
+"source": "wikidata",
+"en": "Kossaybeh"
+},
+"القصير": {
+"lat": 33.2928,
+"lon": 35.455,
+"precision": "town",
+"source": "wikidata",
+"en": "Qoussair"
+},
+"القطاع الشرقي": {
+"lat": 33.28,
+"lon": 35.62,
+"precision": "area",
+"source": "manual"
+},
+"القطاع الغربي": {
+"lat": 33.15,
+"lon": 35.3,
+"precision": "area",
+"source": "manual"
+},
+"القطراني": {
+"lat": 33.4333,
+"lon": 35.6,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Qatrani, Jezzine"
+},
+"القعقعية": {
+"lat": 33.4308,
+"lon": 35.3444,
+"precision": "town",
+"source": "wikidata",
+"en": "Qaaqaaiyet Es Snaoubar"
+},
+"القليعة": {
+"lat": 33.3389,
+"lon": 35.5619,
+"precision": "town",
+"source": "wikidata",
+"en": "Qlaiaa"
+},
+"القليلة": {
+"lat": 33.1964,
+"lon": 35.2311,
+"precision": "town",
+"source": "wikidata",
+"en": "Qlaileh"
+},
+"القنطرة": {
+"lat": 33.2725,
+"lon": 35.4653,
+"precision": "town",
+"source": "wikidata",
+"en": "Qantara"
+},
+"القوزح": {
+"lat": 33.1167,
+"lon": 35.3333,
+"precision": "town",
+"source": "wikidata",
+"en": "Qaouzah"
+},
+"الكرمئيل": {
+"lat": 32.9,
+"lon": 35.2833,
+"precision": "town",
+"source": "wikidata",
+"en": "Karmiel"
+},
+"الكرمل": {
+"lat": 32.75,
+"lon": 35.03,
+"precision": "area",
+"source": "manual"
+},
+"الكريوت": {
+"lat": 32.83,
+"lon": 35.08,
+"precision": "area",
+"source": "manual"
+},
+"الكفور": {
+"lat": 33.3972,
+"lon": 35.4511,
+"precision": "town",
+"source": "wikidata",
+"en": "al-Kufur"
+},
+"اللبوة": {
+"lat": 34.2,
+"lon": 36.35,
+"precision": "approx",
+"source": "manual"
+},
+"اللبونة": {
+"lat": 33.09,
+"lon": 35.16,
+"precision": "approx",
+"source": "manual"
+},
+"اللوبية": {
+"lat": 33.4256,
+"lon": 35.2833,
+"precision": "town",
+"source": "wikidata",
+"en": "Loubieh"
+},
+"اللوبيه": {
+"lat": 33.4256,
+"lon": 35.2833,
+"precision": "town",
+"source": "wikidata",
+"en": "Loubieh"
+},
+"اللويزة": {
+"lat": 33.4604,
+"lon": 35.5358,
+"precision": "town",
+"source": "wikidata",
+"en": "Louayzeh (Jezzine)"
+},
+"الليلكي": {
+"lat": 33.8329,
+"lon": 35.5127,
+"precision": "town",
+"source": "wikidata",
+"en": "Laïlaké"
+},
+"المالكية": {
+"lat": 33.0982,
+"lon": 35.5111,
+"precision": "town",
+"source": "wikidata",
+"en": "Malkia"
+},
+"المالكيّة": {
+"lat": 33.0982,
+"lon": 35.5111,
+"precision": "town",
+"source": "wikidata",
+"en": "Malkia"
+},
+"المجادل": {
+"lat": 33.2294,
+"lon": 35.3601,
+"precision": "town",
+"source": "wikidata",
+"en": "Majadel"
+},
+"المجدل": {
+"lat": 34.1058,
+"lon": 35.8975,
+"precision": "town",
+"source": "wikidata",
+"en": "Majdel el-Aqoura"
+},
+"المرج": {
+"lat": 33.7639,
+"lon": 35.8833,
+"precision": "town",
+"source": "wikidata",
+"en": "Marj"
+},
+"المروانية": {
+"lat": 33.4456,
+"lon": 35.3856,
+"precision": "town",
+"source": "wikidata",
+"en": "Merouaniyeh"
+},
+"المصنع": {
+"lat": 33.705,
+"lon": 35.94,
+"precision": "approx",
+"source": "manual"
+},
+"المصيلح": {
+"lat": 33.42,
+"lon": 35.33,
+"precision": "approx",
+"source": "manual"
+},
+"المطلة": {
+"lat": 33.2789,
+"lon": 35.5767,
+"precision": "town",
+"source": "wikidata",
+"en": "Metula"
+},
+"المطلّة": {
+"lat": 33.2789,
+"lon": 35.5767,
+"precision": "town",
+"source": "wikidata",
+"en": "Metula"
+},
+"المعشوق": {
+"lat": 33.2672,
+"lon": 35.2242,
+"precision": "town",
+"source": "wikidata",
+"en": "معشوق"
+},
+"المعلية": {
+"lat": 33.196,
+"lon": 35.236,
+"precision": "approx",
+"source": "manual"
+},
+"المنارة": {
+"lat": 33.245,
+"lon": 35.543,
+"precision": "approx",
+"source": "manual"
+},
+"المنصوري": {
+"lat": 33.1736,
+"lon": 35.21,
+"precision": "town",
+"source": "wikidata",
+"en": "Mansouri"
+},
+"المية ومية": {
+"lat": 33.5419,
+"lon": 35.3978,
+"precision": "town",
+"source": "wikidata",
+"en": "Mieh Mieh"
+},
+"الناقورة": {
+"lat": 33.12,
+"lon": 35.1342,
+"precision": "town",
+"source": "wikidata",
+"en": "Naqoura"
+},
+"النبطية": {
+"lat": 33.3772,
+"lon": 35.4836,
+"precision": "town",
+"source": "wikidata",
+"en": "Nabatieh"
+},
+"النبطية التحتا": {
+"lat": 33.375,
+"lon": 35.48,
+"precision": "approx",
+"source": "manual"
+},
+"النبطية الفوقا": {
+"lat": 33.385,
+"lon": 35.505,
+"precision": "approx",
+"source": "manual"
+},
+"النبطيّة": {
+"lat": 33.3772,
+"lon": 35.4836,
+"precision": "town",
+"source": "wikidata",
+"en": "Nabatieh"
+},
+"النبعة": {
+"lat": 33.88,
+"lon": 35.54,
+"precision": "approx",
+"source": "manual"
+},
+"النبي شيت": {
+"lat": 33.885,
+"lon": 36.115,
+"precision": "approx",
+"source": "manual"
+},
+"النبي شيث": {
+"lat": 33.8722,
+"lon": 36.1128,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Nabi Shayth"
+},
+"النجارية": {
+"lat": 33.4722,
+"lon": 35.3486,
+"precision": "town",
+"source": "wikidata",
+"en": "Najjarieh"
+},
+"النفاخية": {
+"lat": 33.2708,
+"lon": 35.3861,
+"precision": "town",
+"source": "wikidata",
+"en": "Naffakhiyeh"
+},
+"النميرية": {
+"lat": 33.4231,
+"lon": 35.3989,
+"precision": "town",
+"source": "wikidata",
+"en": "Nmairiyeh"
+},
+"النّاقورة": {
+"lat": 33.12,
+"lon": 35.1342,
+"precision": "town",
+"source": "wikidata",
+"en": "Naqoura"
+},
+"الهبارية": {
+"lat": 33.37,
+"lon": 35.74,
+"precision": "approx",
+"source": "manual"
+},
+"الهرمل": {
+"lat": 34.3961,
+"lon": 36.3875,
+"precision": "town",
+"source": "wikidata",
+"en": "Hermel"
+},
+"الوزاني": {
+"lat": 33.2743,
+"lon": 35.6181,
+"precision": "town",
+"source": "wikidata",
+"en": "Wazzani"
+},
+"انصار": {
+"lat": 33.3833,
+"lon": 35.35,
+"precision": "town",
+"source": "wikidata",
+"en": "Ansar"
+},
+"انصارية": {
+"lat": 33.4125,
+"lon": 35.2792,
+"precision": "town",
+"source": "wikidata",
+"en": "Ansariye"
+},
+"ايفن مناحيم": {
+"lat": 33.074,
+"lon": 35.29,
+"precision": "approx",
+"source": "manual"
+},
+"اييليت هشاحر": {
+"lat": 33.0228,
+"lon": 35.5776,
+"precision": "town",
+"source": "wikidata",
+"en": "Ayelet HaShahar"
+},
+"بئر العبد": {
+"lat": 33.845,
+"lon": 35.505,
+"precision": "approx",
+"source": "manual"
+},
+"باتولية": {
+"lat": 33.2247,
+"lon": 35.2542,
+"precision": "town",
+"source": "wikidata",
+"en": "Batoulay"
+},
+"باتوليه": {
+"lat": 33.2247,
+"lon": 35.2542,
+"precision": "town",
+"source": "wikidata",
+"en": "Batoulay"
+},
+"باريش": {
+"lat": 33.2731,
+"lon": 35.3539,
+"precision": "town",
+"source": "wikidata",
+"en": "Barich"
+},
+"بافليه": {
+"lat": 33.2633,
+"lon": 35.365,
+"precision": "town",
+"source": "wikidata",
+"en": "Baflay"
+},
+"بتست": {
+"lat": 33.07,
+"lon": 35.14,
+"precision": "approx",
+"source": "manual"
+},
+"بدياس": {
+"lat": 33.3122,
+"lon": 35.3006,
+"precision": "town",
+"source": "wikidata",
+"en": "Bedias"
+},
+"برالياس": {
+"lat": 33.775,
+"lon": 35.9,
+"precision": "town",
+"source": "wikidata",
+"en": "Barelias"
+},
+"برانيت": {
+"lat": 33.08,
+"lon": 35.37,
+"precision": "approx",
+"source": "manual"
+},
+"برج البراجنة": {
+"lat": 33.8483,
+"lon": 35.5033,
+"precision": "town",
+"source": "wikidata",
+"en": "Bourj el-Barajneh"
+},
+"برج الشمالي": {
+"lat": 33.2625,
+"lon": 35.2389,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Bustan"
+},
+"برج الملوك": {
+"lat": 33.3242,
+"lon": 35.5633,
+"precision": "town",
+"source": "wikidata",
+"en": "Borj El Mlouk"
+},
+"برج حمود": {
+"lat": 33.8936,
+"lon": 35.5403,
+"precision": "town",
+"source": "wikidata",
+"en": "Bourj Hammoud"
+},
+"برج رحال": {
+"lat": 33.3097,
+"lon": 35.2825,
+"precision": "town",
+"source": "wikidata",
+"en": "Borj Rahal"
+},
+"برج قلاوي": {
+"lat": 33.2606,
+"lon": 35.4189,
+"precision": "town",
+"source": "wikidata",
+"en": "Burj Qallawiyah"
+},
+"برج قلاوية": {
+"lat": 33.2606,
+"lon": 35.4189,
+"precision": "town",
+"source": "wikidata",
+"en": "Burj Qallawiyah"
+},
+"برج قلاويه": {
+"lat": 33.2606,
+"lon": 35.4189,
+"precision": "town",
+"source": "wikidata",
+"en": "Burj Qallawiyah"
+},
+"برعشيت": {
+"lat": 33.1761,
+"lon": 35.4434,
+"precision": "town",
+"source": "wikidata",
+"en": "Baraachit"
+},
+"برعم": {
+"lat": 33.0583,
+"lon": 35.4333,
+"precision": "town",
+"source": "wikidata",
+"en": "Bar'am"
+},
+"بريتال": {
+"lat": 33.9353,
+"lon": 36.1508,
+"precision": "town",
+"source": "wikidata",
+"en": "Brital"
+},
+"بريقع": {
+"lat": 33.3389,
+"lon": 35.3833,
+"precision": "town",
+"source": "wikidata",
+"en": "Braiqeaa"
+},
+"بصليا": {
+"lat": 33.5011,
+"lon": 35.5119,
+"precision": "town",
+"source": "wikidata",
+"en": "Bouslaiya"
+},
+"بعلبك": {
+"lat": 34.01,
+"lon": 36.21,
+"precision": "approx",
+"source": "excel"
+},
+"بلاط": {
+"lat": 33.3861,
+"lon": 35.6006,
+"precision": "town",
+"source": "wikidata",
+"en": "Blat, Marjayoun"
+},
+"بلماخيم الجوية": {
+"lat": 31.93,
+"lon": 34.69,
+"precision": "approx",
+"source": "manual"
+},
+"بليدا": {
+"lat": 33.1382,
+"lon": 35.5082,
+"precision": "town",
+"source": "wikidata",
+"en": "Blida"
+},
+"بنت جبيل": {
+"lat": 33.1258,
+"lon": 35.4428,
+"precision": "town",
+"source": "wikidata",
+"en": "Bint Jbeil"
+},
+"بنت جبيل علي النحو الاتي": {
+"lat": 33.1258,
+"lon": 35.4428,
+"precision": "town",
+"source": "wikidata",
+"en": "Bint Jbeil"
+},
+"بنعفول": {
+"lat": 33.4828,
+"lon": 35.4217,
+"precision": "town",
+"source": "wikidata",
+"en": "Bnaafoul"
+},
+"بني حيان": {
+"lat": 33.2431,
+"lon": 35.4875,
+"precision": "town",
+"source": "wikidata",
+"en": "Bani Haiyyan"
+},
+"بوداي": {
+"lat": 34.07,
+"lon": 36.06,
+"precision": "approx",
+"source": "manual"
+},
+"بيت ليف": {
+"lat": 33.1336,
+"lon": 35.3328,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayt Lif"
+},
+"بيت ليف والقوزح": {
+"lat": 33.1336,
+"lon": 35.3328,
+"precision": "town",
+"source": "wikidata",
+"en": "Bayt Lif"
+},
+"بيت هلل": {
+"lat": 33.2075,
+"lon": 35.6057,
+"precision": "approx",
+"source": "manual"
+},
+"بيت هيلل": {
+"lat": 33.2075,
+"lon": 35.6057,
+"precision": "town",
+"source": "wikidata",
+"en": "Beit Hillel"
+},
+"بيت ياحون": {
+"lat": 33.1592,
+"lon": 35.4217,
+"precision": "town",
+"source": "wikidata",
+"en": "Beit Yahoun"
+},
+"بيروت": {
+"lat": 33.8869,
+"lon": 35.5131,
+"precision": "town",
+"source": "wikidata",
+"en": "Beirut"
+},
+"بيريا": {
+"lat": 32.98,
+"lon": 35.5,
+"precision": "approx",
+"source": "manual"
+},
+"بيسان": {
+"lat": 32.4961,
+"lon": 35.4989,
+"precision": "town",
+"source": "wikidata",
+"en": "Beit She'an"
+},
+"بِرانيت": {
+"lat": 33.08,
+"lon": 35.37,
+"precision": "approx",
+"source": "manual"
+},
+"تبنين": {
+"lat": 33.1933,
+"lon": 35.4108,
+"precision": "town",
+"source": "wikidata",
+"en": "Tebnine"
+},
+"تفاحتا": {
+"lat": 33.4389,
+"lon": 35.3692,
+"precision": "town",
+"source": "wikidata",
+"en": "Teffahta"
+},
+"تل أبيب": {
+"lat": 32.08,
+"lon": 34.78,
+"precision": "town",
+"source": "wikidata",
+"en": "Tel Aviv"
+},
+"تل ابيب": {
+"lat": 32.08,
+"lon": 34.78,
+"precision": "town",
+"source": "wikidata",
+"en": "Tel Aviv"
+},
+"تل النحاس": {
+"lat": 33.28,
+"lon": 35.57,
+"precision": "approx",
+"source": "manual"
+},
+"تل هشومير": {
+"lat": 32.045,
+"lon": 34.84,
+"precision": "approx",
+"source": "manual"
+},
+"تلة العويضة": {
+"lat": 33.27,
+"lon": 35.57,
+"precision": "approx",
+"source": "manual"
+},
+"تلّة الحمامص": {
+"lat": 33.29,
+"lon": 35.6,
+"precision": "approx",
+"source": "manual"
+},
+"تلّة العويضة": {
+"lat": 33.27,
+"lon": 35.57,
+"precision": "approx",
+"source": "manual"
+},
+"تمنين": {
+"lat": 33.94,
+"lon": 36.07,
+"precision": "approx",
+"source": "manual"
+},
+"تمنين التحتا": {
+"lat": 33.8836,
+"lon": 35.9914,
+"precision": "town",
+"source": "wikidata",
+"en": "Temnin el Tahta"
+},
+"تول": {
+"lat": 33.3864,
+"lon": 35.4503,
+"precision": "town",
+"source": "wikidata",
+"en": "Toul"
+},
+"تولين": {
+"lat": 33.2472,
+"lon": 35.4403,
+"precision": "town",
+"source": "wikidata",
+"en": "Touline"
+},
+"تيفن": {
+"lat": 32.96,
+"lon": 35.27,
+"precision": "approx",
+"source": "manual"
+},
+"جباع": {
+"lat": 33.4833,
+"lon": 35.5167,
+"precision": "town",
+"source": "wikidata",
+"en": "Jbaa"
+},
+"جبال البطم": {
+"lat": 33.1765,
+"lon": 35.2914,
+"precision": "town",
+"source": "wikidata",
+"en": "Jabal El Botm"
+},
+"جبشيت": {
+"lat": 33.3657,
+"lon": 35.4343,
+"precision": "town",
+"source": "wikidata",
+"en": "Jebchit"
+},
+"جبل الرفيع": {
+"lat": 33.45,
+"lon": 35.55,
+"precision": "area",
+"source": "manual"
+},
+"جبل الريحان": {
+"lat": 33.4444,
+"lon": 35.5675,
+"precision": "town",
+"source": "wikidata",
+"en": "Al Rihan"
+},
+"جبل الشيخ": {
+"lat": 33.42,
+"lon": 35.86,
+"precision": "area",
+"source": "manual"
+},
+"جبل صافي": {
+"lat": 33.47,
+"lon": 35.58,
+"precision": "area",
+"source": "manual"
+},
+"جرجوع": {
+"lat": 33.4458,
+"lon": 35.5191,
+"precision": "town",
+"source": "wikidata",
+"en": "Jarjouh"
+},
+"جزين": {
+"lat": 33.54,
+"lon": 35.5836,
+"precision": "town",
+"source": "wikidata",
+"en": "Jezzine"
+},
+"جسر الدلافة": {
+"lat": 33.4,
+"lon": 35.62,
+"precision": "approx",
+"source": "manual"
+},
+"جل البحر": {
+"lat": 33.28,
+"lon": 35.21,
+"precision": "approx",
+"source": "manual"
+},
+"جل العلام": {
+"lat": 33.095,
+"lon": 35.162,
+"precision": "approx",
+"source": "manual"
+},
+"جلّ العلاّم": {
+"lat": 33.095,
+"lon": 35.162,
+"precision": "approx",
+"source": "manual"
+},
+"جلّ العلّام": {
+"lat": 33.095,
+"lon": 35.162,
+"precision": "approx",
+"source": "manual"
+},
+"جميجمة": {
+"lat": 33.2037,
+"lon": 35.4388,
+"precision": "town",
+"source": "wikidata",
+"en": "Jumayjimah"
+},
+"جناتا": {
+"lat": 33.2861,
+"lon": 35.3196,
+"precision": "town",
+"source": "wikidata",
+"en": "Jannata"
+},
+"جنتا": {
+"lat": 33.8574,
+"lon": 36.1065,
+"precision": "town",
+"source": "wikidata",
+"en": "Jenta"
+},
+"جنوب لبنان": {
+"lat": 33.28,
+"lon": 35.4,
+"precision": "area",
+"source": "manual"
+},
+"جويا": {
+"lat": 33.2365,
+"lon": 35.3385,
+"precision": "town",
+"source": "wikidata",
+"en": "Jwaya"
+},
+"جويّا": {
+"lat": 33.2365,
+"lon": 35.3385,
+"precision": "town",
+"source": "wikidata",
+"en": "Jwaya"
+},
+"حارة حريك": {
+"lat": 33.85,
+"lon": 35.5167,
+"precision": "town",
+"source": "wikidata",
+"en": "Haret Hreik"
+},
+"حارة صيدا": {
+"lat": 33.555,
+"lon": 35.385,
+"precision": "approx",
+"source": "manual"
+},
+"حاروف": {
+"lat": 33.3722,
+"lon": 35.4444,
+"precision": "town",
+"source": "wikidata",
+"en": "Harouf"
+},
+"حاريص": {
+"lat": 33.1745,
+"lon": 35.3766,
+"precision": "town",
+"source": "wikidata",
+"en": "Hariss"
+},
+"حاصبيا": {
+"lat": 33.3972,
+"lon": 35.6833,
+"precision": "town",
+"source": "wikidata",
+"en": "Hasbaya"
+},
+"حامول": {
+"lat": 33.1261,
+"lon": 35.1669,
+"precision": "town",
+"source": "wikidata",
+"en": "Hamoul"
+},
+"حانيتا": {
+"lat": 33.0876,
+"lon": 35.1735,
+"precision": "approx",
+"source": "manual"
+},
+"حانين": {
+"lat": 33.1103,
+"lon": 35.3811,
+"precision": "town",
+"source": "wikidata",
+"en": "Hanine"
+},
+"حبوش": {
+"lat": 33.4,
+"lon": 35.4833,
+"precision": "town",
+"source": "wikidata",
+"en": "Habboûch"
+},
+"حداثا": {
+"lat": 33.1667,
+"lon": 35.3833,
+"precision": "town",
+"source": "wikidata",
+"en": "Haddatha"
+},
+"حدب يارون": {
+"lat": 33.09,
+"lon": 35.42,
+"precision": "approx",
+"source": "manual"
+},
+"حدّاثا": {
+"lat": 33.1667,
+"lon": 35.3833,
+"precision": "town",
+"source": "wikidata",
+"en": "Haddatha"
+},
+"حربتا": {
+"lat": 34.2067,
+"lon": 36.2647,
+"precision": "town",
+"source": "wikidata",
+"en": "Harbata"
+},
+"حلتا": {
+"lat": 33.3086,
+"lon": 35.6689,
+"precision": "town",
+"source": "wikidata",
+"en": "Halta"
+},
+"حناوية": {
+"lat": 33.2211,
+"lon": 35.2775,
+"precision": "town",
+"source": "wikidata",
+"en": "Hanaouay"
+},
+"حناويه": {
+"lat": 33.2211,
+"lon": 35.2775,
+"precision": "town",
+"source": "wikidata",
+"en": "Hanaouay"
+},
+"حنيتا": {
+"lat": 33.0876,
+"lon": 35.1735,
+"precision": "town",
+"source": "wikidata",
+"en": "Hanita"
+},
+"حوش الرافقة": {
+"lat": 33.9236,
+"lon": 36.045,
+"precision": "town",
+"source": "wikidata",
+"en": "Haouch Er Rafqa"
+},
+"حولا": {
+"lat": 33.21,
+"lon": 35.5169,
+"precision": "town",
+"source": "wikidata",
+"en": "Hula"
+},
+"حومين": {
+"lat": 33.43,
+"lon": 35.49,
+"precision": "approx",
+"source": "manual"
+},
+"حومين التحتا": {
+"lat": 33.475,
+"lon": 35.4344,
+"precision": "town",
+"source": "wikidata",
+"en": "Houmine Et Tahta"
+},
+"حومين الفوقا": {
+"lat": 33.4436,
+"lon": 35.4903,
+"precision": "town",
+"source": "wikidata",
+"en": "Houmine El Faouqa"
+},
+"حيفا": {
+"lat": 32.8192,
+"lon": 34.9992,
+"precision": "town",
+"source": "wikidata",
+"en": "Haifa"
+},
+"حيفا البحرية": {
+"lat": 32.8192,
+"lon": 34.9992,
+"precision": "town",
+"source": "wikidata",
+"en": "Haifa"
+},
+"حيفا المحتلة بعشرات الصواريخ": {
+"lat": 32.8192,
+"lon": 34.9992,
+"precision": "town",
+"source": "wikidata",
+"en": "Haifa"
+},
+"حيفا المحتلة)": {
+"lat": 32.8192,
+"lon": 34.9992,
+"precision": "town",
+"source": "wikidata",
+"en": "Haifa"
+},
+"خربة المنارة": {
+"lat": 32.6455,
+"lon": 34.9644,
+"precision": "town",
+"source": "wikidata",
+"en": "Khirbat Al-Manara"
+},
+"خربة سلم": {
+"lat": 33.2292,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Khirbet Selm"
+},
+"خلدة": {
+"lat": 33.7833,
+"lon": 35.4833,
+"precision": "town",
+"source": "wikidata",
+"en": "Khalde"
+},
+"خليج حيفا": {
+"lat": 32.82,
+"lon": 35.03,
+"precision": "area",
+"source": "manual"
+},
+"دان": {
+"lat": 33.2403,
+"lon": 35.6531,
+"precision": "town",
+"source": "wikidata",
+"en": "Dan"
+},
+"دبعال": {
+"lat": 33.2517,
+"lon": 35.3489,
+"precision": "town",
+"source": "wikidata",
+"en": "Debaal"
+},
+"دبل": {
+"lat": 33.1167,
+"lon": 35.3667,
+"precision": "town",
+"source": "wikidata",
+"en": "Debel"
+},
+"دبين": {
+"lat": 33.3694,
+"lon": 35.5947,
+"precision": "town",
+"source": "wikidata",
+"en": "Dibbine"
+},
+"دبّين": {
+"lat": 33.3694,
+"lon": 35.5947,
+"precision": "town",
+"source": "wikidata",
+"en": "Dibbine"
+},
+"دورس": {
+"lat": 34.0,
+"lon": 36.19,
+"precision": "approx",
+"source": "manual"
+},
+"دوفيف": {
+"lat": 33.0522,
+"lon": 35.4076,
+"precision": "town",
+"source": "wikidata",
+"en": "Dovev"
+},
+"دير أنطار": {
+"lat": 33.2186,
+"lon": 35.3758,
+"precision": "town",
+"source": "wikidata",
+"en": "Deyrintar"
+},
+"دير الزهراني": {
+"lat": 33.4311,
+"lon": 35.4594,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Ez Zahrani"
+},
+"دير انطار": {
+"lat": 33.2186,
+"lon": 35.3758,
+"precision": "town",
+"source": "wikidata",
+"en": "Deyrintar"
+},
+"دير حنا": {
+"lat": 32.8624,
+"lon": 35.3712,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Hanna"
+},
+"دير سريان": {
+"lat": 33.2908,
+"lon": 35.5064,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Siriane"
+},
+"دير عامص": {
+"lat": 33.2008,
+"lon": 35.3361,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Aames"
+},
+"دير قانون النهر": {
+"lat": 33.301,
+"lon": 35.3075,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Qanoun En Nahr"
+},
+"دير قانون رأس العين": {
+"lat": 33.2227,
+"lon": 35.2459,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Qanoun El Ain"
+},
+"دير قانون راس العين": {
+"lat": 33.2227,
+"lon": 35.2459,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Qanoun El Ain"
+},
+"دير كيفا": {
+"lat": 33.2564,
+"lon": 35.3983,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Kifa"
+},
+"دير ميماس": {
+"lat": 33.3,
+"lon": 35.55,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Mimas"
+},
+"ديرسريان": {
+"lat": 33.2908,
+"lon": 35.5064,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Siriane"
+},
+"ديركيفا": {
+"lat": 33.2564,
+"lon": 35.3983,
+"precision": "town",
+"source": "wikidata",
+"en": "Deir Kifa"
+},
+"ديشون": {
+"lat": 33.0816,
+"lon": 35.5169,
+"precision": "town",
+"source": "wikidata",
+"en": "Dishon"
+},
+"دِبعال": {
+"lat": 33.2517,
+"lon": 35.3489,
+"precision": "town",
+"source": "wikidata",
+"en": "Debaal"
+},
+"دِبل": {
+"lat": 33.1167,
+"lon": 35.3667,
+"precision": "town",
+"source": "wikidata",
+"en": "Debel"
+},
+"رأس العين": {
+"lat": 33.23,
+"lon": 35.225,
+"precision": "approx",
+"source": "manual"
+},
+"رأس الناقورة": {
+"lat": 33.0861,
+"lon": 35.1136,
+"precision": "town",
+"source": "wikidata",
+"en": "Rosh HaNikra"
+},
+"رأس النّاقورة": {
+"lat": 33.0861,
+"lon": 35.1136,
+"precision": "town",
+"source": "wikidata",
+"en": "Rosh HaNikra"
+},
+"راس الناقورة": {
+"lat": 33.0861,
+"lon": 35.1136,
+"precision": "town",
+"source": "wikidata",
+"en": "Rosh HaNikra"
+},
+"راشيا الفخار": {
+"lat": 33.3533,
+"lon": 35.6672,
+"precision": "town",
+"source": "wikidata",
+"en": "Rachaya Al Foukhar"
+},
+"رامات ديفيد الجوية": {
+"lat": 32.665,
+"lon": 35.18,
+"precision": "approx",
+"source": "manual"
+},
+"راموت نفتالي": {
+"lat": 33.1017,
+"lon": 35.5534,
+"precision": "town",
+"source": "wikidata",
+"en": "Ramot Naftali"
+},
+"راميا": {
+"lat": 33.105,
+"lon": 35.31,
+"precision": "approx",
+"source": "manual"
+},
+"رامية": {
+"lat": 33.1108,
+"lon": 35.3106,
+"precision": "town",
+"source": "wikidata",
+"en": "Ramyah"
+},
+"راميم": {
+"lat": 33.23,
+"lon": 35.55,
+"precision": "area",
+"source": "manual"
+},
+"رب ثلاثين": {
+"lat": 33.2492,
+"lon": 35.5183,
+"precision": "town",
+"source": "wikidata",
+"en": "Rab El Thalathine"
+},
+"ربّ ثلاثين": {
+"lat": 33.2492,
+"lon": 35.5183,
+"precision": "town",
+"source": "wikidata",
+"en": "Rab El Thalathine"
+},
+"رشاف": {
+"lat": 33.15,
+"lon": 35.3667,
+"precision": "town",
+"source": "wikidata",
+"en": "Rachaf"
+},
+"رشاف وبيت ليف": {
+"lat": 33.15,
+"lon": 35.3667,
+"precision": "town",
+"source": "wikidata",
+"en": "Rachaf"
+},
+"رشكنانيه": {
+"lat": 33.1897,
+"lon": 35.3228,
+"precision": "town",
+"source": "wikidata",
+"en": "Rechknanay"
+},
+"رميش": {
+"lat": 33.09,
+"lon": 35.4,
+"precision": "town",
+"source": "wikidata",
+"en": "Rmaich"
+},
+"روش بينا": {
+"lat": 32.9691,
+"lon": 35.5425,
+"precision": "town",
+"source": "wikidata",
+"en": "Rosh Pinna"
+},
+"رومين": {
+"lat": 33.4617,
+"lon": 35.4425,
+"precision": "town",
+"source": "wikidata",
+"en": "Roumine"
+},
+"زبدين": {
+"lat": 33.3742,
+"lon": 35.4611,
+"precision": "town",
+"source": "wikidata",
+"en": "Zibdine (Nabatiyeh)"
+},
+"زبقين": {
+"lat": 33.1667,
+"lon": 35.2667,
+"precision": "town",
+"source": "wikidata",
+"en": "Zibqin"
+},
+"زحلة": {
+"lat": 33.8439,
+"lon": 35.9072,
+"precision": "town",
+"source": "wikidata",
+"en": "Zahlé"
+},
+"زرعيت": {
+"lat": 33.1,
+"lon": 35.2885,
+"precision": "town",
+"source": "wikidata",
+"en": "Zar'it"
+},
+"زفتا": {
+"lat": 33.4483,
+"lon": 35.3982,
+"precision": "town",
+"source": "wikidata",
+"en": "Zefta"
+},
+"زقاق البلاط": {
+"lat": 33.89,
+"lon": 35.5,
+"precision": "approx",
+"source": "manual"
+},
+"زلايا": {
+"lat": 33.46,
+"lon": 35.6706,
+"precision": "town",
+"source": "wikidata",
+"en": "Zilaya"
+},
+"زوطر": {
+"lat": 33.316,
+"lon": 35.53,
+"precision": "area",
+"source": "manual"
+},
+"زوطر الشرقية": {
+"lat": 33.3236,
+"lon": 35.4764,
+"precision": "town",
+"source": "wikidata",
+"en": "Zaoutar Ech Charqiyeh"
+},
+"زوطر الشرقيّة": {
+"lat": 33.3236,
+"lon": 35.4764,
+"precision": "town",
+"source": "wikidata",
+"en": "Zaoutar Ech Charqiyeh"
+},
+"زوطر الغربية": {
+"lat": 33.3222,
+"lon": 35.4625,
+"precision": "town",
+"source": "wikidata",
+"en": "Zaoutar El Gharbiyeh"
+},
+"زيتا": {
+"lat": 33.4997,
+"lon": 35.4042,
+"precision": "town",
+"source": "wikidata",
+"en": "Zeita"
+},
+"ستيلا ماريس": {
+"lat": 32.826,
+"lon": 34.97,
+"precision": "approx",
+"source": "manual"
+},
+"سجد": {
+"lat": 33.4325,
+"lon": 35.5353,
+"precision": "town",
+"source": "wikidata",
+"en": "Sejoud"
+},
+"سحمر": {
+"lat": 33.5186,
+"lon": 35.6856,
+"precision": "town",
+"source": "wikidata",
+"en": "Sohmor"
+},
+"سد القرعون": {
+"lat": 33.56,
+"lon": 35.69,
+"precision": "approx",
+"source": "manual"
+},
+"سرعين": {
+"lat": 33.93,
+"lon": 36.03,
+"precision": "approx",
+"source": "manual"
+},
+"سعسع": {
+"lat": 33.03,
+"lon": 35.4,
+"precision": "approx",
+"source": "manual"
+},
+"سلعا": {
+"lat": 33.2542,
+"lon": 35.38,
+"precision": "town",
+"source": "wikidata",
+"en": "Selaa"
+},
+"سهل الحولة": {
+"lat": 33.1,
+"lon": 35.6,
+"precision": "area",
+"source": "manual"
+},
+"سهل بوداي": {
+"lat": 34.07,
+"lon": 36.06,
+"precision": "area",
+"source": "manual"
+},
+"شامير": {
+"lat": 33.1654,
+"lon": 35.6607,
+"precision": "town",
+"source": "wikidata",
+"en": "Shamir"
+},
+"شبريحا": {
+"lat": 33.302,
+"lon": 35.236,
+"precision": "approx",
+"source": "manual"
+},
+"شبعا": {
+"lat": 33.35,
+"lon": 35.75,
+"precision": "town",
+"source": "wikidata",
+"en": "Shebaa"
+},
+"شتولا": {
+"lat": 33.087,
+"lon": 35.316,
+"precision": "approx",
+"source": "manual"
+},
+"شحور": {
+"lat": 33.3,
+"lon": 35.3667,
+"precision": "town",
+"source": "wikidata",
+"en": "Chehour"
+},
+"شعث": {
+"lat": 34.1417,
+"lon": 36.2322,
+"precision": "town",
+"source": "wikidata",
+"en": "Chaat"
+},
+"شفا عمرو": {
+"lat": 32.8056,
+"lon": 35.1694,
+"precision": "town",
+"source": "wikidata",
+"en": "Shefa-Amr"
+},
+"شقرا": {
+"lat": 33.1932,
+"lon": 35.4672,
+"precision": "town",
+"source": "wikidata",
+"en": "Chaqra/harare"
+},
+"شلومي": {
+"lat": 33.077,
+"lon": 35.145,
+"precision": "approx",
+"source": "manual"
+},
+"شمال الجولان": {
+"lat": 33.15,
+"lon": 35.75,
+"precision": "area",
+"source": "manual"
+},
+"شمسطار": {
+"lat": 33.9667,
+"lon": 36.0167,
+"precision": "town",
+"source": "wikidata",
+"en": "Chmestar"
+},
+"شمع": {
+"lat": 33.157,
+"lon": 35.215,
+"precision": "approx",
+"source": "manual"
+},
+"شوكين": {
+"lat": 33.3542,
+"lon": 35.4667,
+"precision": "town",
+"source": "wikidata",
+"en": "Choukine"
+},
+"شومرا": {
+"lat": 33.0829,
+"lon": 35.2842,
+"precision": "town",
+"source": "wikidata",
+"en": "Shomera"
+},
+"شوميرا": {
+"lat": 33.0829,
+"lon": 35.2842,
+"precision": "approx",
+"source": "manual"
+},
+"شوميراه": {
+"lat": 33.0829,
+"lon": 35.2842,
+"precision": "approx",
+"source": "manual"
+},
+"شويا": {
+"lat": 33.3928,
+"lon": 35.7164,
+"precision": "town",
+"source": "wikidata",
+"en": "Chouaya"
+},
+"شيحين": {
+"lat": 33.1244,
+"lon": 35.2517,
+"precision": "town",
+"source": "wikidata",
+"en": "Chihine"
+},
+"صديقين": {
+"lat": 33.19,
+"lon": 35.3103,
+"precision": "town",
+"source": "wikidata",
+"en": "Siddikine"
+},
+"صربا": {
+"lat": 33.4667,
+"lon": 35.4744,
+"precision": "town",
+"source": "wikidata",
+"en": "Sarba (Nabatiyeh)"
+},
+"صربين": {
+"lat": 33.1539,
+"lon": 35.3589,
+"precision": "town",
+"source": "wikidata",
+"en": "Srobbine"
+},
+"صريفا": {
+"lat": 33.2814,
+"lon": 35.3964,
+"precision": "town",
+"source": "wikidata",
+"en": "Srifa"
+},
+"صفد": {
+"lat": 32.9658,
+"lon": 35.4983,
+"precision": "town",
+"source": "wikidata",
+"en": "Safed"
+},
+"صفد البطيخ": {
+"lat": 33.2,
+"lon": 35.4328,
+"precision": "town",
+"source": "wikidata",
+"en": "Safad El Battikh"
+},
+"صور": {
+"lat": 33.2667,
+"lon": 35.2,
+"precision": "town",
+"source": "wikidata",
+"en": "Tyre"
+},
+"صيدا": {
+"lat": 33.5606,
+"lon": 35.3758,
+"precision": "town",
+"source": "wikidata",
+"en": "Sidon"
+},
+"صير الغربية": {
+"lat": 33.367,
+"lon": 35.433,
+"precision": "approx",
+"source": "manual"
+},
+"ضهر البيدر": {
+"lat": 33.82,
+"lon": 35.77,
+"precision": "approx",
+"source": "manual"
+},
+"طاريا": {
+"lat": 33.9833,
+"lon": 36.0236,
+"precision": "town",
+"source": "wikidata",
+"en": "Taraya"
+},
+"طبريا": {
+"lat": 32.7897,
+"lon": 35.5247,
+"precision": "town",
+"source": "wikidata",
+"en": "Tiberias"
+},
+"طرابلس": {
+"lat": 34.4367,
+"lon": 35.8344,
+"precision": "town",
+"source": "wikidata",
+"en": "Tripoli"
+},
+"طلوسة": {
+"lat": 33.2328,
+"lon": 35.4847,
+"precision": "town",
+"source": "wikidata",
+"en": "Talloussa"
+},
+"طورا": {
+"lat": 33.2936,
+"lon": 35.2978,
+"precision": "town",
+"source": "wikidata",
+"en": "Toura"
+},
+"طير حرفا": {
+"lat": 33.1281,
+"lon": 35.2122,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Harfa"
+},
+"طير دبا": {
+"lat": 33.275,
+"lon": 35.28,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Debba"
+},
+"طير دبّا": {
+"lat": 33.275,
+"lon": 35.28,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Debba"
+},
+"طير فلسيه": {
+"lat": 33.3089,
+"lon": 35.3481,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Falsay"
+},
+"طيرحرفا": {
+"lat": 33.1281,
+"lon": 35.2122,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Harfa"
+},
+"طيردبا": {
+"lat": 33.275,
+"lon": 35.28,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Debba"
+},
+"طيرفلسيه": {
+"lat": 33.3089,
+"lon": 35.3481,
+"precision": "town",
+"source": "wikidata",
+"en": "Tayr Falsay"
+},
+"عائشة بكار": {
+"lat": 33.882,
+"lon": 35.495,
+"precision": "approx",
+"source": "manual"
+},
+"عبا": {
+"lat": 33.36,
+"lon": 35.4,
+"precision": "town",
+"source": "wikidata",
+"en": "Ebba"
+},
+"عدشيت": {
+"lat": 33.2772,
+"lon": 35.4808,
+"precision": "town",
+"source": "wikidata",
+"en": "Aadchit"
+},
+"عدشيت القصير": {
+"lat": 33.26,
+"lon": 35.55,
+"precision": "approx",
+"source": "manual"
+},
+"عدلون": {
+"lat": 33.403,
+"lon": 35.272,
+"precision": "approx",
+"source": "manual"
+},
+"عديسة": {
+"lat": 33.2542,
+"lon": 35.5425,
+"precision": "town",
+"source": "wikidata",
+"en": "Adaisseh"
+},
+"عرب العرامشة": {
+"lat": 33.09,
+"lon": 35.2286,
+"precision": "town",
+"source": "wikidata",
+"en": "Arab al-Aramshe"
+},
+"عرب اللويزة": {
+"lat": 33.36,
+"lon": 35.55,
+"precision": "approx",
+"source": "manual"
+},
+"عرب صاليم": {
+"lat": 33.4289,
+"lon": 35.5164,
+"precision": "town",
+"source": "wikidata",
+"en": "Arabsalim"
+},
+"عربصاليم": {
+"lat": 33.4289,
+"lon": 35.5164,
+"precision": "town",
+"source": "wikidata",
+"en": "Arabsalim"
+},
+"عرمتى": {
+"lat": 33.4639,
+"lon": 35.5764,
+"precision": "town",
+"source": "wikidata",
+"en": "Aaramta"
+},
+"عرمون": {
+"lat": 33.7597,
+"lon": 35.5208,
+"precision": "town",
+"source": "wikidata",
+"en": "Aramoun"
+},
+"عسقلان": {
+"lat": 31.6658,
+"lon": 34.5664,
+"precision": "town",
+"source": "wikidata",
+"en": "Ashkelon"
+},
+"عكا": {
+"lat": 32.9261,
+"lon": 35.0839,
+"precision": "town",
+"source": "wikidata",
+"en": "Acre"
+},
+"علما الشعب": {
+"lat": 33.105,
+"lon": 35.1711,
+"precision": "town",
+"source": "wikidata",
+"en": "Aalma ech Chaab"
+},
+"علمان": {
+"lat": 33.3025,
+"lon": 35.4711,
+"precision": "town",
+"source": "wikidata",
+"en": "Alman, Marjeyoun"
+},
+"علي الطاهر": {
+"lat": 33.388,
+"lon": 35.515,
+"precision": "approx",
+"source": "manual"
+},
+"علي النهري": {
+"lat": 33.8583,
+"lon": 36.0306,
+"precision": "town",
+"source": "wikidata",
+"en": "Ali el Nahri"
+},
+"عميعاد": {
+"lat": 32.9282,
+"lon": 35.5407,
+"precision": "town",
+"source": "wikidata",
+"en": "Ami'ad"
+},
+"عنقون": {
+"lat": 33.4989,
+"lon": 35.4286,
+"precision": "town",
+"source": "wikidata",
+"en": "Anqoun"
+},
+"عيتا الجبل": {
+"lat": 33.1756,
+"lon": 35.4078,
+"precision": "town",
+"source": "wikidata",
+"en": "Ayta al-Jabal"
+},
+"عيتا الشعب": {
+"lat": 33.0972,
+"lon": 35.3344,
+"precision": "town",
+"source": "wikidata",
+"en": "Ayta ash Shab"
+},
+"عيترون": {
+"lat": 33.1167,
+"lon": 35.4667,
+"precision": "town",
+"source": "wikidata",
+"en": "Aitaroun"
+},
+"عيتيت": {
+"lat": 33.2256,
+"lon": 35.3322,
+"precision": "town",
+"source": "wikidata",
+"en": "Aitit"
+},
+"عين إبل": {
+"lat": 33.1097,
+"lon": 35.4028,
+"precision": "town",
+"source": "wikidata",
+"en": "Ain Ebel"
+},
+"عين الحلوة": {
+"lat": 33.543,
+"lon": 35.375,
+"precision": "approx",
+"source": "manual"
+},
+"عين بعال": {
+"lat": 33.2334,
+"lon": 35.2703,
+"precision": "town",
+"source": "wikidata",
+"en": "Ain Baal"
+},
+"عين زيتيم": {
+"lat": 32.99,
+"lon": 35.5,
+"precision": "approx",
+"source": "manual"
+},
+"عين سعادة": {
+"lat": 33.866,
+"lon": 35.5951,
+"precision": "town",
+"source": "wikidata",
+"en": "Ain Saadeh"
+},
+"عين عرب": {
+"lat": 33.2967,
+"lon": 35.6228,
+"precision": "town",
+"source": "wikidata",
+"en": "Ain Arab"
+},
+"عين قانا": {
+"lat": 33.4822,
+"lon": 35.4994,
+"precision": "town",
+"source": "wikidata",
+"en": "Ain Qana"
+},
+"عيناتا": {
+"lat": 33.1288,
+"lon": 35.4351,
+"precision": "town",
+"source": "wikidata",
+"en": "Aynata"
+},
+"عيناتا بثلاث دفعات": {
+"lat": 33.1288,
+"lon": 35.4351,
+"precision": "town",
+"source": "wikidata",
+"en": "Aynata"
+},
+"عيناثا": {
+"lat": 33.1288,
+"lon": 35.4351,
+"precision": "town",
+"source": "wikidata",
+"en": "Aynata"
+},
+"غابة عيترون": {
+"lat": 33.12,
+"lon": 35.47,
+"precision": "approx",
+"source": "manual"
+},
+"غورن": {
+"lat": 33.06,
+"lon": 35.24,
+"precision": "approx",
+"source": "manual"
+},
+"فرون": {
+"lat": 33.2969,
+"lon": 35.4286,
+"precision": "town",
+"source": "wikidata",
+"en": "Froun"
+},
+"قاقعية الجسر": {
+"lat": 33.33,
+"lon": 35.43,
+"precision": "approx",
+"source": "manual"
+},
+"قانا": {
+"lat": 33.2092,
+"lon": 35.2992,
+"precision": "town",
+"source": "wikidata",
+"en": "Qana"
+},
+"قبريخا": {
+"lat": 33.2524,
+"lon": 35.4296,
+"precision": "town",
+"source": "wikidata",
+"en": "Qabrikha"
+},
+"قصرنبا": {
+"lat": 33.9111,
+"lon": 35.9919,
+"precision": "town",
+"source": "wikidata",
+"en": "Kasarnaba"
+},
+"قعقعية الجسر": {
+"lat": 33.3256,
+"lon": 35.4181,
+"precision": "town",
+"source": "wikidata",
+"en": "Qaaqaait Al Jisr"
+},
+"قعقعية الصنوبر": {
+"lat": 33.48,
+"lon": 35.45,
+"precision": "approx",
+"source": "manual"
+},
+"قلاوية": {
+"lat": 33.205,
+"lon": 35.405,
+"precision": "approx",
+"source": "manual"
+},
+"قلاويه": {
+"lat": 33.205,
+"lon": 35.405,
+"precision": "approx",
+"source": "manual"
+},
+"قلعة الشقيف": {
+"lat": 33.3285,
+"lon": 35.5323,
+"precision": "approx",
+"source": "manual"
+},
+"قلعة الشقيف التاريخيّة": {
+"lat": 33.3285,
+"lon": 35.5323,
+"precision": "approx",
+"source": "manual"
+},
+"قلعة الشّقيف": {
+"lat": 33.3285,
+"lon": 35.5323,
+"precision": "approx",
+"source": "manual"
+},
+"قليا": {
+"lat": 33.47,
+"lon": 35.68,
+"precision": "approx",
+"source": "manual"
+},
+"قناريت": {
+"lat": 33.5036,
+"lon": 35.3792,
+"precision": "town",
+"source": "wikidata",
+"en": "Qennarit"
+},
+"قيسارية": {
+"lat": 32.5,
+"lon": 34.9,
+"precision": "town",
+"source": "wikidata",
+"en": "Caesarea"
+},
+"كابري": {
+"lat": 33.0155,
+"lon": 35.1509,
+"precision": "town",
+"source": "wikidata",
+"en": "Al-Kabri"
+},
+"كتسرين": {
+"lat": 32.99,
+"lon": 35.69,
+"precision": "approx",
+"source": "manual"
+},
+"كرم بن زمرة": {
+"lat": 33.03,
+"lon": 35.47,
+"precision": "approx",
+"source": "manual"
+},
+"كرمئيل": {
+"lat": 32.9,
+"lon": 35.2833,
+"precision": "town",
+"source": "wikidata",
+"en": "Karmiel"
+},
+"كرميئيل": {
+"lat": 32.9,
+"lon": 35.2833,
+"precision": "approx",
+"source": "manual"
+},
+"كريات آتا": {
+"lat": 32.8,
+"lon": 35.1,
+"precision": "town",
+"source": "wikidata",
+"en": "Kiryat Ata"
+},
+"كريات شمونة": {
+"lat": 33.2075,
+"lon": 35.5697,
+"precision": "town",
+"source": "wikidata",
+"en": "Kiryat Shmona"
+},
+"كريات شمونه": {
+"lat": 33.2075,
+"lon": 35.5697,
+"precision": "town",
+"source": "wikidata",
+"en": "Kiryat Shmona"
+},
+"كريات موتسكين": {
+"lat": 32.84,
+"lon": 35.08,
+"precision": "approx",
+"source": "manual"
+},
+"كريات يام": {
+"lat": 32.8331,
+"lon": 35.0664,
+"precision": "town",
+"source": "wikidata",
+"en": "Kiryat Yam"
+},
+"كسارة كفرجلعادي،": {
+"lat": 33.2425,
+"lon": 35.575,
+"precision": "approx",
+"source": "manual"
+},
+"كفار جلعادي": {
+"lat": 33.2425,
+"lon": 35.575,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Giladi"
+},
+"كفار غلعادي": {
+"lat": 33.2425,
+"lon": 35.575,
+"precision": "approx",
+"source": "manual"
+},
+"كفار يوفال": {
+"lat": 33.244,
+"lon": 35.6,
+"precision": "approx",
+"source": "manual"
+},
+"كفاريوفال": {
+"lat": 33.244,
+"lon": 35.6,
+"precision": "approx",
+"source": "manual"
+},
+"كفر جوز": {
+"lat": 33.367,
+"lon": 35.497,
+"precision": "approx",
+"source": "manual"
+},
+"كفر حتى": {
+"lat": 33.5025,
+"lon": 35.4522,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Hatta"
+},
+"كفر حمام": {
+"lat": 33.3439,
+"lon": 35.6789,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarhamam"
+},
+"كفر رمان": {
+"lat": 33.3862,
+"lon": 35.4966,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Remen"
+},
+"كفر صير": {
+"lat": 33.325,
+"lon": 35.4008,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Sir"
+},
+"كفرا": {
+"lat": 33.1758,
+"lon": 35.3514,
+"precision": "town",
+"source": "wikidata",
+"en": "Kafra,  Bint Jbeil District"
+},
+"كفرتبنيت": {
+"lat": 33.372,
+"lon": 35.527,
+"precision": "approx",
+"source": "manual"
+},
+"كفرجلعادي": {
+"lat": 33.2425,
+"lon": 35.575,
+"precision": "approx",
+"source": "manual"
+},
+"كفرجوز": {
+"lat": 33.367,
+"lon": 35.497,
+"precision": "approx",
+"source": "manual"
+},
+"كفرحاتا": {
+"lat": 34.3828,
+"lon": 35.8975,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarhata Zgharta"
+},
+"كفرحتى": {
+"lat": 33.5025,
+"lon": 35.4522,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Hatta"
+},
+"كفرحمام": {
+"lat": 33.3439,
+"lon": 35.6789,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarhamam"
+},
+"كفرحونة": {
+"lat": 33.4931,
+"lon": 35.5861,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarhouna"
+},
+"كفردجال": {
+"lat": 33.39,
+"lon": 35.47,
+"precision": "approx",
+"source": "manual"
+},
+"كفردونين": {
+"lat": 33.2333,
+"lon": 35.4,
+"precision": "town",
+"source": "wikidata",
+"en": "Kafr Dunin"
+},
+"كفررمان": {
+"lat": 33.3862,
+"lon": 35.4966,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Remen"
+},
+"كفرشوبا": {
+"lat": 33.328,
+"lon": 35.6918,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarchouba"
+},
+"كفرصير": {
+"lat": 33.325,
+"lon": 35.4008,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Sir"
+},
+"كفرفيلا": {
+"lat": 33.4822,
+"lon": 35.4994,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarfila"
+},
+"كفركلا": {
+"lat": 33.2833,
+"lon": 35.55,
+"precision": "town",
+"source": "wikidata",
+"en": "Kafr Kila"
+},
+"كفرمان": {
+"lat": 33.3862,
+"lon": 35.4966,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfar Remen"
+},
+"كفرملكي": {
+"lat": 33.5,
+"lon": 35.48,
+"precision": "town",
+"source": "wikidata",
+"en": "Kfarmelki"
+},
+"كوثرية الرز": {
+"lat": 33.45,
+"lon": 35.43,
+"precision": "approx",
+"source": "manual"
+},
+"كوثرية السياد": {
+"lat": 33.4175,
+"lon": 35.3831,
+"precision": "town",
+"source": "wikidata",
+"en": "Kaouthariyat as-Siyad"
+},
+"كونين": {
+"lat": 33.1489,
+"lon": 35.4381,
+"precision": "town",
+"source": "wikidata",
+"en": "Kunin"
+},
+"كيفون": {
+"lat": 33.7853,
+"lon": 35.5592,
+"precision": "town",
+"source": "wikidata",
+"en": "Kaifun"
+},
+"لبايا": {
+"lat": 33.4825,
+"lon": 35.7239,
+"precision": "town",
+"source": "wikidata",
+"en": "Libbaya"
+},
+"ليمان": {
+"lat": 33.06,
+"lon": 35.11,
+"precision": "approx",
+"source": "manual"
+},
+"مار مخايل": {
+"lat": 33.895,
+"lon": 35.52,
+"precision": "approx",
+"source": "manual"
+},
+"مارون الرأس": {
+"lat": 33.1011,
+"lon": 35.4439,
+"precision": "town",
+"source": "wikidata",
+"en": "Maroun al-Ras"
+},
+"مارون الراس": {
+"lat": 33.1011,
+"lon": 35.4439,
+"precision": "town",
+"source": "wikidata",
+"en": "Maroun al-Ras"
+},
+"مالكية": {
+"lat": 33.0982,
+"lon": 35.5111,
+"precision": "town",
+"source": "wikidata",
+"en": "Malkia"
+},
+"مبني بلدية الناقورة": {
+"lat": 33.12,
+"lon": 35.1342,
+"precision": "town",
+"source": "wikidata",
+"en": "Naqoura"
+},
+"مجادل": {
+"lat": 33.2294,
+"lon": 35.3601,
+"precision": "town",
+"source": "wikidata",
+"en": "Majadel"
+},
+"مجدل زون": {
+"lat": 33.1519,
+"lon": 35.2275,
+"precision": "town",
+"source": "wikidata",
+"en": "Majdel Zoun"
+},
+"مجدل سلم": {
+"lat": 33.2217,
+"lon": 35.4644,
+"precision": "town",
+"source": "wikidata",
+"en": "Majdal Selem"
+},
+"مجدلزون": {
+"lat": 33.1519,
+"lon": 35.2275,
+"precision": "town",
+"source": "wikidata",
+"en": "Majdel Zoun"
+},
+"مجدلون": {
+"lat": 33.9889,
+"lon": 36.1361,
+"precision": "town",
+"source": "wikidata",
+"en": "Majdaloun"
+},
+"محرونة": {
+"lat": 33.219,
+"lon": 35.3428,
+"precision": "town",
+"source": "wikidata",
+"en": "Mahrouna"
+},
+"مخيم البداوي": {
+"lat": 34.45,
+"lon": 35.86,
+"precision": "approx",
+"source": "manual"
+},
+"مخيم البرج الشمالي": {
+"lat": 33.2617,
+"lon": 35.2369,
+"precision": "town",
+"source": "wikidata",
+"en": "Burj el-Shemali"
+},
+"مخيم البص": {
+"lat": 33.275,
+"lon": 35.205,
+"precision": "approx",
+"source": "manual"
+},
+"مخيم الرشيدية": {
+"lat": 33.236,
+"lon": 35.218,
+"precision": "approx",
+"source": "manual"
+},
+"مرتفعات الريحان": {
+"lat": 33.4444,
+"lon": 35.5675,
+"precision": "town",
+"source": "wikidata",
+"en": "Al Rihan"
+},
+"مرج الخيام": {
+"lat": 33.3,
+"lon": 35.6,
+"precision": "area",
+"source": "manual"
+},
+"مرج الزهور": {
+"lat": 33.4697,
+"lon": 35.7461,
+"precision": "town",
+"source": "wikidata",
+"en": "Marj Ez Zouhour (Dnaibeh)"
+},
+"مرج حاروف": {
+"lat": 33.345,
+"lon": 35.465,
+"precision": "approx",
+"source": "manual"
+},
+"مرجعيون": {
+"lat": 33.3667,
+"lon": 35.5833,
+"precision": "town",
+"source": "wikidata",
+"en": "Marjayoun"
+},
+"مرجليوت": {
+"lat": 33.2144,
+"lon": 35.5447,
+"precision": "approx",
+"source": "manual"
+},
+"مرغليوت": {
+"lat": 33.2144,
+"lon": 35.5447,
+"precision": "approx",
+"source": "manual"
+},
+"مركبا": {
+"lat": 33.2333,
+"lon": 35.5167,
+"precision": "town",
+"source": "wikidata",
+"en": "Markaba"
+},
+"مروحين": {
+"lat": 33.1083,
+"lon": 35.2778,
+"precision": "town",
+"source": "wikidata",
+"en": "Marwahin"
+},
+"مزارع شبعا": {
+"lat": 33.2833,
+"lon": 35.7,
+"precision": "town",
+"source": "wikidata",
+"en": "Shebaa farms"
+},
+"مزرعة العاقبية": {
+"lat": 33.47,
+"lon": 35.32,
+"precision": "approx",
+"source": "manual"
+},
+"مزرعة القطراني": {
+"lat": 33.44,
+"lon": 35.58,
+"precision": "approx",
+"source": "manual"
+},
+"مزرعة سردا": {
+"lat": 33.29,
+"lon": 35.63,
+"precision": "approx",
+"source": "manual"
+},
+"مزرعة مشرف": {
+"lat": 33.2092,
+"lon": 35.3361,
+"precision": "town",
+"source": "wikidata",
+"en": "Mazraat El Mechref"
+},
+"مسغاف عام": {
+"lat": 33.2478,
+"lon": 35.5483,
+"precision": "town",
+"source": "wikidata",
+"en": "Misgav Am"
+},
+"مسكاف عام": {
+"lat": 33.248,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"مسكافعام": {
+"lat": 33.248,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"مسكفعام": {
+"lat": 33.248,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"مشروع الطيبة": {
+"lat": 33.27,
+"lon": 35.54,
+"precision": "approx",
+"source": "manual"
+},
+"مشغرة": {
+"lat": 33.5281,
+"lon": 35.6517,
+"precision": "town",
+"source": "wikidata",
+"en": "Machgara"
+},
+"مطار رفيق الحريري": {
+"lat": 33.82,
+"lon": 35.49,
+"precision": "approx",
+"source": "manual"
+},
+"معالوت ترشيحا": {
+"lat": 33.0167,
+"lon": 35.2708,
+"precision": "town",
+"source": "wikidata",
+"en": "Ma'alot-Tarshiha"
+},
+"معالوت ترشيحا،": {
+"lat": 33.0167,
+"lon": 35.2708,
+"precision": "town",
+"source": "wikidata",
+"en": "Ma'alot-Tarshiha"
+},
+"معالوت تشريحا": {
+"lat": 33.0167,
+"lon": 35.2708,
+"precision": "approx",
+"source": "manual"
+},
+"معتقل الخيام": {
+"lat": 33.317,
+"lon": 35.611,
+"precision": "approx",
+"source": "manual"
+},
+"معركة": {
+"lat": 33.2728,
+"lon": 35.3097,
+"precision": "town",
+"source": "wikidata",
+"en": "Maarakeh"
+},
+"معروب": {
+"lat": 33.2842,
+"lon": 35.3472,
+"precision": "town",
+"source": "wikidata",
+"en": "Maaroub"
+},
+"معشوق": {
+"lat": 33.2672,
+"lon": 35.2242,
+"precision": "town",
+"source": "wikidata",
+"en": "معشوق"
+},
+"معيان باروخ": {
+"lat": 33.2411,
+"lon": 35.6088,
+"precision": "town",
+"source": "wikidata",
+"en": "Ma'ayan Baruch"
+},
+"مغدوشة": {
+"lat": 33.5217,
+"lon": 35.3858,
+"precision": "town",
+"source": "wikidata",
+"en": "Maghdouché"
+},
+"مفرق معركة": {
+"lat": 33.27,
+"lon": 35.3,
+"precision": "approx",
+"source": "manual"
+},
+"مليخ": {
+"lat": 33.4672,
+"lon": 35.5536,
+"precision": "town",
+"source": "wikidata",
+"en": "Mlikh"
+},
+"منارة": {
+"lat": 33.6481,
+"lon": 35.8861,
+"precision": "town",
+"source": "wikidata",
+"en": "Manara"
+},
+"ميدون": {
+"lat": 33.5,
+"lon": 35.65,
+"precision": "approx",
+"source": "manual"
+},
+"ميرون": {
+"lat": 32.9821,
+"lon": 35.4381,
+"precision": "town",
+"source": "wikidata",
+"en": "Meiron"
+},
+"ميرون للمراقبة وادارة العمليات الجوية": {
+"lat": 32.99,
+"lon": 35.41,
+"precision": "approx",
+"source": "manual"
+},
+"ميس الجبل": {
+"lat": 33.1694,
+"lon": 35.5256,
+"precision": "town",
+"source": "wikidata",
+"en": "Meiss Ej Jabal"
+},
+"ميفدون": {
+"lat": 33.3486,
+"lon": 35.4764,
+"precision": "town",
+"source": "wikidata",
+"en": "Mayfadoun"
+},
+"نتانيا": {
+"lat": 32.3286,
+"lon": 34.8567,
+"precision": "town",
+"source": "wikidata",
+"en": "Netanya"
+},
+"نحلة": {
+"lat": 34.03,
+"lon": 36.24,
+"precision": "approx",
+"source": "manual"
+},
+"نطوعه": {
+"lat": 33.07,
+"lon": 35.32,
+"precision": "approx",
+"source": "manual"
+},
+"نفاخية": {
+"lat": 33.2708,
+"lon": 35.3861,
+"precision": "town",
+"source": "wikidata",
+"en": "Naffakhiyeh"
+},
+"نهاريا": {
+"lat": 33.0036,
+"lon": 35.0925,
+"precision": "town",
+"source": "wikidata",
+"en": "Nahariya"
+},
+"نهاريّا": {
+"lat": 33.0036,
+"lon": 35.0925,
+"precision": "town",
+"source": "wikidata",
+"en": "Nahariya"
+},
+"نيوت مردخاي": {
+"lat": 33.1599,
+"lon": 35.5967,
+"precision": "town",
+"source": "wikidata",
+"en": "Neot Mordechai"
+},
+"هونين": {
+"lat": 33.2144,
+"lon": 35.5447,
+"precision": "town",
+"source": "wikidata",
+"en": "Margaliot"
+},
+"وادي الحجير": {
+"lat": 33.3079,
+"lon": 35.4386,
+"precision": "town",
+"source": "wikidata",
+"en": "Oued Hejir"
+},
+"وادي الخردلي": {
+"lat": 33.335,
+"lon": 35.57,
+"precision": "area",
+"source": "manual"
+},
+"وادي السلوقي": {
+"lat": 33.25,
+"lon": 35.47,
+"precision": "area",
+"source": "manual"
+},
+"وادي السلوقي جنوبي لبنان": {
+"lat": 33.25,
+"lon": 35.47,
+"precision": "area",
+"source": "manual"
+},
+"وادي جيلو": {
+"lat": 33.245,
+"lon": 35.3086,
+"precision": "town",
+"source": "wikidata",
+"en": "Ouadi Jilo"
+},
+"وادي زبقين": {
+"lat": 33.1667,
+"lon": 35.2667,
+"precision": "town",
+"source": "wikidata",
+"en": "Zibqin"
+},
+"يارؤن": {
+"lat": 33.0833,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Yaroun"
+},
+"يارون": {
+"lat": 33.0833,
+"lon": 35.4167,
+"precision": "town",
+"source": "wikidata",
+"en": "Yaroun"
+},
+"يارين": {
+"lat": 33.1064,
+"lon": 35.2336,
+"precision": "town",
+"source": "wikidata",
+"en": "Jarine"
+},
+"ياطر": {
+"lat": 33.1538,
+"lon": 35.3286,
+"precision": "town",
+"source": "wikidata",
+"en": "Yater"
+},
+"يانوح": {
+"lat": 33.2594,
+"lon": 35.3044,
+"precision": "town",
+"source": "wikidata",
+"en": "Yanouh (Sour)"
+},
+"يحمر": {
+"lat": 33.3125,
+"lon": 35.5175,
+"precision": "town",
+"source": "wikidata",
+"en": "Yohmor"
+},
+"يحمر الشقيف": {
+"lat": 33.343,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"يحمر الشّقيف": {
+"lat": 33.343,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"يحمر شقيف": {
+"lat": 33.343,
+"lon": 35.548,
+"precision": "approx",
+"source": "manual"
+},
+"يرؤون": {
+"lat": 33.077,
+"lon": 35.4549,
+"precision": "town",
+"source": "wikidata",
+"en": "Yir'on"
+},
+"يسود همعلاه": {
+"lat": 33.06,
+"lon": 35.6,
+"precision": "approx",
+"source": "manual"
+},
+"يعرا": {
+"lat": 33.05,
+"lon": 35.2,
+"precision": "approx",
+"source": "manual"
+},
+"يفتاح": {
+"lat": 33.1277,
+"lon": 35.5517,
+"precision": "town",
+"source": "wikidata",
+"en": "Yiftah"
+},
+"يوكنعام": {
+"lat": 32.6594,
+"lon": 35.11,
+"precision": "town",
+"source": "wikidata",
+"en": "Yokneam Illit"
+}
+}

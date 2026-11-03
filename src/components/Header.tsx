@@ -33,16 +33,22 @@ export default function Header() {
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
           <Link
+            href="/"
+            className="text-sm text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900 px-3 py-1.5 rounded-lg transition-colors"
+          >
+            السجل الميداني
+          </Link>
+          <Link
             href="/analysis"
             className="text-sm text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 border border-red-200 dark:border-red-900 hover:border-red-400 dark:hover:border-red-700 px-3 py-1.5 rounded-lg transition-colors"
           >
             تحليلات
           </Link>
           <Link
-            href="/losses"
+            href="/impact"
             className="text-sm text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 border border-red-200 dark:border-red-900 hover:border-red-400 dark:hover:border-red-700 px-3 py-1.5 rounded-lg transition-colors"
           >
-            الخسائر الإسرائيلية
+            الأثر المعلن
           </Link>
           <div className="text-zinc-500 dark:text-gray-400 text-sm hidden md:block">{today}</div>
         </div>
